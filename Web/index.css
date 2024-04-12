@@ -1,0 +1,87 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+header h1,
+.content-section h2 {
+    color: #333;
+}
+
+.content-section {
+    flex: 1;
+    /* 修改这里以确保内容区可以扩展 */
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+    /* 移除了 position: absolute; 和 bottom: 0; */
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    /* 根据需要调整高度 */
+    width: 100%;
+    /* 如果需要限制宽度，可以设置max-width而不是width */
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* 让轮播项充满.carousel的宽度 */
+    height: 100%;
+    /* 让轮播项充满.carousel的高度 */
+}
+
+.carousel-item img {
+    max-height: 100%;
+    /* 限制图片的最大高度 */
+    max-width: 100%;
+    /* 限制图片的最大宽度 */
+    object-fit: contain;
+    /* 使用contain而不是cover，避免图片被裁剪 */
+}

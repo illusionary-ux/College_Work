@@ -1,0 +1,4 @@
+﻿  P745.C
+D:\C\2023_11_1\P745.C(8,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+P745.obj : error LNK2005: main 已经在 P214.obj 中定义
+D:\C\2023_11_1\x64\Debug\2023_11_1.exe : fatal error LNK1169: 找到一个或多个多重定义的符号

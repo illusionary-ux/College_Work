@@ -1,0 +1,27 @@
+{
+    "files.associations": {
+        "D1.C": "cpp",
+        "D1002.C": "cpp",
+        "D12.C": "cpp",
+        "P113.C": "cpp",
+        "P122.C": "cpp",
+        "P221.C": "cpp",
+        "P220.C": "cpp",
+        "D2.C": "cpp",
+        "D1035.C": "cpp",
+        "D1023.C": "cpp",
+        "D1001.C": "cpp",
+        "P241.C": "cpp",
+        "P243.C": "cpp",
+        "D1016.C": "cpp",
+        "D16.C": "cpp",
+        "D1008.C": "cpp",
+        "P215.C": "cpp",
+        "D5.C": "cpp",
+        "P765.C": "cpp",
+        "P800.C": "cpp",
+        "P789.C": "cpp",
+        "P804.C": "cpp",
+        "P784.C": "cpp"
+    }
+}

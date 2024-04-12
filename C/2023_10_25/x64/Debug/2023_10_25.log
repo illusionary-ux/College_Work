@@ -1,0 +1,3 @@
+﻿  P755.C
+D:\C\2023_10_25\P755.C(8,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  2023_10_25.vcxproj -> D:\C\2023_10_25\x64\Debug\2023_10_25.exe
