@@ -1,87 +1,122 @@
+/* 基本全局样式 */
+html,
 body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    height: 100%;
+    /* 让html和body高度充满整个视窗 */
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f4f4f4;
+}
 
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    /* 使主体内容和页脚按列方向排列 */
+}
+
+/* 导航栏样式 */
+nav {
+    background-color: #002233;
+    padding: 0.625rem 0;
+    /* 使用rem以适应不同的屏幕分辨率和用户设置 */
 }
 
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    background-color: #333;
-    overflow: hidden;
+    text-align: center;
 }
 
 nav ul li {
-    float: left;
+    display: inline;
 }
 
 nav ul li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    color: #f8f9fa;
+    padding: 0.625rem 0.9375rem;
+    display: inline-block;
 }
 
+/* 鼠标悬停在链接上时的效果 */
 nav ul li a:hover {
-    background-color: #ddd;
-    color: black;
+    background-color: #004466;
 }
 
-header h1,
-.content-section h2 {
-    color: #333;
-}
-
-.content-section {
-    flex: 1;
-    /* 修改这里以确保内容区可以扩展 */
-    background-color: white;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 5px;
-}
-
-.footer {
+/* 主内容区域 */
+.main-content {
+    padding: 1.25rem;
     text-align: center;
-    padding: 20px 0;
-    background-color: #333;
-    color: white;
-    /* 移除了 position: absolute; 和 bottom: 0; */
+    flex: 1;
+    /* 让主内容区域伸展填满除了头部和页脚之外的所有空间 */
 }
 
+header {
+    background-color: #f8f9fa;
+    color: #f8f9fa;
+    padding: 1.25rem;
+}
+header h1, p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #002233;
+}
 .carousel {
     display: flex;
     justify-content: center;
-    align-items: center;
-    height: 500px;
-    /* 根据需要调整高度 */
-    width: 100%;
-    /* 如果需要限制宽度，可以设置max-width而不是width */
+    overflow: hidden;
+    /* 超出部分隐藏 */
 }
 
 .carousel-item {
+    width: 600px;
+    /* 固定宽度 */
+    height: 400px;
+    /* 固定高度 */
+    position: relative;
     display: flex;
     justify-content: center;
+    /* 水平居中 */
     align-items: center;
-    width: 100%;
-    /* 让轮播项充满.carousel的宽度 */
-    height: 100%;
-    /* 让轮播项充满.carousel的高度 */
+    /* 垂直居中 */
+    overflow: hidden;
+    /* 隐藏超出部分 */
 }
 
 .carousel-item img {
-    max-height: 100%;
-    /* 限制图片的最大高度 */
-    max-width: 100%;
-    /* 限制图片的最大宽度 */
-    object-fit: contain;
-    /* 使用contain而不是cover，避免图片被裁剪 */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 保证图片覆盖整个区域且不变形 */
+    object-position: center;
+    /* 图片始终居中 */
+}
+
+/* 内容区块 */
+.content-section {
+    background-color: white;
+    border: 1px solid #ddd;
+    margin: 1.25rem;
+    padding: 1.25rem;
+    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+/* 页脚样式 */
+.footer {
+    background-color: #002233;
+    color: white;
+    text-align: center;
+    padding: 0.625rem 0;
+    width: 100%;
+}
+
+/* 响应式布局调整 */
+@media (max-width: 48rem) {
+    nav ul li {
+        display: block;
+        margin: 0.3125rem;
+    }
 }
