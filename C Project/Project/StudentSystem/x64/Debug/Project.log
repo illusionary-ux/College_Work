@@ -1,0 +1,23 @@
+﻿  main.c
+D:\Code\C Project\Project\function.h(28,3): warning C4550: 表达式计算为缺少参数列表的函数
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(17,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(19,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(36,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(38,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(52,6): warning C4013: “strcmp”未定义；假设外部返回 int
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(50,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+  Project.vcxproj -> D:\Code\C Project\Project\x64\Debug\StudentSystem.exe
