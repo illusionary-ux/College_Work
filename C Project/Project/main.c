@@ -7,9 +7,10 @@ int main(void)
 
 	Login();
 	getchar();//ere getchar() is used to get the '\n' character left in the buffer by the scanf() function in the Login() function.
+	system("cls");
 	do {
 		ShowMenu();
-		choice = getchar();
+		choice = _getch();
 
 		switch (choice) {
 		case '1':
@@ -22,7 +23,7 @@ int main(void)
 			FindStudent();
 			break;
 		case '4':
-			AddStudent();
+			EditStudent();
 			break;
 		case '5':
 			SortStudent();
@@ -30,11 +31,19 @@ int main(void)
 		case '6':
 			DeleteStudent();
 			break;
+		case '7':
+			InsertStudent();
+			break;
+		case '8':
+			ShowFailStudent();
+			break;
 		case '0':
 			printf("感谢使用学生管理系统，再见！\n");
 			break;
 		default:
+			system("cls");
 			printf("无效输入，请重新选择。\n");
+
 		}
 	} while (choice != '0');
 	return 0;
