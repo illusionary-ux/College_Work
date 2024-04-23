@@ -52,6 +52,7 @@ nav ul li a:hover {
     text-align: center;
     flex: 1;
     /* 让主内容区域伸展填满除了头部和页脚之外的所有空间 */
+    font-size: x-large;
 }
 
 header {
@@ -71,9 +72,9 @@ header h1, p{
 }
 
 .carousel-item {
-    width: 600px;
+    width: 1280px;
     /* 固定宽度 */
-    height: 400px;
+    height: 800px;
     /* 固定高度 */
     position: relative;
     display: flex;
@@ -102,6 +103,7 @@ header h1, p{
     padding: 1.25rem;
     box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
     text-align: left;
+    font-size:large;
 }
 
 /* 页脚样式 */
@@ -111,6 +113,10 @@ header h1, p{
     text-align: center;
     padding: 0.625rem 0;
     width: 100%;
+}
+.footer p {
+    margin: 0;
+    color: #f8f9fa;
 }
 
 /* 响应式布局调整 */

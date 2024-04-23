@@ -1,0 +1,119 @@
+﻿  main.c
+D:\Code\C Project\Project\function.h(17,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(19,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(36,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(38,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(51,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(52,2): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(99,11): warning C4098: “AddStudent”:“void”函数返回值
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(108,80): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(103,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(107,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(127,11): warning C4098: “ShowStudent”:“void”函数返回值
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(131,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(150,11): warning C4098: “FindStudent”:“void”函数返回值
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(145,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(153,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(185,11): warning C4098: “EditStudent”:“void”函数返回值
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(203,99): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(211,11): warning C4098: “EditStudent”:“void”函数返回值
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(180,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(189,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(202,4): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(207,7): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(242,11): warning C4098: “SortStudent”:“void”函数返回值
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(297,11): warning C4098: “SortStudent”:“void”函数返回值
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(244,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(251,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(315,11): warning C4098: “DeleteStudent”:“void”函数返回值
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(368,12): warning C4098: “DeleteStudent”:“void”函数返回值
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(310,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(319,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(392,145): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(398,11): warning C4098: “InsertStudent”:“void”函数返回值
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(444,11): warning C4098: “InsertStudent”:“void”函数返回值
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(391,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(401,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(419,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(423,3): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(468,9): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+D:\Code\C Project\Project\function.h(477,2): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  (编译源文件“main.c”)
+  
+  Project.vcxproj -> D:\Code\C Project\Project\x64\Debug\StudentSystem.exe
