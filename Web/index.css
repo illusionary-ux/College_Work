@@ -27,11 +27,19 @@ nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    text-align: center;
+    display: flex;
+    /* 启用Flexbox */
+    justify-content: space-between;
+    /* 将导航项和搜索框分散对齐 */
+    align-items: left;
+    /* 垂直居中 */
+    width: 100%;
+    /* 让<ul>充满整个<nav>宽度 */
 }
 
 nav ul li {
     display: inline;
+    margin-right: 10px;
 }
 
 nav ul li a {
@@ -72,9 +80,9 @@ header h1, p{
 }
 
 .carousel-item {
-    width: 1280px;
+    width: 800px;
     /* 固定宽度 */
-    height: 800px;
+    height: 600px;
     /* 固定高度 */
     position: relative;
     display: flex;
@@ -125,4 +133,33 @@ header h1, p{
         display: block;
         margin: 0.3125rem;
     }
+}
+
+.search-form input[type="text"] {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    /* 在文本框和按钮之间添加一些间距 */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /* 轻微的圆角 */
+}
+
+.search-form button {
+    padding: 0.5rem 1rem;
+    background-color: #006699;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    /* 按钮的圆角 */
+    cursor: pointer;
+    /* 鼠标悬停时显示手指指针 */
+}
+
+.search-form button:hover {
+    background-color: #004466;
+    /* 鼠标悬停时按钮颜色加深 */
+}
+.search-form {
+    margin-left: auto;
+    /* 将搜索表单推到最右侧 */
 }
