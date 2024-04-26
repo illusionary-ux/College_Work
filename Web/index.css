@@ -1,165 +1,184 @@
-/* 基本全局样式 */
+/* 全局样式 */
 html,
 body {
-    height: 100%;
-    /* 让html和body高度充满整个视窗 */
     margin: 0;
     padding: 0;
-}
-
-body {
+    width: 100%;
+    height: 100%;
     font-family: 'Arial', sans-serif;
     background-color: #f8f9fa;
     color: #333;
+    font-size: 16px;
+    /* 基础字体大小 */
+}
+
+body {
     display: flex;
     flex-direction: column;
-    /* 使主体内容和页脚按列方向排列 */
+    /* 垂直堆叠元素 */
+    min-height: 100vh;
+    /* 最小高度为视口高度 */
 }
 
 /* 导航栏样式 */
 nav {
     background-color: #002233;
+    color: #f8f9fa;
     padding: 0.625rem 0;
-    /* 使用rem以适应不同的屏幕分辨率和用户设置 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
+    margin: 0;
     display: flex;
-    /* 启用Flexbox */
-    justify-content: space-between;
-    /* 将导航项和搜索框分散对齐 */
-    align-items: left;
-    /* 垂直居中 */
+    justify-content: space-around;
     width: 100%;
-    /* 让<ul>充满整个<nav>宽度 */
+    max-width: 1200px;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 10px;
+    margin: 0 10px;
 }
 
 nav ul li a {
-    text-decoration: none;
     color: #f8f9fa;
-    padding: 0.625rem 0.9375rem;
-    display: inline-block;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
 }
 
-/* 鼠标悬停在链接上时的效果 */
 nav ul li a:hover {
     background-color: #004466;
 }
 
-/* 主内容区域 */
+/* 主内容区 */
 .main-content {
-    padding: 1.25rem;
-    text-align: center;
     flex: 1;
-    /* 让主内容区域伸展填满除了头部和页脚之外的所有空间 */
-    font-size: x-large;
+    /* 允许主内容区伸展以填满除头部和页脚外的所有空间 */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    /* 控制主内容宽度 */
+    margin: auto;
+    /* 水平居中显示 */
 }
 
 header {
-    background-color: #f8f9fa;
-    color: #f8f9fa;
-    padding: 1.25rem;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
 }
-header h1, p{
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #002233;
-}
+
 .carousel {
-    display: flex;
-    justify-content: center;
+    width: 960px;
+    /* 调整宽度 */
+    height: 500px;
+    /* 调整高度 */
+    position: relative;
     overflow: hidden;
-    /* 超出部分隐藏 */
+    margin: 0 auto;
+    /* 居中显示 */
 }
 
 .carousel-item {
-    width: 800px;
-    /* 固定宽度 */
-    height: 600px;
-    /* 固定高度 */
-    position: relative;
-    display: flex;
-    justify-content: center;
-    /* 水平居中 */
-    align-items: center;
-    /* 垂直居中 */
-    overflow: hidden;
-    /* 隐藏超出部分 */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
 }
 
 .carousel-item img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* 保证图片覆盖整个区域且不变形 */
-    object-position: center;
-    /* 图片始终居中 */
 }
 
 /* 内容区块 */
 .content-section {
-    background-color: white;
-    border: 1px solid #ddd;
-    margin: 1.25rem;
-    padding: 1.25rem;
-    box-shadow: 0 0.125rem 0.3125rem rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 960px;
+    /* 控制最大宽度 */
+    margin: 10px auto;
+    /* 居中并添加间距 */
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
-    font-size:large;
+    border: 1px solid #ddd;
+}
+
+.content-section h2 {
+    margin-top: 0;
 }
 
 /* 页脚样式 */
 .footer {
-    background-color: #002233;
-    color: white;
-    text-align: center;
-    padding: 0.625rem 0;
     width: 100%;
+    background-color: #002233;
+    color: #ffffff;
+    text-align: center;
+    padding: 10px 0;
 }
-.footer p {
-    margin: 0;
-    color: #f8f9fa;
-}
-
-/* 响应式布局调整 */
-@media (max-width: 48rem) {
-    nav ul li {
-        display: block;
-        margin: 0.3125rem;
-    }
-}
-
-.search-form input[type="text"] {
-    padding: 0.5rem;
-    margin-right: 0.5rem;
-    /* 在文本框和按钮之间添加一些间距 */
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    /* 轻微的圆角 */
-}
-
-.search-form button {
-    padding: 0.5rem 1rem;
-    background-color: #006699;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    /* 按钮的圆角 */
-    cursor: pointer;
-    /* 鼠标悬停时显示手指指针 */
-}
-
-.search-form button:hover {
-    background-color: #004466;
-    /* 鼠标悬停时按钮颜色加深 */
-}
+/* 搜索栏容器样式 */
 .search-form {
-    margin-left: auto;
-    /* 将搜索表单推到最右侧 */
+    position: relative; /* 为了定位内部的输入框和按钮 */
+    width: 50px; /* 初始宽度，足够显示为一个图标或按钮 */
+    height: 25px;
+    overflow: hidden; /* 隐藏溢出的部分 */
+    transition: width 0.5s ease; /* 平滑过渡宽度变化 */
+    cursor: pointer;
+}
+
+/* 输入框样式 */
+.search-form input[type="text"] {
+    position: absolute; /* 绝对定位，使之能在容器内正确显示 */
+    right: 0;
+    top: 0;
+    border: none;
+    padding: 10px;
+    width: 100%; /* 充满整个容器 */
+    height: 100%;
+    box-sizing: border-box;
+    transition: opacity 0.5s ease; /* 平滑过渡透明度变化 */
+}
+
+/* 搜索按钮样式 */
+.search-form button {
+    position: absolute; /* 绝对定位 */
+    right: 0;
+    top: 0;
+    width: 40px; /* 按钮宽度 */
+    height: 100%;
+    border: none;
+    background-color: #004466; /* 按钮背景颜色 */
+    color: white; /* 按钮文字颜色 */
+    cursor: pointer;
+}
+
+/* 鼠标悬停于搜索表单容器时的样式 */
+.search-form:hover, .search-form:focus-within {
+    width: 200px; /* 展开宽度 */
+}
+
+/* 鼠标悬停时的输入框样式 */
+.search-form:hover input[type="text"], .search-form:focus-within input[type="text"] {
+    opacity: 1; /* 完全不透明 */
+}
+
+/* 初始化时输入框透明度为0，不显示 */
+.search-form input[type="text"] {
+    opacity: 0;
+}
+
+/* 初始化时，只显示搜索按钮 */
+.search-form button {
+    display: block;
 }

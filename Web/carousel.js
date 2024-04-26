@@ -1,27 +1,45 @@
-document.addEventListener('DOMContentLoaded', function() {
-    let currentIndex = 0; // 当前显示的图片索引
+document.addEventListener('DOMContentLoaded', () => {
+    let currentIndex = 0;
     const items = document.querySelectorAll('.carousel-item');
-    const itemCount = items.length; // 轮播图项的总数
+    const itemCount = items.length;
+    let loadedCount = 0;
 
-    // 初始化，只显示第一张图片
+    // 检查所有图片是否加载完成
+    items.forEach(item => {
+        const img = item.querySelector('img');
+        if (img.complete) {
+            loadedCount++;
+        } else {
+            img.onload = () => {
+                loadedCount++;
+                if (loadedCount === itemCount) {
+                    initCarousel();
+                    startCarousel();
+                }
+            };
+        }
+    });
+
+    // 如果所有图片在代码执行时已经加载，直接启动轮播
+    if (loadedCount === itemCount) {
+        initCarousel();
+        startCarousel();
+    }
+
     function initCarousel() {
         items.forEach((item, index) => {
-            item.style.display = index === 0 ? "block" : "none";
+            item.style.opacity = index === 0 ? '1' : '0';
+            item.style.transition = 'opacity 0.5s ease-in-out';
         });
     }
 
-    // 切换到下一张图片
     function nextItem() {
-        items[currentIndex].style.display = "none"; // 隐藏当前图片
-        currentIndex = (currentIndex + 1) % itemCount; // 计算下一张图片的索引
-        items[currentIndex].style.display = "block"; // 显示下一张图片
+        items[currentIndex].style.opacity = '0';
+        currentIndex = (currentIndex + 1) % itemCount;
+        items[currentIndex].style.opacity = '1';
     }
 
-    // 自动轮播
     function startCarousel() {
-        setInterval(nextItem, 3000); // 每3秒切换一次图片
+        setInterval(nextItem, 3000);
     }
-
-    initCarousel(); // 初始化轮播图
-    startCarousel(); // 开始自动轮播
 });

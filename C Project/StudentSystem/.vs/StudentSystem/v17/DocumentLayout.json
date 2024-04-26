@@ -22,8 +22,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 230,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "function.h",
+              "DocumentMoniker": "D:\\Code\\C Project\\StudentSystem\\function.h",
+              "RelativeDocumentMoniker": "function.h",
+              "ToolTip": "D:\\Code\\C Project\\StudentSystem\\function.h",
+              "RelativeToolTip": "function.h",
+              "ViewState": "AQIAANUAAAAAAAAAAAAAAH0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-04-17T01:11:19.349Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
@@ -36,9 +50,10 @@
               "RelativeDocumentMoniker": "define.h",
               "ToolTip": "D:\\Code\\C Project\\StudentSystem\\define.h",
               "RelativeToolTip": "define.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAyAAAA",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAABgAAAAyAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-21T06:14:52.129Z"
+              "WhenOpened": "2024-04-21T06:14:52.129Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -48,21 +63,9 @@
               "RelativeDocumentMoniker": "main.c",
               "ToolTip": "D:\\Code\\C Project\\StudentSystem\\main.c",
               "RelativeToolTip": "main.c",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACUAAAAVAAAA",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACUAAAAVAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-04-21T03:50:39.969Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "function.h",
-              "DocumentMoniker": "D:\\Code\\C Project\\StudentSystem\\function.h",
-              "RelativeDocumentMoniker": "function.h",
-              "ToolTip": "D:\\Code\\C Project\\StudentSystem\\function.h",
-              "RelativeToolTip": "function.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAG8BAAAMAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-04-17T01:11:19.349Z",
+              "WhenOpened": "2024-04-21T03:50:39.969Z",
               "EditorCaption": ""
             }
           ]

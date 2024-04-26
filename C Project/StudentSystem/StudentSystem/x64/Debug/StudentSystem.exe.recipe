@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\Code\C Project\Project\x64\Debug\StudentSystem.exe</FullPath>
+      <FullPath>D:\Code\C Project\StudentSystem\x64\Debug\StudentSystem.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

@@ -1,127 +1,121 @@
-/* 基础样式重置 */
-body,
-h1,
-h2,
-h3,
-p,
-div,
-form,
-input,
-textarea,
-button {
+/* 全局样式 */
+html, body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-/* 字体样式 */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
-    background-color: #f4f4f4;
-    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 /* 导航栏样式 */
 .navbar {
-    background-color: #333;
-    padding: 10px 0;
-    text-align: center;
+    background-color: #002233;
+    color: #f8f9fa;
+    padding: 0.625rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .navbar a {
-    color: white;
-    padding: 10px 20px;
+    color: #f8f9fa;
     text-decoration: none;
-    font-size: 16px;
+    padding: 0.5rem 1rem;
+    margin: 0 10px;
 }
 
 .navbar a:hover {
-    background-color: #555;
+    background-color: #004466;
 }
 
-/* 主内容区域 */
+/* 内容区域 */
 .content {
+    flex: 1;
     padding: 20px;
-    background: white;
-    margin-top: 20px;
-    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+}
+
+.content h1, .content h2 {
+    color: #002233;
 }
 
 /* 讨论表单样式 */
 .discussion-form {
-    margin-bottom: 20px;
+    width: 100%;
+    max-width: 960px;
+    margin-top: 20px;
 }
 
-.discussion-form h2,
-.discussion-posts h2 {
-    margin-bottom: 10px;
-    color: #0056b3;
+.discussion-form form {
+    position: relative; /* 设置表单为相对定位 */
+    background-color: #ffffff;
+    padding: 10px;
+    padding-bottom: 50px; /* 为按钮预留空间 */
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-form {
-    padding: 20px;
-    background: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-}
-
-form label {
+.discussion-form label {
     display: block;
-    margin-bottom: 5px;
+    margin: 10px 0 5px;
 }
 
-form input[type="text"],
-form textarea {
+.discussion-form input[type="text"],
+.discussion-form textarea {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    box-sizing: border-box;
 }
 
-form button {
-    background-color: #007bff;
+.discussion-form button {
+    position: absolute; /* 设置按钮为绝对定位 */
+    right: 20px; /* 从右边20px的位置开始 */
+    bottom: 15px; /* 从底部20px的位置开始 */
+    padding: 10px 20px;
+    background-color: #004466;
     color: white;
     border: none;
-    padding: 10px 15px;
     cursor: pointer;
-    border-radius: 4px;
-    transition: background-color 0.3s;
+    border-radius: 14px;
 }
 
-form button:hover {
-    background-color: #0056b3;
+.discussion-form button:hover {
+    background-color: #002233;
 }
 
-/* 帖子列表样式 */
-.discussion-posts .post {
-    padding: 15px;
-    margin-bottom: 10px;
-    background: #f9f9f9;
+/* 讨论帖子样式 */
+.discussion-posts {
+    width: 100%;
+    max-width: 960px;
+}
+
+.post {
+    background-color: #ffffff;
     border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.discussion-posts h3 {
-    color: #004085;
-}
-
-.discussion-posts p {
-    margin: 10px 0;
-}
-
-.discussion-posts span {
-    font-size: 12px;
-    color: #666;
+    padding: 20px;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 /* 页脚样式 */
 .footer {
-    background-color: #333;
-    color: white;
+    width: 100%;
+    background-color: #002233;
+    color: #ffffff;
     text-align: center;
-    padding: 10px;
-    margin-top: 20px;
+    padding: 10px 0;
 }
