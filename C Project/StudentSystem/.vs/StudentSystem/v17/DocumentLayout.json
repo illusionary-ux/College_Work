@@ -7,12 +7,12 @@
       "RelativeMoniker": "D:0:0:{64166F0F-0BB6-4C9C-BB5E-365CE772DCD0}|Project.vcxproj|solutionrelative:function.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{64166F0F-0BB6-4C9C-BB5E-365CE772DCD0}|Project.vcxproj|D:\\Code\\C Project\\StudentSystem\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{64166F0F-0BB6-4C9C-BB5E-365CE772DCD0}|Project.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{64166F0F-0BB6-4C9C-BB5E-365CE772DCD0}|Project.vcxproj|D:\\Code\\C Project\\StudentSystem\\define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{64166F0F-0BB6-4C9C-BB5E-365CE772DCD0}|Project.vcxproj|solutionrelative:define.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64166F0F-0BB6-4C9C-BB5E-365CE772DCD0}|Project.vcxproj|D:\\Code\\C Project\\StudentSystem\\main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{64166F0F-0BB6-4C9C-BB5E-365CE772DCD0}|Project.vcxproj|solutionrelative:main.c||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -32,7 +32,11 @@
               "RelativeDocumentMoniker": "function.h",
               "ToolTip": "D:\\Code\\C Project\\StudentSystem\\function.h",
               "RelativeToolTip": "function.h",
+<<<<<<< HEAD
               "ViewState": "AQIAAKgBAAAAAAAAAAAAAH0AAAAVAAAA",
+=======
+              "ViewState": "AQIAAMUBAAAAAAAAAAAAAJ4BAAACAAAA",
+>>>>>>> college_code/main
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-17T01:11:19.349Z",
               "IsPinned": true,
@@ -44,25 +48,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "define.h",
               "DocumentMoniker": "D:\\Code\\C Project\\StudentSystem\\define.h",
               "RelativeDocumentMoniker": "define.h",
               "ToolTip": "D:\\Code\\C Project\\StudentSystem\\define.h",
               "RelativeToolTip": "define.h",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAAABgAAAAyAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-04-21T06:14:52.129Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "main.c",
               "DocumentMoniker": "D:\\Code\\C Project\\StudentSystem\\main.c",
               "RelativeDocumentMoniker": "main.c",
               "ToolTip": "D:\\Code\\C Project\\StudentSystem\\main.c",
               "RelativeToolTip": "main.c",
-              "ViewState": "AQIAABUAAAAAAAAAAAAAACUAAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAALAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
               "WhenOpened": "2024-04-21T03:50:39.969Z"
             }
