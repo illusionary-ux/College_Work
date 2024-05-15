@@ -1,0 +1,5 @@
+str = input().strip()
+c = input().strip()
+str = str.replace(c.lower(), '')
+str = str.replace(c.upper(), '')
+print('result:', str)
