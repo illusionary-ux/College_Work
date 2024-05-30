@@ -1,0 +1,375 @@
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+*{
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #333;
+}
+
+li{
+    float:right;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 28px;
+    font-family:"仿宋";
+    font-weight: 700;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+ul{
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 2;
+    opacity: 0.9;
+}
+
+li .zz{
+    display: block;
+    color: #e90606;
+    background-color: #111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 28px;
+    font-family:"仿宋";
+    font-weight: 700;
+}
+
+img{
+    width:100%;
+    height:600px;
+}
+
+.box1 .js{
+    font-size: 50px;
+    font-family: "华文楷体";
+    font-weight: bold;
+    position: absolute;
+    left:900px;
+    top:450px;
+    color:#b07a7a;
+}
+
+.js:hover{
+    transform: scale(1.1);
+}
+.box2{
+    width:100%;
+    height:600px;
+    position: absolute;
+    top:600px;
+}
+
+
+section{
+    position:absolute;
+    left:630px;
+    width: 200px;
+    height: 300px;
+    transform-style: preserve-3d;
+    animation: rotate 20s linear infinite;
+    z-index: 1;
+}
+section:hover{
+    animation-play-state: paused;
+}
+section div{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    -webkit-box-reflect: below 5px -webkit-linear-gradient(transparent 60%,rgba(255,255,255,0.3));
+}
+section div img{
+    width: 100%;
+    height: 100%;
+}
+section div:nth-child(1){
+    transform: rotateY(0deg) translateZ(300px);
+}
+section div:nth-child(2){
+    transform: rotateY(45deg) translateZ(300px);
+}
+section div:nth-child(3){
+    transform: rotateY(90deg) translateZ(300px);
+}
+section div:nth-child(4){
+    transform: rotateY(135deg) translateZ(300px);
+}
+section div:nth-child(5){
+    transform: rotateY(180deg) translateZ(300px);
+}
+section div:nth-child(6){
+    transform: rotateY(225deg) translateZ(300px);
+}
+section div:nth-child(7){
+    transform: rotateY(270deg) translateZ(300px);
+}
+section div:nth-child(8){
+    transform: rotateY(315deg) translateZ(300px);
+}
+
+
+@keyframes rotate {
+    0%{
+        transform: rotateY(0deg);
+    }
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+
+.box2 .yl{
+    font-family: "华文楷体";
+    font-size: 30px;
+    position: absolute;
+    right:200px;
+    top:130px;
+    border-left: #111 solid 5px;
+    border-right: #111 solid 5px;
+}
+
+.box3{
+    width: 100%;
+    height: 1500px;
+    position: absolute;
+    top:600px;
+}
+
+.box3 .bg{
+    background-color: rgb(235, 242, 249);
+    width:1000px;
+    height:1600px;
+    position: absolute;
+    top:420px;
+    left:230px;
+    z-index: -1;
+}
+
+h1{
+    font-family: "华文楷体";
+    z-index: 2;
+}
+
+.box3 .bg img{
+    width:280px;
+    height:280px;
+    border-radius: 8px;
+}
+
+.img1{
+    position: absolute;
+    left: 50px;
+    top:90px;
+    box-shadow:10px 10px 5px -4px rgba(208, 169, 169, 0.8);
+}
+
+.b1{
+    position: absolute;
+    left:350px;
+    top:50px;
+    border-left: #111 solid 5px;
+}
+
+.c1{
+    display: block;
+    width: 600px;
+    font-family: "华文楷体";
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+    position: absolute;
+    left:350px;
+    top:90px;
+}
+
+.img2{
+    position: absolute;
+    right:50px;
+    top:470px;
+    box-shadow:-10px 10px 5px -4px rgba(208, 169, 169, 0.8);
+}
+
+.b2{
+    position: absolute;
+    right:350px;
+    top:420px;
+    border-right: #111 solid 5px;
+}
+
+.c2{
+    display: block;
+    width: 600px;
+    font-family: "华文楷体";
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+    position: absolute;
+    right:350px;
+    top:470px;
+}
+
+.img3{
+    position: absolute;
+    left: 50px;
+    top:890px;
+    box-shadow:10px 10px 5px -4px rgba(208, 169, 169, 0.8);
+}
+
+.b3{
+    position: absolute;
+    left:350px;
+    top:850px;
+    border-left: #111 solid 5px;
+}
+
+.c3{
+    display: block;
+    width: 600px;
+    font-family: "华文楷体";
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+    position: absolute;
+    left:350px;
+    top:890px;
+}
+
+.img4{
+    position: absolute;
+    right:50px;
+    top:1280px;
+    box-shadow:-10px 10px 5px -4px rgba(208, 169, 169, 0.8);
+}
+
+.b4{
+    position: absolute;
+    right:350px;
+    top:1240px;
+    border-right: #111 solid 5px;
+}
+
+.c4{
+    display: block;
+    width: 600px;
+    font-family: "华文楷体";
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: bold;
+    position: absolute;
+    right:350px;
+    top:1280px;
+}
+
+.footer{
+    width:100%;
+    height:180px;
+    border: #111;
+    background-color: #444;
+    position: absolute;
+    top:2780px;
+    opacity: 0.9;
+}
+
+#box51{
+    position: absolute;
+    top:50px;
+    left:790px;
+    z-index: 1;
+}
+
+.button{
+    --offset:10px;
+    --border-size:2px;
+    position: absolute;
+    left:400px;
+    top:1650px;
+    width: 200px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c98de;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 var(--border-size) currentColor;
+    transition: background 0.8s ease;
+}
+.button:hover{
+    background: rgba(100,0,0,0.065);
+}
+
+.button-h,
+.button-v{
+    position: absolute;
+    top:var(--h-offset,0);
+    right:var(--v-offset,0);
+    bottom:var(--h-offset,0);
+    left:var(--v-offset,0);
+    transition: transform 0.8s ease;
+}
+.button-h{
+    --v-offset:calc(var(--offset) * -1);
+    border-top:var(--border-size) solid currentColor;
+    border-bottom:var(--border-size) solid currentColor;
+}
+.button-v{
+    --h-offset:calc(var(--offset) * -1);
+    border-left:var(--border-size) solid currentColor;
+    border-right:var(--border-size) solid currentColor;
+}
+.button-h::before,
+.button-v::before{
+    content: "";
+    position: absolute;
+    border: inherit;
+}
+.button-h::before{
+    top:calc(var(--v-offset) - var(--border-size));
+    bottom:calc(var(--v-offset) - var(--border-size));
+    left:calc(var(--v-offset) * -1);
+    right:calc(var(--v-offset) * -1);
+}
+.button-v::before{
+    top:calc(var(--h-offset) * -1);
+    bottom:calc(var(--h-offset) * -1);
+    left:calc(var(--h-offset) - var(--border-size));
+    right:calc(var(--h-offset) - var(--border-size));
+}
+
+.button:hover .button-h{
+    transform: scaleX(0);
+}
+.button:hover .button-v{
+    transform: scaleY(0);
+}

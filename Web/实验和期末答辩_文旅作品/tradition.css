@@ -1,0 +1,392 @@
+*{
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #333;
+}
+
+li{
+    float:right;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 28px;
+    font-family:"仿宋";
+    font-weight: 700;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+ul{
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 1;
+    opacity: 0.9;
+}
+li .zz{
+    display: block;
+    color: #e90606;
+    background-color: #111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 28px;
+    font-family:"仿宋";
+    font-weight: 700;
+}
+
+.box1{
+    margin: 0 auto;
+    width:100%;
+    height:600px;
+}
+
+.box1 img{
+    width:100%;
+    height:600px;
+    z-index: -1;
+}
+
+.bt{
+    font-size: 150px;
+    font-family: "华文楷体";
+    color:#f8e4c7;
+    position: absolute;
+    left:480px;
+    top:100px;
+}
+
+.py{
+    font-size: 80px;
+    font-weight: bold;
+    font-family: "华文楷体";
+    color:#f8e4c7;
+    position: absolute;
+    left:400px;
+    top:300px;
+}
+
+.js{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: "华文楷体";
+    color:#f8e4c7;
+    position: absolute;
+    left:540px;
+    top:400px;
+}
+
+.box2{
+    margin: 0 auto;
+    width:100%;
+    height:600px;
+}
+.yx{
+    font-family: "华文楷体";
+    font-size: 50px;
+    position: absolute;
+    left:680px;
+    bottom:60px;
+}
+.yx::before,
+.yx::after {
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 7px;
+    background-color:black;
+    top: 50%;
+}
+
+.yx::before {
+    width:400px;
+    left:100%;
+}
+
+.yx::after {
+    width:400px;
+    right:100%;
+}
+
+.box2 .sb1{
+    background-color:rgb(157, 154, 154);
+    width: 320px;
+    height:380px;
+    position: absolute;
+    left:200px;
+    bottom:-370px;
+}
+
+.box2 .sb2 img{
+    width:340px;
+    height:460px;
+}
+
+.box2 .i1{
+    position: absolute;
+    left:650px;
+    bottom:-410px;
+}
+
+.box2 .i2{
+    position: absolute;
+    left:1000px;
+    bottom:-410px;
+}
+
+.box3{
+    width:530px;
+    height:300px;
+    background-color: #f0a46699;
+    z-index: 1;
+    position: absolute;
+    left:255px;
+    bottom:-330px;
+    opacity: 0.9;
+}
+
+.qy1,.fz1,.i4{
+    font-family: "华文楷体";
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.js2{
+    display: block;
+    width:450px;
+    height:250px;
+    position: absolute;
+    left:40px;
+    top:80px;
+}
+
+.box2 .i3{
+    width: 100px;
+    height:100px;
+    border-radius: 50%;
+}
+
+.box4{
+    width: 100%;
+    height: 250px;
+    background-color: #ededec;
+}
+
+.lp{
+    width:60px;
+    height:160px;
+    position: absolute;
+    left: 200px;
+    bottom:-680px;
+}
+
+.box4 .lp h1{
+    font-family: "华文楷体";
+    font-size: 50px;
+    text-align: center;
+}
+
+.box4 img{
+    width:auto;
+    height:180px;
+    border-radius: 50%;
+}
+
+.l1{
+    position: absolute;
+    left:400px;
+    bottom:-680px;
+    transition: all 0.5s;
+}
+
+.l2{
+    position: absolute;
+    left:650px;
+    bottom:-680px;
+    transition: all 0.5s;
+}
+.l3{
+    position: absolute;
+    left:850px;
+    bottom:-680px;
+    transition: all 0.5s;
+}
+.l4{
+    position: absolute;
+    left:1070px;
+    bottom:-680px;
+    transition: all 0.5s;
+}
+
+.l1:hover{
+   transform: scale(1.1);
+}
+.l2:hover{
+    transform: scale(1.1);
+ }
+ .l3:hover{
+    transform: scale(1.1);
+ }
+ .l4:hover{
+    transform: scale(1.1);
+ }
+
+.box5{
+    width: 100%;
+    height:1200px;
+    margin: 0 auto;
+}
+
+.box5 .qy{
+    font-family: "华文楷体";
+    font-size: 40px;
+    position: absolute;
+    left:600px;
+    bottom: -800px;
+    border-left: #111 solid 5px;
+}
+
+.box5 img{
+    width:280px;
+    height:350px;
+}
+
+.box5 .img1{
+    position: absolute;
+    left:280px;
+    bottom:-1100px;
+}
+
+.box5 .qyk{
+    width:560px;
+    height:400px;
+    display: block;
+    position: absolute;
+    left:600px;
+    bottom: -1220px;
+}
+
+.box5 .fz{
+    font-family: "华文楷体";
+    font-size: 40px;
+    position: absolute;
+    right:600px;
+    bottom: -1200px;
+    border-right: #111 solid 5px;
+}
+
+.box5 .img2{
+    position: absolute;
+    right:280px;
+    bottom:-1500px;
+}
+
+.box5 .fzk{
+    width:560px;
+    height:400px;
+    display: block;
+    position: absolute;
+    right:600px;
+    bottom: -1620px;
+}
+
+.box5 .cc{
+    font-family: "华文楷体";
+    font-size: 40px;
+    position: absolute;
+    left:200px;
+    bottom: -1650px;
+    color:#f3b557;
+}
+
+.box5 .cck{
+    width:450px;
+    height:400px;
+    display: block;
+    position: absolute;
+    left:200px;
+    bottom: -2050px;
+    color:#f3b557;
+    font-family: "华文楷体";
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: bold;
+}
+
+.container{
+    width: 700px;
+    height: 400px;
+    max-height: 100%;
+    position: absolute;
+    right:100px;
+    top:2300px;
+    background: url(image/t12.jpg) no-repeat;
+    border-radius: 8px;
+}
+.clip{
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position:absolute;
+    transition: 0.3s ease-in-out;
+    border-radius: 8px;
+}
+.clip-2{
+    background-image: url(image/t13.jpg);
+    clip-path: polygon(43% 0,100% 0,38% 100%,13% 100%);
+}
+.clip-3{
+    background-image: url(image/t11.jpg);
+    clip-path: polygon(100% 0,100% 0,100% 100%,38% 100%);
+}
+
+.container:hover .clip{
+    clip-path: polygon(100% 0,100% 0,100% 100%,100% 100%);
+}
+.container .clip:hover{
+    clip-path: polygon(0 0,100% 0,100% 100%,0% 100%);
+}
+
+.footer{
+    width:100%;
+    height:180px;
+    border: #111;
+    background-color: #444;
+    position: absolute;
+    top:2770px;
+    opacity: 0.9;
+}
+
+#box51{
+    position: absolute;
+    top:51px;
+    left:750px;
+    z-index: 1;
+}
+
+.bq{
+    font-size: 20px;
+    text-indent: 40px;
+    font-family: "华文楷体";
+}

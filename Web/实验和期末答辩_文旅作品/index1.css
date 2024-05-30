@@ -1,0 +1,409 @@
+*{
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+    font-size: 20px;
+    text-indent: 40px;
+    font-family: "华文楷体"
+}
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #333;
+}
+
+li{
+    float:right;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 28px;
+    font-family:"仿宋";
+    font-weight: 700;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+ul{
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.slide.active {
+    opacity: 1;
+}
+
+.slide img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.slideshow-container {
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 600px;
+    opacity: 0;
+    transition: opacity 1s ease;
+}
+
+.slide img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+
+.arrow {
+    position: absolute;
+    top: 45%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+#box2{
+    width:auto;
+    height:400px;
+    border: #111;
+}
+
+h2{
+    font-size: 150px;
+    font-family: "华文楷体";
+    color:#f8e4c7;
+}
+
+a{
+    text-decoration: none;
+    color:#6c98de;
+}
+.tfzg{
+    float:right;
+}
+
+.p1{
+    display: block;
+    width:700px;
+    height:300px;
+    font-weight: bold;
+    font-family: "华文楷体";
+    font-size: 20px;
+    position: absolute;
+    left:250px;
+    top:680px;
+}
+
+h1{
+    font-family: "华文楷体";
+}
+
+.sc{
+    position: absolute;
+    left:1050px;
+    bottom:-45px;
+    border-bottom: #111 solid 3px;
+}
+
+#box3{
+    width:auto;
+    height:700px;
+    background-color: rgb(243, 244, 245);
+}
+
+#box3 img{
+    width:270px;
+    height:270px;
+    border-radius: 8px;
+}
+
+#box3 .chashe{
+    position: absolute;
+    left:220px;
+    top:1100px;
+}
+
+#box3 .sanxing{
+    position: absolute;
+    right:220px;
+    top:1400px;
+}
+
+#box3 .wenhua{
+    position: absolute;
+    left:645px;
+    top:1020px;
+    border-left: #111 solid 5px;
+    border-right: #111 solid 5px;
+}
+#box3 .cha{
+    position: absolute;
+    left:530px;
+    top:1110px;
+    border-left: #111 solid 5px;
+}
+
+#box3 .cs{
+    display: block;
+    width:600px;
+    height:300px;  
+    font-weight: bold;
+    position: absolute;
+    left:650px;
+    top:1120px;
+}
+
+#box3 .san{
+    position: absolute;
+    right:530px;
+    top:1410px;
+    border-right: #111 solid 5px;
+}
+
+#box3 .sx{
+    display: block;
+    width:580px;
+    height:300px;  
+    font-weight: bold;
+    position: absolute;
+    left:180px;
+    top:1420px;
+}
+#box4 {
+    width: auto;
+    height: 600px;
+    border: #111;
+}
+
+#box4 img{
+    width:200px;
+    height: 200px;
+    border-radius: 8px;
+}
+
+#box4 .img1{
+    position: absolute;
+    left:200px;
+    top:1800px;
+}
+
+#box4 .img2{
+    position: absolute;
+    left:500px;
+    top:1800px;
+}
+#box4 .img3{
+    position: absolute;
+    left:800px;
+    top:1800px;
+}
+#box4 .img4{
+    position: absolute;
+    left:1100px;
+    top:1800px;
+}
+
+.img1:hover{
+    transform: scale(1.1);
+}
+
+.img2:hover{
+    transform: scale(1.1);
+}
+
+.img3:hover{
+    transform: scale(1.1);
+}
+
+.img4:hover{
+    transform: scale(1.1);
+}
+
+#box4 .remen{
+    position: absolute;
+    left:640px;
+    font-size: 50px;
+}
+
+.remen:hover{
+    transform: scale(1.1);
+}
+
+#box41 h1 {
+    position: absolute;
+    left: 650px;
+    bottom: 300px;
+    font-size: 40px;
+}
+
+#box5{
+    width:auto;
+    height:180px;
+    border: #111;
+    background-color: #444;
+    opacity: 0.9;
+}
+
+#box51{
+    position: absolute;
+    right:170px;
+    top:2350px;
+    z-index: 1;
+}
+
+
+.button1{
+    --offset:10px;
+    --border-size:2px;
+    position: absolute;
+    left:200px;
+    top:2050px;
+    width: 200px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c98de;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 var(--border-size) currentColor;
+    transition: background 0.8s ease;
+}
+.button1:hover{
+    background: rgba(100,0,0,0.065);
+}
+
+.button2{
+    --offset:10px;
+    --border-size:2px;
+    position: absolute;
+    left:500px;
+    top:2050px;
+    width: 200px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c98de;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 var(--border-size) currentColor;
+    transition: background 0.8s ease;
+}
+.button2:hover{
+    background: rgba(100,0,0,0.065);
+}
+
+.button3{
+    --offset:10px;
+    --border-size:2px;
+    position: absolute;
+    left:800px;
+    top:2050px;
+    width: 200px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c98de;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 var(--border-size) currentColor;
+    transition: background 0.8s ease;
+}
+.button3:hover{
+    background: rgba(100,0,0,0.065);
+}
+
+.button4{
+    --offset:10px;
+    --border-size:2px;
+    position: absolute;
+    right:170px;
+    top:2050px;
+    width: 200px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #6c98de;
+    background: transparent;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: inset 0 0 0 var(--border-size) currentColor;
+    transition: background 0.8s ease;
+}
+.button4:hover{
+    background: rgba(100,0,0,0.065);
+}
+
+.fh{
+    font-family: "华文楷体";
+    font-size: 35px;
+    font-weight: bold;
+    position: absolute;
+    right:50px;
+    top:2222px;
+    color:rgb(198, 190, 179)
+}
+
+.fh::after{
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: currentColor;
+    position: absolute;
+    left: 0;
+    bottom:0;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.3s ease-out;
+}
+.fh:hover::after{
+    transform: scaleX(1);
+    transform-origin: left;
+}

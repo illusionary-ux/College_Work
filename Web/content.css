@@ -1,5 +1,6 @@
 /* 全局样式 */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -38,13 +39,16 @@ body {
 
 /* 内容区域 */
 .content {
-    flex: 1;  /* 允许内容区域填充可用空间 */
+    flex: 1;
+    /* 允许内容区域填充可用空间 */
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 90%; /* 控制主内容宽度 */
-    margin: auto; /* 水平居中显示 */
+    width: 90%;
+    /* 控制主内容宽度 */
+    margin: auto;
+    /* 水平居中显示 */
 }
 
 .news-item {
@@ -52,9 +56,10 @@ body {
     border: 1px solid #ddd;
     padding: 20px;
     margin: 20px 0;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
-    max-width: 960px; /* 控制最大宽度 */
+    max-width: 960px;
+    /* 控制最大宽度 */
     text-align: left;
 }
 

@@ -1,5 +1,6 @@
 /* 全局样式 */
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
@@ -47,7 +48,8 @@ body {
     margin: auto;
 }
 
-.content h1, .content h2 {
+.content h1,
+.content h2 {
     color: #002233;
 }
 
@@ -59,12 +61,14 @@ body {
 }
 
 .discussion-form form {
-    position: relative; /* 设置表单为相对定位 */
+    position: relative;
+    /* 设置表单为相对定位 */
     background-color: #ffffff;
     padding: 10px;
-    padding-bottom: 50px; /* 为按钮预留空间 */
+    padding-bottom: 50px;
+    /* 为按钮预留空间 */
     border: 1px solid #ddd;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .discussion-form label {
@@ -82,9 +86,12 @@ body {
 }
 
 .discussion-form button {
-    position: absolute; /* 设置按钮为绝对定位 */
-    right: 20px; /* 从右边20px的位置开始 */
-    bottom: 15px; /* 从底部20px的位置开始 */
+    position: absolute;
+    /* 设置按钮为绝对定位 */
+    right: 20px;
+    /* 从右边20px的位置开始 */
+    bottom: 15px;
+    /* 从底部20px的位置开始 */
     padding: 10px 20px;
     background-color: #004466;
     color: white;
@@ -108,7 +115,7 @@ body {
     border: 1px solid #ddd;
     padding: 20px;
     margin-top: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* 页脚样式 */

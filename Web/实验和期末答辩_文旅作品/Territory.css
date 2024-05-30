@@ -1,0 +1,283 @@
+*{
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #333;
+}
+
+li{
+    float:right;
+}
+
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 28px;
+    font-family:"仿宋";
+    font-weight: 700;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+ul{
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 1;
+    opacity: 0.9;
+}
+li .zz{
+    display: block;
+    color: #e90606;
+    background-color: #111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 28px;
+    font-family:"仿宋";
+    font-weight: 700;
+}
+
+#box1 {
+    position: absolute;
+    width: 100%;
+    height: 600px;
+    background-color: black;
+}
+
+#box11 img {
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 620px;
+}
+
+h1{
+    font-family: "华文楷体";
+    font-size: 35px;
+}
+
+h2{
+    font-family: "华文楷体";
+}
+#box21 {
+    position: absolute;
+    top:780px;
+    left: 200px;
+    width: 650px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(232, 232, 232);
+}
+
+.gk{
+    position:absolute;
+    bottom:350px;
+    left:500px;
+}
+
+.p1 {
+    /* position: absolute; */
+    line-height: 40px;
+    font-size: 20px;
+    color: black;
+    font-weight: bold;
+    font-family: "华文楷体";
+}
+
+
+#box22 {
+    position: absolute;
+    top: 780px;
+    left: 890px;
+    
+}
+
+#box22 img {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 380px;
+    height: 300px;
+}
+
+.a1 {
+    position: absolute;
+    top: 1150px;
+    left: 560px;
+}
+
+#box31 {
+    position: absolute;
+    top: 1320px;
+    left: 150px;
+    
+}
+
+.xzq{
+    position: absolute;
+    top:1225px;
+    left:680px;
+}
+
+#box31 img {
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    width: 450px;
+    height: 450px;
+}
+
+#box32 {
+    position: absolute;
+    top: 1300px;
+    left: 650px;
+    width: 650px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    background-color: rgb(232, 232, 232);
+}
+
+#box41 {
+    position: relative;
+    top: 1050px;
+}
+
+#box42 {
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 650px;
+    position: absolute;
+    top: 2000px;
+    left: 150px;
+    background-color: rgb(232, 232, 232);
+}
+
+
+#box43 {
+    position: absolute;
+    top: 2000px;
+    left: 850px;
+}
+
+#box43 img {
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 360px;
+    height: 360px;
+}
+
+#box51 {
+    position: relative;
+    top: 1520px;
+}
+
+.wz{
+    position: absolute;
+    left:600px;
+    top:2500px;
+    font-family: "华文楷体";
+    font-weight: bold;
+}
+
+.qh{
+    position: absolute;
+    left:600px;
+    top:830px;
+}
+#box52 {
+    position: absolute;
+    top: 2460px;
+    left: 190px;
+}
+
+#box52 img {
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    height: 350px;
+}
+
+#box53 {
+    border-radius: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+    width: 650px;
+    position: absolute;
+    top: 2530px;
+    left: 610px;
+    background-color: rgb(232, 232, 232);
+}
+
+.image:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    opacity: 0.9;
+}
+
+
+#box6 {
+    position: absolute;
+    top: 3000px;
+    width: 100%;
+    height: 300px;
+    border: black;
+    background-color: #333;
+    opacity: 0.9;
+}
+
+#box61 {
+    position: relative;
+    top: 110px;
+    width: 500px;
+    position: absolute;
+    left: 500px;
+}
+
+#box62 {
+    position: absolute;
+    top: 2050px;
+
+}
+
+#box62 img {
+    width: 200px;
+    height: 200px;
+}
+
+.footer{
+    width:100%;
+    height:180px;
+    border: #111;
+    background-color: #444;
+    position: absolute;
+    top:2850px;
+    opacity: 0.9;
+}
+
+#box51{
+    position: absolute;
+    top:51px;
+    left:750px;
+    z-index: 1;
+}
+
+.bq{
+    font-size: 20px;
+    text-indent: 40px;
+    font-family: "华文楷体";
+}
+

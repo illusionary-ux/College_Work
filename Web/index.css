@@ -6,8 +6,6 @@ body {
     width: 100%;
     height: 100%;
     font-family: 'Arial', sans-serif;
-    background-color: #f8f9fa;
-    color: #333;
     font-size: 16px;
     /* 基础字体大小 */
 }
@@ -18,11 +16,19 @@ body {
     /* 垂直堆叠元素 */
     min-height: 100vh;
     /* 最小高度为视口高度 */
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.main-content h1,
+p {
+    color: #333;
+    font-weight: bold;
 }
 
 /* 导航栏样式 */
 nav {
-    background-color: #002233;
+    background-color: #333;
     color: #f8f9fa;
     padding: 0.625rem 0;
     display: flex;
@@ -40,6 +46,15 @@ nav ul {
     max-width: 1200px;
 }
 
+nav .site-title {
+    margin-right: auto;
+    /* 将其推到最左边 */
+    padding: 0 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f8f9fa;
+}
+
 nav ul li {
     margin: 0 10px;
 }
@@ -48,14 +63,30 @@ nav ul li a {
     color: #f8f9fa;
     text-decoration: none;
     padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #004466;
+    background-color: #555;
+    border-radius: 10px;
+}
+
+nav .search-form {
+    display: flex;
+}
+
+nav .search-form input[type="text"] {
+    padding: 5px;
+    margin-right: 5px;
+}
+
+nav .search-form button {
+    padding: 5px;
 }
 
 /* 主内容区 */
 .main-content {
+    margin-top: 50px;
     flex: 1;
     /* 允许主内容区伸展以填满除头部和页脚外的所有空间 */
     padding: 20px;
@@ -71,7 +102,7 @@ nav ul li a:hover {
 header {
     width: 100%;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .carousel {
@@ -83,6 +114,7 @@ header {
     overflow: hidden;
     margin: 0 auto;
     /* 居中显示 */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-item {
@@ -106,71 +138,99 @@ header {
     width: 100%;
     max-width: 960px;
     /* 控制最大宽度 */
-    margin: 10px auto;
+    margin: 5px auto;
     /* 居中并添加间距 */
-    padding: 20px;
-    background-color: #ffffff;
+    padding: 15px;
+    background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     text-align: left;
     border: 1px solid #ddd;
+    border-radius: 15px;
+    margin-bottom: 20px;
 }
 
 .content-section h2 {
     margin-top: 0;
 }
 
+.content-section h2 a {
+    color: #333;
+    text-decoration: none;
+}
+
+.content-section p {
+    color: #666;
+}
+
 /* 页脚样式 */
 .footer {
     width: 100%;
-    background-color: #002233;
-    color: #ffffff;
+    background-color: #333;
     text-align: center;
     padding: 10px 0;
 }
+.footer p {
+    color: #f8f9fa;
+}
 /* 搜索栏容器样式 */
 .search-form {
-    position: relative; /* 为了定位内部的输入框和按钮 */
-    width: 50px; /* 初始宽度，足够显示为一个图标或按钮 */
+    position: relative;
+    /* 为了定位内部的输入框和按钮 */
+    width: 50px;
+    /* 初始宽度，足够显示为一个图标或按钮 */
     height: 25px;
-    overflow: hidden; /* 隐藏溢出的部分 */
-    transition: width 0.5s ease; /* 平滑过渡宽度变化 */
+    overflow: hidden;
+    /* 隐藏溢出的部分 */
+    transition: width 0.5s ease;
+    /* 平滑过渡宽度变化 */
     cursor: pointer;
 }
 
 /* 输入框样式 */
 .search-form input[type="text"] {
-    position: absolute; /* 绝对定位，使之能在容器内正确显示 */
+    position: absolute;
+    /* 绝对定位，使之能在容器内正确显示 */
     right: 0;
     top: 0;
     border: none;
     padding: 10px;
-    width: 100%; /* 充满整个容器 */
+    width: 100%;
+    /* 充满整个容器 */
     height: 100%;
     box-sizing: border-box;
-    transition: opacity 0.5s ease; /* 平滑过渡透明度变化 */
+    transition: opacity 0.5s ease;
+    /* 平滑过渡透明度变化 */
 }
 
 /* 搜索按钮样式 */
 .search-form button {
-    position: absolute; /* 绝对定位 */
+    position: absolute;
+    /* 绝对定位 */
     right: 0;
     top: 0;
-    width: 40px; /* 按钮宽度 */
+    width: 40px;
+    /* 按钮宽度 */
     height: 100%;
     border: none;
-    background-color: #004466; /* 按钮背景颜色 */
-    color: white; /* 按钮文字颜色 */
+    background-color: #555;
+    /* 按钮背景颜色 */
+    color: white;
+    /* 按钮文字颜色 */
     cursor: pointer;
 }
 
 /* 鼠标悬停于搜索表单容器时的样式 */
-.search-form:hover, .search-form:focus-within {
-    width: 200px; /* 展开宽度 */
+.search-form:hover,
+.search-form:focus-within {
+    width: 200px;
+    /* 展开宽度 */
 }
 
 /* 鼠标悬停时的输入框样式 */
-.search-form:hover input[type="text"], .search-form:focus-within input[type="text"] {
-    opacity: 1; /* 完全不透明 */
+.search-form:hover input[type="text"],
+.search-form:focus-within input[type="text"] {
+    opacity: 1;
+    /* 完全不透明 */
 }
 
 /* 初始化时输入框透明度为0，不显示 */

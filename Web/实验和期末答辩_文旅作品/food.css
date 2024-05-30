@@ -1,0 +1,345 @@
+*{
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    background-color: #333;
+}
+
+li{
+    float:right;
+}
+
+
+li .zz{
+    display: block;
+    color: #e90606;
+    background-color: #111;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 28px;
+    font-family:"仿宋";
+    font-weight: 700;
+}
+li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    line-height: 28px;
+    font-family:"仿宋";
+    font-weight: 700;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+ul{
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 2;
+    opacity: 0.9;
+}
+.box1{
+    margin: 0 auto;
+    width:100%;
+    height:400px;
+}
+
+img{
+    width: 100%;
+    margin:0 auto;
+    height:600px;
+    z-index: -1;
+}
+
+.box1 .zy{
+    width:600px;
+    height:220px;
+    background-color:azure;
+    opacity: 0.8;
+    z-index: 1;
+    position: absolute;
+    left:440px;
+    bottom:300px;
+    border-radius: 2%;
+    font-size: 30px;
+    font-family: "华文隶书";
+    text-align: center;
+    letter-spacing: 50px;
+    box-shadow:10px 10px 5px -4px rgba(170, 0, 0, 0.8);
+}
+
+h1{
+    position: absolute;
+    top:30px;
+    left:50px;
+}
+
+.box1 .bt{
+    width:300px;
+    height:55px;
+    background-color: #dc2323;
+    text-align: center;
+    font-size: 30px;
+    font-family: "华文楷体";
+    color:white;
+    position:absolute;
+    bottom:350px;
+    left:580px;
+    z-index: 1;
+    box-shadow:10px 10px 5px -4px rgba(170, 0, 0, 0.8);
+}
+
+
+
+.box2 .e{
+    font-family: "华文楷体";
+    font-size: 50px;
+    position:absolute;
+    left:650px;
+    top:660px;
+}
+
+.hg,
+.mc{
+    width:300px;
+    height:300px;
+
+}
+
+.hg{
+    position: absolute;
+    left:250px;
+    top:750px;
+    display: block;
+}
+.mc{
+    position: absolute;
+    right:250px;
+    top:1100px;
+}
+
+.box2 .hg .huoguo{
+    width:500px;
+    height:150px;
+    position:absolute;
+    bottom:130px;
+    left:360px;
+}
+
+.box2 .mc .maocai{
+    width:500px;
+    height:150px;
+    position:absolute;
+    bottom:140px;
+    right:400px;
+}
+
+p{
+    font-size: 20px;
+    text-indent: 40px;
+    font-family: "华文楷体";
+}
+.box2 .q{
+    width:250px;
+    height:250px;
+    border-radius: 8px;
+    box-shadow:10px 10px 5px -4px rgba(243, 74, 74, 0.8);
+    transition:all 0.4s;
+}
+
+.box2 .q:hover{
+    transform:scale(1.1);
+    border-radius: 8px;
+}
+
+.box3{
+    width: 100%;
+    height:500px;
+    background-color: #ededec;
+    position: absolute;
+    top:1400px;
+    z-index: -1;
+}
+
+.box3 .w{
+    width:500px;
+    height: 350px;
+    position:absolute;
+    left:180px;
+    top:80px;
+    border-radius: 8px;
+}
+
+.box3 .f{
+    font-family: "华文楷体";
+    font-size: 50px;
+    position: absolute;
+    left:1050px;
+    top:25px;
+}
+
+.box3 .nav p{
+    width:300px;
+    display: block;
+    position: absolute;
+    right:400px;
+    top:100px;
+}
+
+.box3 .nav1 p{
+    width:300px;
+    display: block;
+    position: absolute;
+    right:60px;
+    top:100px;
+}
+
+.box4{
+    width: auto;
+    height:400px;
+    position: relative;
+    top:1500px;
+}
+
+.box4 .g{
+    font-family: "华文楷体";
+    font-size: 50px;
+    position:absolute;
+    left:650px;
+
+}
+
+
+
+.footer{
+    width:100%;
+    height:180px;
+    border: #111;
+    background-color: #444;
+    position: absolute;
+    top:2300px;
+    opacity: 0.9;
+}
+
+#box51{
+    position: absolute;
+    top:50px;
+    left:750px;
+    z-index: 1;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 250px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+}
+.card img{
+    width: 100%;
+    height: 100%;
+    transition: 0.35s;
+}
+.card #text{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    bottom: 30px;
+    right: 30px;
+    padding: 0 18px;
+}
+.card #text::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 100%;
+    border-left: 4px solid rgba(255,255,255,0.8);
+    background-color: rgba(255,255,255,0.5);
+    opacity: 0;
+    transition: 0.3s;
+    transition-delay: 0.3s;
+}
+.card #text h2,
+.card #text p{
+    margin-bottom: 6px;
+    opacity: 0;
+    transition: 0.35s;
+}
+.card #text h2{
+    font-weight: 300;
+    text-transform: uppercase;
+    transform: translate(30%,0%);
+    transition-delay: 0.3s;
+}
+.card #text h2 span{
+    font-weight: 800;
+}
+.card #text p{
+    font-weight: 200;
+    transform: translate(0%,30%);
+}
+
+.card:hover img{
+    opacity: 0.3;
+}
+
+.card:hover #text p{
+    opacity: 0.9;
+    transform: translate(0%,0%);
+    transition-delay: 0.3s;
+}
+.card:hover #text::before{
+    background-color: rgba(255,255,255,0);
+    left: 0;
+    opacity: 1;
+    transition-delay: 0s;
+}
+
+#c1{
+    position: absolute;
+    left:200px;
+    top:100px;
+}
+
+#c2{
+    position: absolute;
+    left:500px;
+    top:100px;
+}
+
+#c3{
+    position: absolute;
+    left:800px;
+    top:100px;
+}
+
+#c4{
+    position: absolute;
+    left:1100px;
+    top:100px;
+}

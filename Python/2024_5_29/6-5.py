@@ -3,16 +3,13 @@ import math
 def funcos(a, b):
     i = j = 0
     sum = 0
-    tmp = 1
-    while True:
-        if abs(tmp) < a:
-            break
+    tmp = pow(-1, j) * pow(b, i) / math.factorial(i)
+    while abs(tmp) > a:
         sum += tmp
-        tmp = pow(-1, j) * pow(b, i) / math.factorial(i)
         i += 2
         j += 1
+        tmp = pow(-1, j) * pow(b, i) / math.factorial(i)
     return sum
-
 
 eps,x=input().split()
 eps,x=float(eps),float(x)
