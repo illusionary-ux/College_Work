@@ -53,7 +53,6 @@ body {
     color: #002233;
 }
 
-/* 讨论表单样式 */
 .discussion-form {
     width: 100%;
     max-width: 960px;
@@ -62,11 +61,9 @@ body {
 
 .discussion-form form {
     position: relative;
-    /* 设置表单为相对定位 */
     background-color: #ffffff;
     padding: 10px;
     padding-bottom: 50px;
-    /* 为按钮预留空间 */
     border: 1px solid #ddd;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
@@ -87,11 +84,8 @@ body {
 
 .discussion-form button {
     position: absolute;
-    /* 设置按钮为绝对定位 */
     right: 20px;
-    /* 从右边20px的位置开始 */
     bottom: 15px;
-    /* 从底部20px的位置开始 */
     padding: 10px 20px;
     background-color: #004466;
     color: white;

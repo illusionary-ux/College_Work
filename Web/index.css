@@ -13,9 +13,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    /* 垂直堆叠元素 */
     min-height: 100vh;
-    /* 最小高度为视口高度 */
     background-color: #f0f0f0;
     color: #333;
 }
@@ -48,7 +46,6 @@ nav ul {
 
 nav .site-title {
     margin-right: auto;
-    /* 将其推到最左边 */
     padding: 0 20px;
     font-size: 1.5em;
     font-weight: bold;
@@ -86,14 +83,10 @@ nav .search-form button {
 /* 搜索栏容器样式 */
 .search-form {
     position: relative;
-    /* 为了定位内部的输入框和按钮 */
     width: 50px;
-    /* 初始宽度，足够显示为一个图标或按钮 */
     height: 25px;
     overflow: hidden;
-    /* 隐藏溢出的部分 */
     transition: width 0.5s ease;
-    /* 平滑过渡宽度变化 */
     cursor: pointer;
 }
 
@@ -124,9 +117,7 @@ nav .search-form button {
     height: 100%;
     border: none;
     background-color: #555;
-    /* 按钮背景颜色 */
     color: white;
-    /* 按钮文字颜色 */
     cursor: pointer;
 }
 
@@ -134,14 +125,12 @@ nav .search-form button {
 .search-form:hover,
 .search-form:focus-within {
     width: 200px;
-    /* 展开宽度 */
 }
 
 /* 鼠标悬停时的输入框样式 */
 .search-form:hover input[type="text"],
 .search-form:focus-within input[type="text"] {
     opacity: 1;
-    /* 完全不透明 */
 }
 
 /* 初始化时输入框透明度为0，不显示 */
@@ -176,13 +165,10 @@ header {
 
 .carousel {
     width: 960px;
-    /* 调整宽度 */
     height: 500px;
-    /* 调整高度 */
     position: relative;
     overflow: hidden;
     margin: 0 auto;
-    /* 居中显示 */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -202,13 +188,11 @@ header {
     object-fit: cover;
 }
 
-/* 内容区块 */
+
 .content-section {
     width: 100%;
     max-width: 960px;
-    /* 控制最大宽度 */
     margin: 5px auto;
-    /* 居中并添加间距 */
     padding: 15px;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
