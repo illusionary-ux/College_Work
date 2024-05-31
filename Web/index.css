@@ -83,7 +83,76 @@ nav .search-form input[type="text"] {
 nav .search-form button {
     padding: 5px;
 }
+/* 搜索栏容器样式 */
+.search-form {
+    position: relative;
+    /* 为了定位内部的输入框和按钮 */
+    width: 50px;
+    /* 初始宽度，足够显示为一个图标或按钮 */
+    height: 25px;
+    overflow: hidden;
+    /* 隐藏溢出的部分 */
+    transition: width 0.5s ease;
+    /* 平滑过渡宽度变化 */
+    cursor: pointer;
+}
 
+/* 输入框样式 */
+.search-form input[type="text"] {
+    position: absolute;
+    /* 绝对定位，使之能在容器内正确显示 */
+    right: 0;
+    top: 0;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    /* 充满整个容器 */
+    height: 100%;
+    box-sizing: border-box;
+    transition: opacity 0.5s ease;
+    /* 平滑过渡透明度变化 */
+}
+
+/* 搜索按钮样式 */
+.search-form button {
+    position: absolute;
+    /* 绝对定位 */
+    right: 0;
+    top: 0;
+    width: 40px;
+    /* 按钮宽度 */
+    height: 100%;
+    border: none;
+    background-color: #555;
+    /* 按钮背景颜色 */
+    color: white;
+    /* 按钮文字颜色 */
+    cursor: pointer;
+}
+
+/* 鼠标悬停于搜索表单容器时的样式 */
+.search-form:hover,
+.search-form:focus-within {
+    width: 200px;
+    /* 展开宽度 */
+}
+
+/* 鼠标悬停时的输入框样式 */
+.search-form:hover input[type="text"],
+.search-form:focus-within input[type="text"] {
+    opacity: 1;
+    /* 完全不透明 */
+}
+
+/* 初始化时输入框透明度为0，不显示 */
+.search-form input[type="text"] {
+    opacity: 0;
+}
+
+/* 初始化时，只显示搜索按钮 */
+.search-form button {
+    display: block;
+}
 /* 主内容区 */
 .main-content {
     margin-top: 50px;
@@ -171,74 +240,4 @@ header {
 }
 .footer p {
     color: #f8f9fa;
-}
-/* 搜索栏容器样式 */
-.search-form {
-    position: relative;
-    /* 为了定位内部的输入框和按钮 */
-    width: 50px;
-    /* 初始宽度，足够显示为一个图标或按钮 */
-    height: 25px;
-    overflow: hidden;
-    /* 隐藏溢出的部分 */
-    transition: width 0.5s ease;
-    /* 平滑过渡宽度变化 */
-    cursor: pointer;
-}
-
-/* 输入框样式 */
-.search-form input[type="text"] {
-    position: absolute;
-    /* 绝对定位，使之能在容器内正确显示 */
-    right: 0;
-    top: 0;
-    border: none;
-    padding: 10px;
-    width: 100%;
-    /* 充满整个容器 */
-    height: 100%;
-    box-sizing: border-box;
-    transition: opacity 0.5s ease;
-    /* 平滑过渡透明度变化 */
-}
-
-/* 搜索按钮样式 */
-.search-form button {
-    position: absolute;
-    /* 绝对定位 */
-    right: 0;
-    top: 0;
-    width: 40px;
-    /* 按钮宽度 */
-    height: 100%;
-    border: none;
-    background-color: #555;
-    /* 按钮背景颜色 */
-    color: white;
-    /* 按钮文字颜色 */
-    cursor: pointer;
-}
-
-/* 鼠标悬停于搜索表单容器时的样式 */
-.search-form:hover,
-.search-form:focus-within {
-    width: 200px;
-    /* 展开宽度 */
-}
-
-/* 鼠标悬停时的输入框样式 */
-.search-form:hover input[type="text"],
-.search-form:focus-within input[type="text"] {
-    opacity: 1;
-    /* 完全不透明 */
-}
-
-/* 初始化时输入框透明度为0，不显示 */
-.search-form input[type="text"] {
-    opacity: 0;
-}
-
-/* 初始化时，只显示搜索按钮 */
-.search-form button {
-    display: block;
 }
