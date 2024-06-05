@@ -1,4 +1,3 @@
-/* 全局样式 */
 html,
 body {
     margin: 0;
@@ -16,7 +15,6 @@ body {
     min-height: 100vh;
 }
 
-/* 导航栏样式 */
 .navbar {
     background-color: #002233;
     color: #f8f9fa;
@@ -37,18 +35,14 @@ body {
     background-color: #004466;
 }
 
-/* 内容区域 */
 .content {
     flex: 1;
-    /* 允许内容区域填充可用空间 */
     padding: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 90%;
-    /* 控制主内容宽度 */
     margin: auto;
-    /* 水平居中显示 */
 }
 
 .news-item {
@@ -59,11 +53,9 @@ body {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 960px;
-    /* 控制最大宽度 */
     text-align: left;
 }
 
-/* 页脚样式 */
 .footer {
     width: 100%;
     background-color: #002233;
