@@ -36,7 +36,7 @@
               "RelativeDocumentMoniker": "function.h",
               "ToolTip": "D:\\College_Work\\C Project\\StudentSystem\\function.h",
               "RelativeToolTip": "function.h",
-              "ViewState": "AQIAALUBAAAAAAAAAAAAAPUBAAAZAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAPUBAAAZAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2024-05-20T02:26:59.509Z",
               "EditorCaption": ""
@@ -51,8 +51,7 @@
               "RelativeToolTip": "define.h",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAPAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-05-20T02:26:59.669Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T02:26:59.669Z"
             },
             {
               "$type": "Document",
@@ -64,8 +63,7 @@
               "RelativeToolTip": "main.c",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAADEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000423|",
-              "WhenOpened": "2024-05-20T02:26:59.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-20T02:26:59.674Z"
             }
           ]
         }
