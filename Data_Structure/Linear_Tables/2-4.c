@@ -20,10 +20,12 @@ void DestroyPolyn(Polynomial *P);
 void PrintPolyn(Polynomial P);
 void AddPolyn(Polynomial *Pa, Polynomial *Pb);
 void SubtractPolyn(Polynomial *Pa, Polynomial *Pb);
-void MultiplyPolyn(Polynomial *Pa, Polynomial *Pb);
 int cmp(term a, term b);
 LinkList GetHead(Polynomial P);
-int LocateElem(LinkList p, ElemType e, Position *q, int (*compare)(ElemType, ElemType));
+void InitList(Polynomial *L);
+int LocateElem(Polynomial P, term e, LinkList *q, int (*compare)(term, term));
+int MakeNode(LinkList *p, term e);
+void InsFirst(LinkList h, LinkList s);
 
 int main(void)
 {
@@ -54,50 +56,119 @@ void CreatPolyn(Polynomial *P, int m)
     }
 }
 
+void InitList(Polynomial *L)
+{
+    *L = (LinkList)malloc(sizeof(LNode));
+    if (*L)
+    {
+        (*L)->next = NULL;
+    }
+}
+
+int LocateElem(Polynomial P, term e, LinkList *q, int (*compare)(term, term))
+{
+    LinkList p = P->next;
+    while (p && !(*compare)(p->data, e))
+    {
+        *q = p;
+        p = p->next;
+    }
+    if (p)
+    {
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+int MakeNode(LinkList *p, term e)
+{
+    *p = (LinkList)malloc(sizeof(LNode));
+    if (*p)
+    {
+        (*p)->data = e;
+        (*p)->next = NULL;
+        return 1;
+    }
+    else
+    {
+        return 0;
+    }
+}
+
+void InsFirst(LinkList h, LinkList s)
+{
+    s->next = h->next;
+    h->next = s;
+}
+
+void DestroyPolyn(Polynomial *P)
+{
+    LinkList p, q;
+    p = *P;
+    while (p)
+    {
+        q = p->next;
+        free(p);
+        p = q;
+    }
+    *P = NULL;
+}
+
+int cmp(term a, term b)
+{
+    if (a.exponents == b.exponents)
+    {
+        return 0;
+    }
+    else if (a.exponents < b.exponents)
+    {
+        return -1;
+    }
+    else
+    {
+        return 1;
+    }
+}
+
 void AddPolyn(Polynomial *Pa, Polynomial *Pb)
 {
-    LinkList *ha = GetHead(Pa);
-    LinkList *hb = GetHead(Pb);
-    LinkList qa = NextPos(ha);
-    LinkList qb = NextPos(hb);
-    while (qa && qb)
+    LinkList ha = GetHead(Pa);
+    LinkList hb = GetHead(Pb);
+    LinkList qa = NextPos(Pa,ha);
+    LinkList qb = NextPos(Pb,hb);
+    while (qa&&qb)
     {
         term a = GetCurElem(qa);
         term b = GetCurElem(qb);
-        switch (cmp(a, b))
+        switch (cmp(a,b))
         {
         case -1:
             ha = qa;
-            qa = NextPos(qa);
+            qa = NextPos(Pa,qa);
             break;
         case 0:
-            float sum = a.Coefficient + b.Coefficient;
-            if (sum != 0.0)
+            a.Coefficient += b.Coefficient;
+            if (a.Coefficient == 0)
             {
-                SetCurElem(qa, sum);
-                ha = qa;
+                DelFirst(qa,ha);
             }
             else
             {
-                DelFirst(qa);
-                FreeNode(qa);
+                SetCurElem(qa,a);
             }
-            DelFirst(hb, qb);
-            FreeNode(qb);
-            qb = NextPos(Pb, qb);
-            qa = NextPos(Pa, qa);
+            ha = qa;
+            qb = NextPos(Pb,qb);
             break;
         case 1:
-            DelFirst(hb, qb);
-            InsFirst(ha, qb);
-            qb = NextPos(Pb, qb);
-            ha = NextPos(Pa, ha);
+            DelFirst(qb,hb);
+            InsFirst(qa,qb);
+            ha = qa;
+            qa = NextPos(Pa,qa);
+            qb = NextPos(Pb,hb);
             break;
         }
     }
-    if (qb)
-    {
-        Append(Pa, qb);
-    }
-    FreeNode(qb);
 }

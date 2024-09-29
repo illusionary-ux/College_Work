@@ -1,0 +1,21 @@
+# do gate_xor.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gate_xor
+# 
+# Top level modules:
+# 	gate_xor
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module gate_xor_vlg_sample_tst
+# -- Compiling module gate_xor_vlg_check_tst
+# -- Compiling module gate_xor_vlg_vec_tst
+# 
+# Top level modules:
+# 	gate_xor_vlg_vec_tst
+# vsim -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.gate_xor_vlg_vec_tst 
+# Loading work.gate_xor_vlg_vec_tst
+# Loading work.gate_xor
+# Loading work.gate_xor_vlg_sample_tst
+# Loading work.gate_xor_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : gate.vwf.vt(150)
+#    Time: 1 us  Iteration: 0  Instance: /gate_xor_vlg_vec_tst/tb_out
