@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Exper_3
-Thu Oct 17 19:13:40 2024
+Thu Oct 17 22:20:08 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -14,9 +14,8 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
   8. General Register Statistics
-  9. Parameter Settings for User Entity Instance: Top-level Entity: |74283
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  9. Elapsed Time Per Partition
+ 10. Analysis & Synthesis Messages
 
 
 
@@ -42,10 +41,10 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 17 19:13:40 2024       ;
+; Analysis & Synthesis Status     ; Successful - Thu Oct 17 22:20:08 2024       ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                   ; Exper_3                                     ;
-; Top-level Entity Name           ; 74283                                       ;
+; Top-level Entity Name           ; 74138a                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
@@ -68,7 +67,7 @@ applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; 74283              ; Exper_3            ;
+; Top-level entity name                                                           ; 74138a             ; Exper_3            ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -166,40 +165,39 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                     ;
-+----------------------------------+-----------------+---------------+-------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type     ; File Name with Absolute Path                                ; Library ;
-+----------------------------------+-----------------+---------------+-------------------------------------------------------------+---------+
-; 74283.tdf                        ; yes             ; Megafunction  ; c:/altera/13.1/quartus/libraries/others/maxplus2/74283.tdf  ;         ;
-; aglobal.inc                      ; yes             ; Megafunction  ; c:/altera/13.1/quartus/libraries/megafunctions/aglobal.inc  ;         ;
-; f74283.bdf                       ; yes             ; Megafunction  ; c:/altera/13.1/quartus/libraries/others/maxplus2/f74283.bdf ;         ;
-+----------------------------------+-----------------+---------------+-------------------------------------------------------------+---------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                               ; Library ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+---------+
+; 74138a.bdf                       ; yes             ; User Block Diagram/Schematic File  ; D:/College_Work/THR/74138a.bdf                             ;         ;
+; 74138.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/others/maxplus2/74138.bdf ;         ;
++----------------------------------+-----------------+------------------------------------+------------------------------------------------------------+---------+
 
 
-+----------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                    ;
-+---------------------------------------------+------------------+
-; Resource                                    ; Usage            ;
-+---------------------------------------------+------------------+
-; Estimate of Logic utilization (ALMs needed) ; 3                ;
-;                                             ;                  ;
-; Combinational ALUT usage for logic          ; 6                ;
-;     -- 7 input functions                    ; 0                ;
-;     -- 6 input functions                    ; 0                ;
-;     -- 5 input functions                    ; 4                ;
-;     -- 4 input functions                    ; 0                ;
-;     -- <=3 input functions                  ; 2                ;
-;                                             ;                  ;
-; Dedicated logic registers                   ; 0                ;
-;                                             ;                  ;
-; I/O pins                                    ; 14               ;
-; Total DSP Blocks                            ; 0                ;
-; Maximum fan-out node                        ; f74283:sub|105~0 ;
-; Maximum fan-out                             ; 3                ;
-; Total fan-out                               ; 45               ;
-; Average fan-out                             ; 1.32             ;
-+---------------------------------------------+------------------+
++-------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary           ;
++---------------------------------------------+---------+
+; Resource                                    ; Usage   ;
++---------------------------------------------+---------+
+; Estimate of Logic utilization (ALMs needed) ; 8       ;
+;                                             ;         ;
+; Combinational ALUT usage for logic          ; 8       ;
+;     -- 7 input functions                    ; 0       ;
+;     -- 6 input functions                    ; 8       ;
+;     -- 5 input functions                    ; 0       ;
+;     -- 4 input functions                    ; 0       ;
+;     -- <=3 input functions                  ; 0       ;
+;                                             ;         ;
+; Dedicated logic registers                   ; 0       ;
+;                                             ;         ;
+; I/O pins                                    ; 14      ;
+; Total DSP Blocks                            ; 0       ;
+; Maximum fan-out node                        ; A~input ;
+; Maximum fan-out                             ; 8       ;
+; Total fan-out                               ; 70      ;
+; Average fan-out                             ; 1.94    ;
++---------------------------------------------+---------+
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -207,8 +205,8 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; |74283                     ; 6 (0)             ; 0 (0)        ; 0                 ; 0          ; 14   ; 0            ; |74283              ; work         ;
-;    |f74283:sub|            ; 6 (6)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |74283|f74283:sub   ; work         ;
+; |74138a                    ; 8 (0)             ; 0 (0)        ; 0                 ; 0          ; 14   ; 0            ; |74138a             ; work         ;
+;    |74138:inst|            ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |74138a|74138:inst  ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -228,20 +226,6 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+-----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: Top-level Entity: |74283 ;
-+------------------------+-----------+----------------------------------+
-; Parameter Name         ; Value     ; Type                             ;
-+------------------------+-----------+----------------------------------+
-; DEVICE_FAMILY          ; Cyclone V ; Untyped                          ;
-; AUTO_CARRY_CHAINS      ; ON        ; AUTO_CARRY                       ;
-; IGNORE_CARRY_BUFFERS   ; OFF       ; IGNORE_CARRY                     ;
-; AUTO_CASCADE_CHAINS    ; ON        ; AUTO_CASCADE                     ;
-; IGNORE_CASCADE_BUFFERS ; OFF       ; IGNORE_CASCADE                   ;
-+------------------------+-----------+----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
@@ -257,29 +241,28 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Oct 17 19:13:39 2024
+    Info: Processing started: Thu Oct 17 22:20:08 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Exper_3 -c Exper_3
 Info (20034): Auto device selection is not supported for Cyclone V device family. The default device, 5CGXFC7C7F23C8, is set.
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file 74138a.bdf
     Info (12023): Found entity 1: 74138a
-Info (12127): Elaborating entity "74283" for the top level hierarchy
-Info (12128): Elaborating entity "f74283" for hierarchy "f74283:sub"
-Info (12132): Elaborated megafunction instantiation "f74283:sub", which is child of top level entity.
-Info (13014): Ignored 17 buffer(s)
-    Info (13015): Ignored 5 CARRY buffer(s)
-    Info (13019): Ignored 12 SOFT buffer(s)
+Info (12021): Found 1 design units, including 1 entities, in source file 74283a.bdf
+    Info (12023): Found entity 1: 74283a
+Info (12127): Elaborating entity "74138a" for the top level hierarchy
+Info (12128): Elaborating entity "74138" for hierarchy "74138:inst"
+Info (12130): Elaborated megafunction instantiation "74138:inst"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 20 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 9 input pins
-    Info (21059): Implemented 5 output pins
-    Info (21061): Implemented 6 logic cells
+Info (21057): Implemented 22 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 6 input pins
+    Info (21059): Implemented 8 output pins
+    Info (21061): Implemented 8 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4726 megabytes
-    Info: Processing ended: Thu Oct 17 19:13:40 2024
-    Info: Elapsed time: 00:00:01
+    Info: Processing ended: Thu Oct 17 22:20:08 2024
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 

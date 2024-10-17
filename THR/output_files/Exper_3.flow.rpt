@@ -1,5 +1,5 @@
 Flow report for Exper_3
-Thu Oct 17 19:14:08 2024
+Thu Oct 17 22:20:36 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,14 +40,14 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Oct 17 19:14:08 2024       ;
+; Flow Status                     ; Successful - Thu Oct 17 22:20:36 2024       ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                   ; Exper_3                                     ;
-; Top-level Entity Name           ; 74283                                       ;
+; Top-level Entity Name           ; 74138a                                      ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; 4 / 56,480 ( < 1 % )                        ;
+; Logic utilization (in ALMs)     ; 7 / 56,480 ( < 1 % )                        ;
 ; Total registers                 ; 0                                           ;
 ; Total pins                      ; 14 / 268 ( 5 % )                            ;
 ; Total virtual pins              ; 0                                           ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/17/2024 19:13:40 ;
+; Start date & time ; 10/17/2024 22:20:08 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Exper_3             ;
 +-------------------+---------------------+
@@ -78,14 +78,14 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 260406197963744.172916362027544 ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 260406197963744.172917480802504 ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                        ; --            ; 74283       ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; 74283       ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; 74283       ; Top            ;
+; PARTITION_COLOR                     ; 16764057                        ; --            ; 74138a      ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING           ; --            ; 74138a      ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                          ; --            ; 74138a      ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                    ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; 74283                           ; Exper_3       ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; 74138a                          ; Exper_3       ; --          ; --             ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 
 
@@ -94,12 +94,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4726 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:15     ; 3.4                     ; 6829 MB             ; 00:00:33                           ;
-; Assembler                 ; 00:00:05     ; 1.0                     ; 4761 MB             ; 00:00:06                           ;
-; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 5092 MB             ; 00:00:03                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4618 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:25     ; --                      ; --                  ; 00:00:44                           ;
+; Analysis & Synthesis      ; 00:00:00     ; 1.0                     ; 4726 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:15     ; 4.5                     ; 6822 MB             ; 00:00:34                           ;
+; Assembler                 ; 00:00:06     ; 1.0                     ; 4769 MB             ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 5120 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4621 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:24     ; --                      ; --                  ; 00:00:43                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

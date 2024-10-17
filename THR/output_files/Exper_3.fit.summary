@@ -1,11 +1,11 @@
-Fitter Status : Successful - Thu Oct 17 19:13:56 2024
+Fitter Status : Successful - Thu Oct 17 22:20:24 2024
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : Exper_3
-Top-level Entity Name : 74283
+Top-level Entity Name : 74138a
 Family : Cyclone V
 Device : 5CGXFC7C7F23C8
 Timing Models : Final
-Logic utilization (in ALMs) : 4 / 56,480 ( < 1 % )
+Logic utilization (in ALMs) : 7 / 56,480 ( < 1 % )
 Total registers : 0
 Total pins : 14 / 268 ( 5 % )
 Total virtual pins : 0
