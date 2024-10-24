@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\College_Work\Numerical_and_Electrical_Experiment\E3\simulation\qsim
+vE3_74138
+Z1 !s100 VFHbddO_SRi9G1^2C^;9L0
+Z2 I<K_oY;Dz6oigHc?jT_7<k1
+Z3 VWNif[mNI]ikAITgj]<S?N2
+Z4 dD:\College_Work\Numerical_and_Electrical_Experiment\E3\simulation\qsim
+Z5 w1729760320
+Z6 8E3.vo
+Z7 FE3.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|E3.vo|
+Z10 o-work work -O0
+Z11 n@e3_74138
+Z12 !s108 1729760320.698000
+Z13 !s107 E3.vo|
+!i10b 1
+!s85 0
+!s101 -O0
+vE3_74138_vlg_check_tst
+Z14 Ignf6fF[W@NbzYz2?CPORJ3
+Z15 V^]naCQ<d<[C?LdaS8`nD40
+R4
+Z16 w1729760319
+Z17 8E3_74153.vwf.vt
+Z18 FE3_74153.vwf.vt
+L0 61
+R8
+r1
+31
+Z19 !s108 1729760320.750000
+Z20 !s107 E3_74153.vwf.vt|
+Z21 !s90 -work|work|E3_74153.vwf.vt|
+R10
+Z22 n@e3_74138_vlg_check_tst
+Z23 !s100 a==Izfk6DRzUH8BC`]6BQ2
+!i10b 1
+!s85 0
+!s101 -O0
+vE3_74138_vlg_sample_tst
+Z24 IX>kUD<lYYczVQK4K?FZC_2
+Z25 V?WlmnkkE>Tnbb[GeA<TML3
+R4
+R16
+R17
+R18
+L0 29
+R8
+r1
+31
+R19
+R20
+R21
+R10
+Z26 n@e3_74138_vlg_sample_tst
+Z27 !s100 CHTPZ:A:GU?M3A`^?WoKa2
+!i10b 1
+!s85 0
+!s101 -O0
+vE3_74138_vlg_vec_tst
+Z28 IZT@<M4<a?C[z`73^56Z0U0
+Z29 VM]D;O@=j]YV;R0o_laZ^D1
+R4
+R16
+R17
+R18
+Z30 L0 156
+R8
+r1
+31
+R19
+R20
+R21
+R10
+Z31 n@e3_74138_vlg_vec_tst
+Z32 !s100 UXJK1BHiZeH^@Zz4b0NGg1
+!i10b 1
+!s85 0
+!s101 -O0
+vE3_74153
+Z33 I`5BL`bG<1V`i<Y^OUd8FS1
+Z34 VOKDo<z6AUL3H1D:0^:GS52
+R4
+Z35 w1729760889
+R6
+R7
+L0 31
+R8
+r1
+31
+R9
+R10
+Z36 n@e3_74153
+!i10b 1
+Z37 !s100 [BI3V^gh8<VUm;_I804ha0
+!s85 0
+Z38 !s108 1729760889.848000
+R13
+!s101 -O0
+vE3_74153_vlg_check_tst
+!i10b 1
+!s100 XTlVOWUS4i?lJNn4kkh:I1
+IDjCoQZZlQW;z:bXcl?gJ@3
+V<d55gHlo[:ELiXH2kEcVG1
+R4
+Z39 w1729760888
+Z40 8E3_74138.vwf.vt
+Z41 FE3_74138.vwf.vt
+L0 61
+R8
+r1
+!s85 0
+31
+Z42 !s108 1729760889.902000
+Z43 !s107 E3_74138.vwf.vt|
+Z44 !s90 -work|work|E3_74138.vwf.vt|
+!s101 -O0
+R10
+Z45 n@e3_74153_vlg_check_tst
+vE3_74153_vlg_sample_tst
+!i10b 1
+!s100 JWIEIE9XBJW:Z=zU`RXX93
+I^DgfMflINXeeE@CFf^>CQ2
+VPKYOh9o:kBaIURND=31L21
+R4
+R39
+R40
+R41
+L0 29
+R8
+r1
+!s85 0
+31
+R42
+R43
+R44
+!s101 -O0
+R10
+Z46 n@e3_74153_vlg_sample_tst
+vE3_74153_vlg_vec_tst
+!i10b 1
+!s100 ]6?1_IDNJD@d=<QS:f9UA2
+IG[X]F7Tz]6gWT0So]B5H^1
+Z47 Vj]GlQKIbTOPCedl9HcV?K1
+R4
+R39
+R40
+R41
+R30
+R8
+r1
+!s85 0
+31
+R42
+R43
+R44
+!s101 -O0
+R10
+Z48 n@e3_74153_vlg_vec_tst
