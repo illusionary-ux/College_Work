@@ -1,0 +1,32 @@
+|test_74147
+CN <= 74147:inst.CN
+N1 => 74147:inst.1N
+N2 => 74147:inst.2N
+N3 => 74147:inst.3N
+N6 => 74147:inst.6N
+N5 => 74147:inst.5N
+N4 => 74147:inst.4N
+N9 => 74147:inst.9N
+N8 => 74147:inst.8N
+N7 => 74147:inst.7N
+BN <= 74147:inst.BN
+AN <= 74147:inst.AN
+DN <= 74147:inst.DN
+
+
+|test_74147|74147:inst
+DN <= 68.DB_MAX_OUTPUT_PORT_TYPE
+8N => 63.IN0
+9N => 65.IN0
+CN <= 9.DB_MAX_OUTPUT_PORT_TYPE
+4N => 57.IN0
+5N => 60.IN0
+6N => 62.IN0
+7N => 114.IN0
+BN <= 8.DB_MAX_OUTPUT_PORT_TYPE
+2N => 55.IN0
+3N => 56.IN0
+AN <= 7.DB_MAX_OUTPUT_PORT_TYPE
+1N => 53.IN0
+
+
