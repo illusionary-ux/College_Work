@@ -32,7 +32,7 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("pin_name1")
+SIGNAL("A")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -42,7 +42,7 @@ SIGNAL("pin_name1")
 	PARENT = "";
 }
 
-SIGNAL("pin_name2")
+SIGNAL("B")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -52,7 +52,7 @@ SIGNAL("pin_name2")
 	PARENT = "";
 }
 
-SIGNAL("pin_name3")
+SIGNAL("C")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -62,7 +62,7 @@ SIGNAL("pin_name3")
 	PARENT = "";
 }
 
-SIGNAL("pin_name4")
+SIGNAL("OUTPUT")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -74,10 +74,10 @@ SIGNAL("pin_name4")
 
 GROUP("INPUT")
 {
-	MEMBERS = "pin_name1", "pin_name2", "pin_name3";
+	MEMBERS = "A", "B", "C";
 }
 
-TRANSITION_LIST("pin_name1")
+TRANSITION_LIST("A")
 {
 	NODE
 	{
@@ -92,7 +92,7 @@ TRANSITION_LIST("pin_name1")
 	}
 }
 
-TRANSITION_LIST("pin_name2")
+TRANSITION_LIST("B")
 {
 	NODE
 	{
@@ -107,7 +107,7 @@ TRANSITION_LIST("pin_name2")
 	}
 }
 
-TRANSITION_LIST("pin_name3")
+TRANSITION_LIST("C")
 {
 	NODE
 	{
@@ -121,7 +121,7 @@ TRANSITION_LIST("pin_name3")
 	}
 }
 
-TRANSITION_LIST("pin_name4")
+TRANSITION_LIST("OUTPUT")
 {
 	NODE
 	{
@@ -133,7 +133,7 @@ TRANSITION_LIST("pin_name4")
 DISPLAY_LINE
 {
 	CHANNEL = "INPUT";
-	EXPAND_STATUS = EXPANDED;
+	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
@@ -142,7 +142,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name1";
+	CHANNEL = "A";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -152,7 +152,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name2";
+	CHANNEL = "B";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -162,7 +162,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name3";
+	CHANNEL = "C";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -172,7 +172,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "pin_name4";
+	CHANNEL = "OUTPUT";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;

@@ -1,4 +1,5 @@
 |THR2023063114
+<<<<<<< HEAD
 HEX1_0 <= 7447:inst.OA
 H1 => 7447:inst.B
 H2 => 7447:inst.C
@@ -43,6 +44,28 @@ OD <= 84.DB_MAX_OUTPUT_PORT_TYPE
 OC <= 83.DB_MAX_OUTPUT_PORT_TYPE
 OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
 OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
+=======
+OB <= 7447:inst1.OB
+A => inst7.IN0
+B => inst8.IN0
+C => inst9.IN0
+F => inst12.IN0
+E => inst11.IN0
+D => inst10.IN0
+I => inst15.IN0
+H => inst14.IN0
+G => inst13.IN0
+OC <= 7447:inst1.OC
+OE <= 7447:inst1.OE
+OD <= 7447:inst1.OD
+OF <= 7447:inst1.OF
+OG <= 7447:inst1.OG
+OA <= 7447:inst1.OA
+LED1 <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+LED2 <= inst4.DB_MAX_OUTPUT_PORT_TYPE
+LED3 <= inst5.DB_MAX_OUTPUT_PORT_TYPE
+LED4 <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+>>>>>>> 4b47ada (数据结构文件更新)
 
 
 |THR2023063114|7447:inst1
@@ -67,3 +90,22 @@ OB <= 82.DB_MAX_OUTPUT_PORT_TYPE
 OA <= 81.DB_MAX_OUTPUT_PORT_TYPE
 
 
+<<<<<<< HEAD
+=======
+|THR2023063114|74147:inst
+DN <= 68.DB_MAX_OUTPUT_PORT_TYPE
+8N => 63.IN0
+9N => 65.IN0
+CN <= 9.DB_MAX_OUTPUT_PORT_TYPE
+4N => 57.IN0
+5N => 60.IN0
+6N => 62.IN0
+7N => 114.IN0
+BN <= 8.DB_MAX_OUTPUT_PORT_TYPE
+2N => 55.IN0
+3N => 56.IN0
+AN <= 7.DB_MAX_OUTPUT_PORT_TYPE
+1N => 53.IN0
+
+
+>>>>>>> 4b47ada (数据结构文件更新)

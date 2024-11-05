@@ -1,5 +1,5 @@
 Analysis & Synthesis report for E3
-Thu Oct 24 17:07:07 2024
+Fri Oct 25 19:36:08 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Oct 24 17:07:07 2024       ;
+; Analysis & Synthesis Status     ; Successful - Fri Oct 25 19:36:08 2024       ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                   ; E3                                          ;
 ; Top-level Entity Name           ; E3_74153                                    ;
@@ -66,7 +66,7 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
 ; Top-level entity name                                                           ; E3_74153           ; E3                 ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
@@ -165,14 +165,14 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                  ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                        ; Library ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
-; E3_74153.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/College_Work/Numerical_and_Electrical_Experiment/E3/E3_74153.bdf ;         ;
-; 74153.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/others/maxplus2/74153.bdf          ;         ;
-+----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                      ; Library ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
+; E3_74153.bdf                     ; yes             ; User Block Diagram/Schematic File  ; D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E4/E3_74153.bdf ;         ;
+; 74153.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/others/maxplus2/74153.bdf                        ;         ;
++----------------------------------+-----------------+------------------------------------+-----------------------------------------------------------------------------------+---------+
 
 
 +--------------------------------------------------------------+
@@ -241,7 +241,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Oct 24 17:07:07 2024
+    Info: Processing started: Fri Oct 25 19:36:06 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off E3 -c E3
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file e3_74138.bdf
@@ -259,9 +259,9 @@ Info (21057): Implemented 5 device resources after synthesis - the final resourc
     Info (21059): Implemented 1 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4711 megabytes
-    Info: Processing ended: Thu Oct 24 17:07:07 2024
-    Info: Elapsed time: 00:00:00
+    Info: Peak virtual memory: 4723 megabytes
+    Info: Processing ended: Fri Oct 25 19:36:08 2024
+    Info: Elapsed time: 00:00:02
     Info: Total CPU time (on all processors): 00:00:01
 
 

@@ -1,5 +1,9 @@
 Flow report for THR2023063114
+<<<<<<< HEAD
 Mon Oct 28 13:07:13 2024
+=======
+Mon Oct 28 15:21:48 2024
+>>>>>>> 4b47ada (数据结构文件更新)
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,25 +44,43 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
+<<<<<<< HEAD
 ; Flow Status                     ; Successful - Mon Oct 28 13:07:13 2024       ;
+=======
+; Flow Status                     ; Successful - Mon Oct 28 15:21:48 2024       ;
+>>>>>>> 4b47ada (数据结构文件更新)
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                   ; THR2023063114                               ;
 ; Top-level Entity Name           ; THR2023063114                               ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Preliminary                                 ;
+<<<<<<< HEAD
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
 ; Total pins                      ; 22                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
+=======
+; Logic utilization (in ALMs)     ; 12 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 20 / 457 ( 4 % )                            ;
+; Total virtual pins              ; 0                                           ;
+; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
+; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
+>>>>>>> 4b47ada (数据结构文件更新)
 ; Total HSSI RX PCSs              ; 0                                           ;
 ; Total HSSI PMA RX Deserializers ; 0                                           ;
 ; Total HSSI TX PCSs              ; 0                                           ;
 ; Total HSSI TX Channels          ; 0                                           ;
+<<<<<<< HEAD
 ; Total PLLs                      ; 0                                           ;
 ; Total DLLs                      ; 0                                           ;
+=======
+; Total PLLs                      ; 0 / 6 ( 0 % )                               ;
+; Total DLLs                      ; 0 / 4 ( 0 % )                               ;
+>>>>>>> 4b47ada (数据结构文件更新)
 +---------------------------------+---------------------------------------------+
 
 
@@ -67,7 +89,11 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
+<<<<<<< HEAD
 ; Start date & time ; 10/28/2024 13:07:12 ;
+=======
+; Start date & time ; 10/28/2024 15:20:57 ;
+>>>>>>> 4b47ada (数据结构文件更新)
 ; Main task         ; Compilation         ;
 ; Revision Name     ; THR2023063114       ;
 +-------------------+---------------------+
@@ -78,7 +104,11 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
+<<<<<<< HEAD
 ; COMPILER_SIGNATURE_ID               ; 260406197963744.173009203206752 ; --            ; --          ; --             ;
+=======
+; COMPILER_SIGNATURE_ID               ; 220449209054716.173010005724004 ; --            ; --          ; --             ;
+>>>>>>> 4b47ada (数据结构文件更新)
 ; EDA_OUTPUT_DATA_FORMAT              ; Vhdl                            ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (VHDL)          ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --            ; --          ; --             ;
@@ -90,6 +120,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+---------------+-------------+----------------+
 
 
+<<<<<<< HEAD
 +--------------------------------------------------------------------------------------------------------------------------+
 ; Flow Elapsed Time                                                                                                        ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
@@ -107,12 +138,46 @@ applicable agreement for further details.
 +----------------------+------------------+-----------+------------+----------------+
 ; Analysis & Synthesis ; DESKTOP-MA74LPU  ; Windows 7 ; 6.2        ; x86_64         ;
 +----------------------+------------------+-----------+------------+----------------+
+=======
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4723 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:28     ; 2.7                     ; 6676 MB             ; 00:00:25                           ;
+; Assembler                 ; 00:00:11     ; 1.0                     ; 4765 MB             ; 00:00:05                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 5069 MB             ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4622 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:48     ; --                      ; --                  ; 00:00:35                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-ONPK3FH  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-ONPK3FH  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-ONPK3FH  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-ONPK3FH  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-ONPK3FH  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
+>>>>>>> 4b47ada (数据结构文件更新)
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off THR2023063114 -c THR2023063114
+<<<<<<< HEAD
+=======
+quartus_fit --read_settings_files=off --write_settings_files=off THR2023063114 -c THR2023063114
+quartus_asm --read_settings_files=off --write_settings_files=off THR2023063114 -c THR2023063114
+quartus_sta THR2023063114 -c THR2023063114
+quartus_eda --read_settings_files=off --write_settings_files=off THR2023063114 -c THR2023063114
+>>>>>>> 4b47ada (数据结构文件更新)
 
 
 

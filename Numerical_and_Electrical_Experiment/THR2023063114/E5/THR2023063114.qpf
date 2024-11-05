@@ -18,12 +18,20 @@
 #
 # Quartus II 64-Bit
 # Version 13.1.0 Build 162 10/23/2013 SJ Full Version
+<<<<<<< HEAD
 # Date created = 12:54:25  October 28, 2024
+=======
+# Date created = 14:38:48  October 28, 2024
+>>>>>>> 4b47ada (数据结构文件更新)
 #
 # -------------------------------------------------------------------------- #
 
 QUARTUS_VERSION = "13.1"
+<<<<<<< HEAD
 DATE = "12:54:25  October 28, 2024"
+=======
+DATE = "14:38:48  October 28, 2024"
+>>>>>>> 4b47ada (数据结构文件更新)
 
 # Revisions
 
