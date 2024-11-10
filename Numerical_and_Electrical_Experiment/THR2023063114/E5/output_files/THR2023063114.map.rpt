@@ -1,9 +1,5 @@
 Analysis & Synthesis report for THR2023063114
-<<<<<<< HEAD
-Mon Oct 28 13:07:13 2024
-=======
-Mon Oct 28 15:20:58 2024
->>>>>>> 4b47ada (数据结构文件更新)
+Fri Nov 08 18:40:08 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -45,22 +41,14 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-<<<<<<< HEAD
-; Analysis & Synthesis Status     ; Successful - Mon Oct 28 13:07:13 2024       ;
-=======
-; Analysis & Synthesis Status     ; Successful - Mon Oct 28 15:20:58 2024       ;
->>>>>>> 4b47ada (数据结构文件更新)
+; Analysis & Synthesis Status     ; Successful - Fri Nov 08 18:40:08 2024       ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                   ; THR2023063114                               ;
 ; Top-level Entity Name           ; THR2023063114                               ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
-<<<<<<< HEAD
-; Total pins                      ; 22                                          ;
-=======
 ; Total pins                      ; 20                                          ;
->>>>>>> 4b47ada (数据结构文件更新)
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -184,34 +172,6 @@ applicable agreement for further details.
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
 ; THR2023063114.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E5/THR2023063114.bdf ;         ;
 ; 7447.bdf                         ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/others/maxplus2/7447.bdf                              ;         ;
-<<<<<<< HEAD
-+----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
-
-
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimate of Logic utilization (ALMs needed) ; 7        ;
-;                                             ;          ;
-; Combinational ALUT usage for logic          ; 14       ;
-;     -- 7 input functions                    ; 0        ;
-;     -- 6 input functions                    ; 0        ;
-;     -- 5 input functions                    ; 0        ;
-;     -- 4 input functions                    ; 10       ;
-;     -- <=3 input functions                  ; 4        ;
-;                                             ;          ;
-; Dedicated logic registers                   ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 22       ;
-; Total DSP Blocks                            ; 0        ;
-; Maximum fan-out node                        ; H0~input ;
-; Maximum fan-out                             ; 7        ;
-; Total fan-out                               ; 88       ;
-; Average fan-out                             ; 1.52     ;
-+---------------------------------------------+----------+
-=======
 ; 74147.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/others/maxplus2/74147.bdf                             ;         ;
 +----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
 
@@ -234,12 +194,11 @@ applicable agreement for further details.
 ;                                             ;                ;
 ; I/O pins                                    ; 20             ;
 ; Total DSP Blocks                            ; 0              ;
-; Maximum fan-out node                        ; 7447:inst1|5~0 ;
+; Maximum fan-out node                        ; 7447:inst3|5~0 ;
 ; Maximum fan-out                             ; 10             ;
 ; Total fan-out                               ; 99             ;
 ; Average fan-out                             ; 1.83           ;
 +---------------------------------------------+----------------+
->>>>>>> 4b47ada (数据结构文件更新)
 
 
 +-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -247,15 +206,9 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name       ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------+--------------+
-<<<<<<< HEAD
-; |THR2023063114             ; 14 (0)            ; 0 (0)        ; 0                 ; 0          ; 22   ; 0            ; |THR2023063114            ; work         ;
-;    |7447:inst1|            ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |THR2023063114|7447:inst1 ; work         ;
-;    |7447:inst|             ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |THR2023063114|7447:inst  ; work         ;
-=======
 ; |THR2023063114             ; 14 (0)            ; 0 (0)        ; 0                 ; 0          ; 20   ; 0            ; |THR2023063114            ; work         ;
 ;    |74147:inst|            ; 6 (6)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |THR2023063114|74147:inst ; work         ;
-;    |7447:inst1|            ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |THR2023063114|7447:inst1 ; work         ;
->>>>>>> 4b47ada (数据结构文件更新)
+;    |7447:inst3|            ; 8 (8)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |THR2023063114|7447:inst3 ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -290,40 +243,19 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-<<<<<<< HEAD
-    Info: Processing started: Mon Oct 28 13:07:12 2024
-=======
-    Info: Processing started: Mon Oct 28 15:20:56 2024
->>>>>>> 4b47ada (数据结构文件更新)
+    Info: Processing started: Fri Nov 08 18:40:06 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off THR2023063114 -c THR2023063114
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file thr2023063114.bdf
     Info (12023): Found entity 1: THR2023063114
-<<<<<<< HEAD
-Info (12021): Found 1 design units, including 1 entities, in source file thr2023063114_2.bdf
-    Info (12023): Found entity 1: THR2023063114_2
 Info (12127): Elaborating entity "THR2023063114" for the top level hierarchy
-Info (12128): Elaborating entity "7447" for hierarchy "7447:inst"
-Info (12130): Elaborated megafunction instantiation "7447:inst"
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 36 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 8 input pins
-    Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 14 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4727 megabytes
-    Info: Processing ended: Mon Oct 28 13:07:13 2024
-    Info: Elapsed time: 00:00:01
-=======
-Info (12127): Elaborating entity "THR2023063114" for the top level hierarchy
-Warning (275011): Block or symbol "NOT" of instance "inst8" overlaps another block or symbol
-Warning (275011): Block or symbol "NOT" of instance "inst10" overlaps another block or symbol
-Warning (275011): Block or symbol "NOT" of instance "inst12" overlaps another block or symbol
-Warning (275011): Block or symbol "NOT" of instance "inst14" overlaps another block or symbol
-Info (12128): Elaborating entity "7447" for hierarchy "7447:inst1"
-Info (12130): Elaborated megafunction instantiation "7447:inst1"
+Warning (275011): Block or symbol "NOT" of instance "inst7" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst9" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst11" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst13" overlaps another block or symbol
+Warning (275011): Block or symbol "NOT" of instance "inst15" overlaps another block or symbol
+Info (12128): Elaborating entity "7447" for hierarchy "7447:inst3"
+Info (12130): Elaborated megafunction instantiation "7447:inst3"
 Info (12128): Elaborating entity "74147" for hierarchy "74147:inst"
 Info (12130): Elaborated megafunction instantiation "74147:inst"
 Info (286030): Timing-Driven Synthesis is running
@@ -333,11 +265,10 @@ Info (21057): Implemented 34 device resources after synthesis - the final resour
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 11 output pins
     Info (21061): Implemented 14 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 4723 megabytes
-    Info: Processing ended: Mon Oct 28 15:20:58 2024
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 4734 megabytes
+    Info: Processing ended: Fri Nov 08 18:40:08 2024
     Info: Elapsed time: 00:00:02
->>>>>>> 4b47ada (数据结构文件更新)
     Info: Total CPU time (on all processors): 00:00:01
 
 

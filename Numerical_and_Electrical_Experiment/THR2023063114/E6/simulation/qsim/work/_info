@@ -1,0 +1,165 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\College_Work\Numerical_and_Electrical_Experiment\THR2023063114\E6\simulation\qsim
+vBlock1
+Z1 Ih8LZ9?z=Va<lmdRaR@^633
+Z2 V9`8OFY76LT5W9B8Vf[dlS2
+Z3 dD:\College_Work\Numerical_and_Electrical_Experiment\THR2023063114\E6\simulation\qsim
+Z4 w1731079104
+Z5 8THR2023063114.vo
+Z6 FTHR2023063114.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s90 -work|work|THR2023063114.vo|
+Z9 o-work work -O0
+Z10 n@block1
+!i10b 1
+Z11 !s100 oG33Y9zU7o3HlG[<M9JO@2
+!s85 0
+Z12 !s108 1731079106.623000
+Z13 !s107 THR2023063114.vo|
+!s101 -O0
+vBlock1_vlg_check_tst
+!i10b 1
+!s100 TWTKeSk`hckZD<Xk4^Q0I2
+IkIoK0P^e3h;lUX6V:Rk[T2
+V1j37[fM3GHT7P=E5@RT1`2
+R3
+Z14 w1731079102
+Z15 8Waveform.vwf.vt
+Z16 FWaveform.vwf.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z17 !s108 1731079106.717000
+Z18 !s107 Waveform.vwf.vt|
+Z19 !s90 -work|work|Waveform.vwf.vt|
+!s101 -O0
+R9
+n@block1_vlg_check_tst
+vBlock1_vlg_sample_tst
+!i10b 1
+!s100 oGkg_Ka=goC14f22@la4E0
+IekD`_:1T]7S3kF3><m`XR0
+VNhJG>BGDBg<o;nlf>:4J21
+R3
+R14
+R15
+R16
+L0 29
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+n@block1_vlg_sample_tst
+vBlock1_vlg_vec_tst
+!i10b 1
+!s100 NICUM:hUdjVY9C15g>hZz0
+IHJ`=3Y][_IhPSzNkSEHaB1
+V8EbEX^g@9e0ZUXjTWSm=l2
+R3
+R14
+R15
+R16
+L0 451
+R7
+r1
+!s85 0
+31
+R17
+R18
+R19
+!s101 -O0
+R9
+n@block1_vlg_vec_tst
+vBlock2
+Z20 !s100 =EY3ciOJhYYZU_98:K]H=3
+Z21 IOA756b`GP1aFca[D^_lln1
+Z22 V@^5e4ALjBHBKU3WFoYz9>2
+R3
+Z23 w1731065799
+R5
+R6
+L0 31
+R7
+r1
+31
+R8
+R9
+Z24 n@block2
+Z25 !s108 1731065801.580000
+R13
+!i10b 1
+!s85 0
+!s101 -O0
+vBlock2_vlg_check_tst
+Z26 !s100 7VCmRXFeY:8I_V;lfJCfU0
+Z27 I4XhIaZ;3HL3j3LchXhjGO1
+Z28 VoLgFk6HeQh:X<M@MM2NLj2
+R3
+Z29 w1731065797
+Z30 8b2.vwf.vt
+Z31 Fb2.vwf.vt
+L0 57
+R7
+r1
+31
+Z32 !s108 1731065801.662000
+Z33 !s107 b2.vwf.vt|
+Z34 !s90 -work|work|b2.vwf.vt|
+R9
+Z35 n@block2_vlg_check_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vBlock2_vlg_sample_tst
+Z36 !s100 BS@6:cjJen8=o3Ec=TP[i3
+Z37 Ibn0MFg2f;n00o4jhYF^<a1
+Z38 V<?C@=W]h4EP=_3DG`[S361
+R3
+R29
+R30
+R31
+L0 29
+R7
+r1
+31
+R32
+R33
+R34
+R9
+Z39 n@block2_vlg_sample_tst
+!i10b 1
+!s85 0
+!s101 -O0
+vBlock2_vlg_vec_tst
+Z40 !s100 l62IblQ;^okGSh8JGz=P60
+Z41 Il<mHUZWiPIcMZlLLlj0_[2
+Z42 VniRYiKO^Dm>FO`M@4a0Mg1
+R3
+R29
+R30
+R31
+Z43 L0 341
+R7
+r1
+31
+R32
+R33
+R34
+R9
+Z44 n@block2_vlg_vec_tst
+!i10b 1
+!s85 0
+!s101 -O0

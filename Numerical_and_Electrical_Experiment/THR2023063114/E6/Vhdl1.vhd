@@ -1,16 +1,16 @@
 LIBRARY IEEE;
 USE IEEE.STD_LOGIC_1164.ALL;
 USE IEEE.STD_LOGIC_UNSIGNED.ALL;
-ENTITY LowFreqClk IS
+ENTITY Vhdl1 IS
 PORT(rst_n  : IN STD_LOGIC;
 	Clk_50M  : IN STD_LOGIC;
 	clk_1Hz  : buffer STD_LOGIC;
 	clk_2Hz  : buffer STD_LOGIC;
 	clk_4Hz  : buffer STD_LOGIC;
 	clk_8Hz  : buffer STD_LOGIC);
-END LowFreqClk;
+END Vhdl1;
  
-ARCHITECTURE Behv OF LowFreqClk IS
+ARCHITECTURE Behv OF Vhdl1 IS
 BEGIN
 PROCESS(Clk_50M,rst_n)
 VARIABLE Count:INTEGER ;
@@ -19,7 +19,7 @@ BEGIN
     Count := 0 ;
 	 clk_8Hz <= '0';
   ELSIF Clk_50M'EVENT AND Clk_50M='1' THEN
-    IF Count >= 2 THEN
+    IF Count >= 3124999 THEN
 	   clk_8Hz <=not clk_8Hz;
 		Count := 0 ;
 	  ELSE
@@ -27,6 +27,7 @@ BEGIN
 	  END IF;
   END IF;
 END PROCESS ;
+
 PROCESS(clk_8Hz,rst_n)
 BEGIN
   IF rst_n = '0' then 

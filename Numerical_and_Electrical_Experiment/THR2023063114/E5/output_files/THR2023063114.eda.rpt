@@ -1,5 +1,5 @@
 EDA Netlist Writer report for THR2023063114
-Mon Oct 28 15:21:48 2024
+Fri Nov 08 18:44:04 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -8,7 +8,9 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 ---------------------
   1. Legal Notice
   2. EDA Netlist Writer Summary
-  3. EDA Netlist Writer Messages
+  3. Simulation Settings
+  4. Simulation Generated Files
+  5. EDA Netlist Writer Messages
 
 
 
@@ -34,11 +36,42 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Oct 28 15:21:48 2024 ;
+; EDA Netlist Writer Status ; Successful - Fri Nov 08 18:44:04 2024 ;
 ; Revision Name             ; THR2023063114                         ;
 ; Top-level Entity Name     ; THR2023063114                         ;
 ; Family                    ; Cyclone V                             ;
+; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Settings                                                                                                           ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Option                                                                                            ; Setting                   ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+; Tool Name                                                                                         ; ModelSim-Altera (Verilog) ;
+; Generate netlist for functional simulation only                                                   ; On                        ;
+; Truncate long hierarchy paths                                                                     ; Off                       ;
+; Map illegal HDL characters                                                                        ; Off                       ;
+; Flatten buses into individual nodes                                                               ; Off                       ;
+; Maintain hierarchy                                                                                ; Off                       ;
+; Bring out device-wide set/reset signals as ports                                                  ; Off                       ;
+; Enable glitch filtering                                                                           ; Off                       ;
+; Do not write top level VHDL entity                                                                ; Off                       ;
+; Disable detection of setup and hold time violations in the input registers of bi-directional pins ; Off                       ;
+; Architecture name in VHDL output netlist                                                          ; structure                 ;
+; Generate third-party EDA tool command script for RTL functional simulation                        ; Off                       ;
+; Generate third-party EDA tool command script for gate-level simulation                            ; Off                       ;
++---------------------------------------------------------------------------------------------------+---------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                             ;
++--------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                        ;
++--------------------------------------------------------------------------------------------------------+
+; D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E5/simulation/qsim//THR2023063114.vo ;
++--------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -47,12 +80,25 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Mon Oct 28 15:21:47 2024
-Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off THR2023063114 -c THR2023063114
-Warning (11101): Unable to generate the VHDL EDA simulation netlist files because the Quartus II software does not currently support VHDL post-compilation simulation for the Cyclone V devices.
-Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4629 megabytes
-    Info: Processing ended: Mon Oct 28 15:21:48 2024
+    Info: Copyright (C) 1991-2013 Altera Corporation. All rights reserved.
+    Info: Your use of Altera Corporation's design tools, logic functions 
+    Info: and other software and tools, and its AMPP partner logic 
+    Info: functions, and any output files from any of the foregoing 
+    Info: (including device programming or simulation files), and any 
+    Info: associated documentation or information are expressly subject 
+    Info: to the terms and conditions of the Altera Program License 
+    Info: Subscription Agreement, Altera MegaCore Function License 
+    Info: Agreement, or other applicable license agreement, including, 
+    Info: without limitation, that your use is for the sole purpose of 
+    Info: programming logic devices manufactured by Altera and sold by 
+    Info: Altera or its authorized distributors.  Please refer to the 
+    Info: applicable agreement for further details.
+    Info: Processing started: Fri Nov 08 18:44:03 2024
+Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E5/simulation/qsim/ THR2023063114 -c THR2023063114
+Info (204019): Generated file THR2023063114.vo in folder "D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E5/simulation/qsim//" for EDA simulation tool
+Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 4637 megabytes
+    Info: Processing ended: Fri Nov 08 18:44:04 2024
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

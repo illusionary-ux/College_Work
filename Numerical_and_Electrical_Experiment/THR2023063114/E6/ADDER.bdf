@@ -20,6 +20,22 @@ applicable agreement for further details.
 */
 (header "graphic" (version "1.4"))
 (pin
+	(input)
+	(rect 40 336 208 352)
+	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
+	(text "CP" (rect 5 0 21 12)(font "Arial" ))
+	(pt 168 8)
+	(drawing
+		(line (pt 84 12)(pt 109 12))
+		(line (pt 84 4)(pt 109 4))
+		(line (pt 113 8)(pt 168 8))
+		(line (pt 84 12)(pt 84 4))
+		(line (pt 109 4)(pt 113 8))
+		(line (pt 109 12)(pt 113 8))
+	)
+	(text "VCC" (rect 128 7 148 17)(font "Arial" (font_size 6)))
+)
+(pin
 	(output)
 	(rect 456 112 632 128)
 	(text "OUTPUT" (rect 1 0 39 10)(font "Arial" (font_size 6)))
@@ -437,10 +453,6 @@ applicable agreement for further details.
 	)
 )
 (connector
-	(pt 144 224)
-	(pt 144 496)
-)
-(connector
 	(pt 136 496)
 	(pt 144 496)
 )
@@ -560,6 +572,34 @@ applicable agreement for further details.
 	(pt 344 120)
 	(pt 456 120)
 )
+(connector
+	(pt 208 280)
+	(pt 144 280)
+)
+(connector
+	(pt 144 224)
+	(pt 144 280)
+)
+(connector
+	(pt 208 296)
+	(pt 144 296)
+)
+(connector
+	(pt 144 280)
+	(pt 144 296)
+)
+(connector
+	(pt 208 312)
+	(pt 144 312)
+)
+(connector
+	(pt 144 296)
+	(pt 144 312)
+)
+(connector
+	(pt 144 312)
+	(pt 144 496)
+)
 (junction (pt 144 496))
 (junction (pt 368 496))
 (junction (pt 552 296))
@@ -568,3 +608,6 @@ applicable agreement for further details.
 (junction (pt 368 296))
 (junction (pt 368 312))
 (junction (pt 368 328))
+(junction (pt 144 280))
+(junction (pt 144 296))
+(junction (pt 144 312))

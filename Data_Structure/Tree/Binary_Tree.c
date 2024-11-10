@@ -38,7 +38,7 @@ int main(void)
     return 0;
 }
 
-Status CreateBiTree(BiTree *T) // 改为传递指针的指针
+Status CreateBiTree(BiTree *T)
 {
     TElemType ch;
     scanf("%d", &ch);

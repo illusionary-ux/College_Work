@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY THR2023063114
+set_global_assignment -name TOP_LEVEL_ENTITY Block1
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "16:58:33  NOVEMBER 08, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -48,12 +48,33 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name BDF_FILE THR2023063114.bdf
+set_global_assignment -name BDF_FILE ADDER.bdf
+set_global_assignment -name VHDL_FILE Vhdl1.vhd
+set_global_assignment -name BDF_FILE Block2.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE b2.vwf
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E6/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_global_assignment -name BDF_FILE Block1.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AF14 -to CLK
+set_location_assignment PIN_AB12 -to RST
+set_location_assignment PIN_AC18 -to CLK_1
+set_location_assignment PIN_Y17 -to CLK_2
+set_location_assignment PIN_AD17 -to CLK_4
+set_location_assignment PIN_Y18 -to CLK_8
+set_location_assignment PIN_W20 -to Y7N
+set_location_assignment PIN_Y19 -to Y6N
+set_location_assignment PIN_V16 -to Y0N
+set_location_assignment PIN_W16 -to Y1N
+set_location_assignment PIN_V17 -to Y2N
+set_location_assignment PIN_V18 -to Y3N
+set_location_assignment PIN_W17 -to Y4N
+set_location_assignment PIN_W19 -to Y5N
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name BDF_FILE ADDER.bdf
-set_global_assignment -name VHDL_FILE Vhdl2.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE Waveform.vwf

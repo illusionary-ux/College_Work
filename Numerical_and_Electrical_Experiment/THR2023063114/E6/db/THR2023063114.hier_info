@@ -1,71 +1,21 @@
-|THR2023063114
-Q0 <= 74112:inst.1Q
-CP => 74112:inst.1CLK
-Q2 <= 74112:inst2.1Q
-BO <= inst4.DB_MAX_OUTPUT_PORT_TYPE
-Q1 <= 74112:inst1.1Q
-Y0N <= 74138:inst6.Y0N
-Y1N <= 74138:inst6.Y1N
-Y2N <= 74138:inst6.Y2N
-Y3N <= 74138:inst6.Y3N
-Y4N <= 74138:inst6.Y4N
-Y5N <= 74138:inst6.Y5N
-Y6N <= 74138:inst6.Y6N
-Y7N <= 74138:inst6.Y7N
+|Block1
+Y0N <= 74138:inst2.Y0N
+RST => Vhdl1:inst.rst_n
+CLK => Vhdl1:inst.Clk_50M
+Y1N <= 74138:inst2.Y1N
+Y2N <= 74138:inst2.Y2N
+Y3N <= 74138:inst2.Y3N
+Y4N <= 74138:inst2.Y4N
+Y5N <= 74138:inst2.Y5N
+Y6N <= 74138:inst2.Y6N
+Y7N <= 74138:inst2.Y7N
+CLK_4 <= Vhdl1:inst.clk_4Hz
+CLK_8 <= Vhdl1:inst.clk_8Hz
+CLK_2 <= Vhdl1:inst.clk_2Hz
+CLK_1 <= Vhdl1:inst.clk_1Hz
 
 
-|THR2023063114|74112:inst
-2QN <= 5.DB_MAX_OUTPUT_PORT_TYPE
-2PRN => 7.PRESET
-2CLRN => 7.ACLR
-2K => 7.IN0
-2J => 7.IN1
-2CLK => 24.IN0
-2Q <= 7.DB_MAX_OUTPUT_PORT_TYPE
-1QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
-1PRN => 8.PRESET
-1CLRN => 8.ACLR
-1K => 8.IN0
-1J => 8.IN1
-1CLK => 23.IN0
-1Q <= 8.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|THR2023063114|74112:inst2
-2QN <= 5.DB_MAX_OUTPUT_PORT_TYPE
-2PRN => 7.PRESET
-2CLRN => 7.ACLR
-2K => 7.IN0
-2J => 7.IN1
-2CLK => 24.IN0
-2Q <= 7.DB_MAX_OUTPUT_PORT_TYPE
-1QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
-1PRN => 8.PRESET
-1CLRN => 8.ACLR
-1K => 8.IN0
-1J => 8.IN1
-1CLK => 23.IN0
-1Q <= 8.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|THR2023063114|74112:inst1
-2QN <= 5.DB_MAX_OUTPUT_PORT_TYPE
-2PRN => 7.PRESET
-2CLRN => 7.ACLR
-2K => 7.IN0
-2J => 7.IN1
-2CLK => 24.IN0
-2Q <= 7.DB_MAX_OUTPUT_PORT_TYPE
-1QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
-1PRN => 8.PRESET
-1CLRN => 8.ACLR
-1K => 8.IN0
-1J => 8.IN1
-1CLK => 23.IN0
-1Q <= 8.DB_MAX_OUTPUT_PORT_TYPE
-
-
-|THR2023063114|74138:inst6
+|Block1|74138:inst2
 Y7N <= 22.DB_MAX_OUTPUT_PORT_TYPE
 G1 => 8.IN0
 G2BN => 1.IN1
@@ -80,5 +30,139 @@ Y3N <= 18.DB_MAX_OUTPUT_PORT_TYPE
 Y2N <= 17.DB_MAX_OUTPUT_PORT_TYPE
 Y1N <= 16.DB_MAX_OUTPUT_PORT_TYPE
 Y0N <= 15.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|ADDER:inst1
+A <= 74112:inst.1Q
+CP => 74112:inst.1CLK
+N <= 74112:inst1.1Q
+C <= 74112:inst2.1Q
+
+
+|Block1|ADDER:inst1|74112:inst
+2QN <= 5.DB_MAX_OUTPUT_PORT_TYPE
+2PRN => 7.PRESET
+2CLRN => 7.ACLR
+2K => 7.IN0
+2J => 7.IN1
+2CLK => 24.IN0
+2Q <= 7.DB_MAX_OUTPUT_PORT_TYPE
+1QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+1PRN => 8.PRESET
+1CLRN => 8.ACLR
+1K => 8.IN0
+1J => 8.IN1
+1CLK => 23.IN0
+1Q <= 8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|ADDER:inst1|74112:inst1
+2QN <= 5.DB_MAX_OUTPUT_PORT_TYPE
+2PRN => 7.PRESET
+2CLRN => 7.ACLR
+2K => 7.IN0
+2J => 7.IN1
+2CLK => 24.IN0
+2Q <= 7.DB_MAX_OUTPUT_PORT_TYPE
+1QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+1PRN => 8.PRESET
+1CLRN => 8.ACLR
+1K => 8.IN0
+1J => 8.IN1
+1CLK => 23.IN0
+1Q <= 8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|ADDER:inst1|74112:inst2
+2QN <= 5.DB_MAX_OUTPUT_PORT_TYPE
+2PRN => 7.PRESET
+2CLRN => 7.ACLR
+2K => 7.IN0
+2J => 7.IN1
+2CLK => 24.IN0
+2Q <= 7.DB_MAX_OUTPUT_PORT_TYPE
+1QN <= 6.DB_MAX_OUTPUT_PORT_TYPE
+1PRN => 8.PRESET
+1CLRN => 8.ACLR
+1K => 8.IN0
+1J => 8.IN1
+1CLK => 23.IN0
+1Q <= 8.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Block1|Vhdl1:inst
+rst_n => clk_8Hz~reg0.ACLR
+rst_n => Count[0].ACLR
+rst_n => Count[1].ACLR
+rst_n => Count[2].ACLR
+rst_n => Count[3].ACLR
+rst_n => Count[4].ACLR
+rst_n => Count[5].ACLR
+rst_n => Count[6].ACLR
+rst_n => Count[7].ACLR
+rst_n => Count[8].ACLR
+rst_n => Count[9].ACLR
+rst_n => Count[10].ACLR
+rst_n => Count[11].ACLR
+rst_n => Count[12].ACLR
+rst_n => Count[13].ACLR
+rst_n => Count[14].ACLR
+rst_n => Count[15].ACLR
+rst_n => Count[16].ACLR
+rst_n => Count[17].ACLR
+rst_n => Count[18].ACLR
+rst_n => Count[19].ACLR
+rst_n => Count[20].ACLR
+rst_n => Count[21].ACLR
+rst_n => Count[22].ACLR
+rst_n => Count[23].ACLR
+rst_n => Count[24].ACLR
+rst_n => Count[25].ACLR
+rst_n => Count[26].ACLR
+rst_n => Count[27].ACLR
+rst_n => Count[28].ACLR
+rst_n => Count[29].ACLR
+rst_n => Count[30].ACLR
+rst_n => Count[31].ACLR
+rst_n => clk_1Hz~reg0.ACLR
+rst_n => clk_2Hz~reg0.ACLR
+rst_n => clk_4Hz~reg0.ACLR
+Clk_50M => clk_8Hz~reg0.CLK
+Clk_50M => Count[0].CLK
+Clk_50M => Count[1].CLK
+Clk_50M => Count[2].CLK
+Clk_50M => Count[3].CLK
+Clk_50M => Count[4].CLK
+Clk_50M => Count[5].CLK
+Clk_50M => Count[6].CLK
+Clk_50M => Count[7].CLK
+Clk_50M => Count[8].CLK
+Clk_50M => Count[9].CLK
+Clk_50M => Count[10].CLK
+Clk_50M => Count[11].CLK
+Clk_50M => Count[12].CLK
+Clk_50M => Count[13].CLK
+Clk_50M => Count[14].CLK
+Clk_50M => Count[15].CLK
+Clk_50M => Count[16].CLK
+Clk_50M => Count[17].CLK
+Clk_50M => Count[18].CLK
+Clk_50M => Count[19].CLK
+Clk_50M => Count[20].CLK
+Clk_50M => Count[21].CLK
+Clk_50M => Count[22].CLK
+Clk_50M => Count[23].CLK
+Clk_50M => Count[24].CLK
+Clk_50M => Count[25].CLK
+Clk_50M => Count[26].CLK
+Clk_50M => Count[27].CLK
+Clk_50M => Count[28].CLK
+Clk_50M => Count[29].CLK
+Clk_50M => Count[30].CLK
+Clk_50M => Count[31].CLK
+clk_1Hz <= clk_1Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_2Hz <= clk_2Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_4Hz <= clk_4Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
+clk_8Hz <= clk_8Hz~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

@@ -1,0 +1,833 @@
+$comment
+	File created using the following command:
+		vcd file THR2023063114.msim.vcd -direction
+$end
+$date
+	Fri Nov 08 23:18:27 2024
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module Block1_vlg_vec_tst $end
+$var reg 1 ! CLK $end
+$var reg 1 " RST $end
+$var wire 1 # CLK_1 $end
+$var wire 1 $ CLK_2 $end
+$var wire 1 % CLK_4 $end
+$var wire 1 & CLK_8 $end
+$var wire 1 ' Y0N $end
+$var wire 1 ( Y1N $end
+$var wire 1 ) Y2N $end
+$var wire 1 * Y3N $end
+$var wire 1 + Y4N $end
+$var wire 1 , Y5N $end
+$var wire 1 - Y6N $end
+$var wire 1 . Y7N $end
+$var wire 1 / sampler $end
+$scope module i1 $end
+$var wire 1 0 gnd $end
+$var wire 1 1 vcc $end
+$var wire 1 2 unknown $end
+$var tri1 1 3 devclrn $end
+$var tri1 1 4 devpor $end
+$var tri1 1 5 devoe $end
+$var wire 1 6 ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 7 CLK~input_o $end
+$var wire 1 8 CLK~inputCLKENA0_outclk $end
+$var wire 1 9 inst|Add0~6 $end
+$var wire 1 : inst|Add0~89_sumout $end
+$var wire 1 ; RST~input_o $end
+$var wire 1 < inst|LessThan0~1_combout $end
+$var wire 1 = inst|LessThan0~0_combout $end
+$var wire 1 > inst|LessThan0~3_combout $end
+$var wire 1 ? inst|LessThan0~4_combout $end
+$var wire 1 @ inst|LessThan0~5_combout $end
+$var wire 1 A inst|LessThan0~2_combout $end
+$var wire 1 B inst|LessThan0~6_combout $end
+$var wire 1 C inst|Add0~17_sumout $end
+$var wire 1 D inst|Add0~90 $end
+$var wire 1 E inst|Add0~105_sumout $end
+$var wire 1 F inst|Add0~106 $end
+$var wire 1 G inst|Add0~101_sumout $end
+$var wire 1 H inst|Add0~102 $end
+$var wire 1 I inst|Add0~97_sumout $end
+$var wire 1 J inst|Add0~98 $end
+$var wire 1 K inst|Add0~93_sumout $end
+$var wire 1 L inst|Add0~94 $end
+$var wire 1 M inst|Add0~125_sumout $end
+$var wire 1 N inst|Add0~126 $end
+$var wire 1 O inst|Add0~121_sumout $end
+$var wire 1 P inst|Add0~122 $end
+$var wire 1 Q inst|Add0~117_sumout $end
+$var wire 1 R inst|Add0~118 $end
+$var wire 1 S inst|Add0~113_sumout $end
+$var wire 1 T inst|Add0~114 $end
+$var wire 1 U inst|Add0~109_sumout $end
+$var wire 1 V inst|LessThan0~7_combout $end
+$var wire 1 W inst|LessThan0~8_combout $end
+$var wire 1 X inst|Count~1_combout $end
+$var wire 1 Y inst|Add0~18 $end
+$var wire 1 Z inst|Add0~25_sumout $end
+$var wire 1 [ inst|Add0~26 $end
+$var wire 1 \ inst|Add0~21_sumout $end
+$var wire 1 ] inst|Add0~22 $end
+$var wire 1 ^ inst|Add0~45_sumout $end
+$var wire 1 _ inst|Add0~46 $end
+$var wire 1 ` inst|Add0~41_sumout $end
+$var wire 1 a inst|Add0~42 $end
+$var wire 1 b inst|Add0~37_sumout $end
+$var wire 1 c inst|Add0~38 $end
+$var wire 1 d inst|Add0~33_sumout $end
+$var wire 1 e inst|Add0~34 $end
+$var wire 1 f inst|Add0~29_sumout $end
+$var wire 1 g inst|Add0~30 $end
+$var wire 1 h inst|Add0~61_sumout $end
+$var wire 1 i inst|Add0~62 $end
+$var wire 1 j inst|Add0~57_sumout $end
+$var wire 1 k inst|Add0~58 $end
+$var wire 1 l inst|Add0~53_sumout $end
+$var wire 1 m inst|Add0~54 $end
+$var wire 1 n inst|Add0~49_sumout $end
+$var wire 1 o inst|Add0~50 $end
+$var wire 1 p inst|Add0~65_sumout $end
+$var wire 1 q inst|Add0~66 $end
+$var wire 1 r inst|Add0~13_sumout $end
+$var wire 1 s inst|Add0~14 $end
+$var wire 1 t inst|Add0~9_sumout $end
+$var wire 1 u inst|Add0~10 $end
+$var wire 1 v inst|Add0~85_sumout $end
+$var wire 1 w inst|Add0~86 $end
+$var wire 1 x inst|Add0~81_sumout $end
+$var wire 1 y inst|Add0~82 $end
+$var wire 1 z inst|Add0~77_sumout $end
+$var wire 1 { inst|Add0~78 $end
+$var wire 1 | inst|Add0~73_sumout $end
+$var wire 1 } inst|Add0~74 $end
+$var wire 1 ~ inst|Add0~69_sumout $end
+$var wire 1 !! inst|Add0~70 $end
+$var wire 1 "! inst|Add0~5_sumout $end
+$var wire 1 #! inst|LessThan0~9_combout $end
+$var wire 1 $! inst|Add0~110 $end
+$var wire 1 %! inst|Add0~1_sumout $end
+$var wire 1 &! inst|Count~0_combout $end
+$var wire 1 '! inst|clk_8Hz~0_combout $end
+$var wire 1 (! inst|clk_8Hz~q $end
+$var wire 1 )! inst|clk_4Hz~0_combout $end
+$var wire 1 *! inst|clk_4Hz~feeder_combout $end
+$var wire 1 +! inst|clk_4Hz~q $end
+$var wire 1 ,! inst|clk_2Hz~0_combout $end
+$var wire 1 -! inst|clk_2Hz~feeder_combout $end
+$var wire 1 .! inst|clk_2Hz~q $end
+$var wire 1 /! inst|clk_1Hz~0_combout $end
+$var wire 1 0! inst|clk_1Hz~q $end
+$var wire 1 1! inst1|inst|8~0_combout $end
+$var wire 1 2! inst1|inst|8~q $end
+$var wire 1 3! inst1|inst1|8~0_combout $end
+$var wire 1 4! inst1|inst1|8~q $end
+$var wire 1 5! inst1|inst2|8~q $end
+$var wire 1 6! inst1|inst2|8~0_combout $end
+$var wire 1 7! inst1|inst2|8~feeder_combout $end
+$var wire 1 8! inst1|inst2|8~DUPLICATE_q $end
+$var wire 1 9! inst2|15~0_combout $end
+$var wire 1 :! inst2|15~1_combout $end
+$var wire 1 ;! inst2|15~2_combout $end
+$var wire 1 <! inst2|15~3_combout $end
+$var wire 1 =! inst2|15~4_combout $end
+$var wire 1 >! inst2|15~5_combout $end
+$var wire 1 ?! inst2|15~6_combout $end
+$var wire 1 @! inst2|15~7_combout $end
+$var wire 1 A! inst|Count [31] $end
+$var wire 1 B! inst|Count [30] $end
+$var wire 1 C! inst|Count [29] $end
+$var wire 1 D! inst|Count [28] $end
+$var wire 1 E! inst|Count [27] $end
+$var wire 1 F! inst|Count [26] $end
+$var wire 1 G! inst|Count [25] $end
+$var wire 1 H! inst|Count [24] $end
+$var wire 1 I! inst|Count [23] $end
+$var wire 1 J! inst|Count [22] $end
+$var wire 1 K! inst|Count [21] $end
+$var wire 1 L! inst|Count [20] $end
+$var wire 1 M! inst|Count [19] $end
+$var wire 1 N! inst|Count [18] $end
+$var wire 1 O! inst|Count [17] $end
+$var wire 1 P! inst|Count [16] $end
+$var wire 1 Q! inst|Count [15] $end
+$var wire 1 R! inst|Count [14] $end
+$var wire 1 S! inst|Count [13] $end
+$var wire 1 T! inst|Count [12] $end
+$var wire 1 U! inst|Count [11] $end
+$var wire 1 V! inst|Count [10] $end
+$var wire 1 W! inst|Count [9] $end
+$var wire 1 X! inst|Count [8] $end
+$var wire 1 Y! inst|Count [7] $end
+$var wire 1 Z! inst|Count [6] $end
+$var wire 1 [! inst|Count [5] $end
+$var wire 1 \! inst|Count [4] $end
+$var wire 1 ]! inst|Count [3] $end
+$var wire 1 ^! inst|Count [2] $end
+$var wire 1 _! inst|Count [1] $end
+$var wire 1 `! inst|Count [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+1(
+1)
+1*
+1+
+1,
+1-
+1.
+x/
+00
+11
+x2
+13
+14
+15
+06
+07
+08
+09
+0:
+0;
+0<
+1=
+0>
+1?
+0@
+1A
+0B
+1C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+1V
+1W
+1X
+0Y
+0Z
+0[
+0\
+0]
+0^
+0_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+0i
+0j
+0k
+0l
+0m
+0n
+0o
+0p
+0q
+0r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+0}
+0~
+0!!
+0"!
+1#!
+0$!
+0%!
+0&!
+0'!
+0(!
+1)!
+1*!
+0+!
+1,!
+1-!
+0.!
+1/!
+00!
+11!
+02!
+13!
+04!
+05!
+16!
+17!
+08!
+19!
+0:!
+0;!
+0<!
+0=!
+0>!
+0?!
+0@!
+0`!
+0_!
+0^!
+0]!
+0\!
+0[!
+0Z!
+0Y!
+0X!
+0W!
+0V!
+0U!
+0T!
+0S!
+0R!
+0Q!
+0P!
+0O!
+0N!
+0M!
+0L!
+0K!
+0J!
+0I!
+0H!
+0G!
+0F!
+0E!
+0D!
+0C!
+0B!
+0A!
+$end
+#10000
+1!
+17
+18
+0/
+#20000
+0!
+07
+08
+1/
+#30000
+1!
+17
+18
+0/
+#40000
+0!
+07
+08
+1/
+#50000
+1!
+17
+18
+0/
+#60000
+0!
+07
+08
+1/
+#70000
+1!
+17
+18
+0/
+#80000
+0!
+07
+08
+1/
+#90000
+1!
+17
+18
+0/
+#100000
+0!
+07
+08
+1/
+#110000
+1!
+17
+18
+0/
+#120000
+0!
+07
+08
+1/
+#130000
+1!
+17
+18
+0/
+#140000
+0!
+07
+08
+1/
+#150000
+1!
+17
+18
+0/
+#160000
+0!
+07
+08
+1/
+#170000
+1!
+17
+18
+0/
+#180000
+0!
+07
+08
+1/
+#190000
+1!
+17
+18
+0/
+#200000
+0!
+07
+08
+1/
+#210000
+1!
+17
+18
+0/
+#220000
+0!
+07
+08
+1/
+#230000
+1!
+17
+18
+0/
+#240000
+0!
+07
+08
+1/
+#250000
+1!
+17
+18
+0/
+#260000
+0!
+07
+08
+1/
+#270000
+1!
+17
+18
+0/
+#280000
+0!
+07
+08
+1/
+#290000
+1!
+17
+18
+0/
+#300000
+0!
+07
+08
+1/
+#310000
+1!
+17
+18
+0/
+#320000
+0!
+07
+08
+1/
+#330000
+1!
+17
+18
+0/
+#340000
+0!
+07
+08
+1/
+#350000
+1!
+17
+18
+0/
+#360000
+0!
+07
+08
+1/
+#370000
+1!
+17
+18
+0/
+#380000
+0!
+07
+08
+1/
+#390000
+1!
+17
+18
+0/
+#400000
+0!
+07
+08
+1/
+#410000
+1!
+17
+18
+0/
+#420000
+0!
+07
+08
+1/
+#430000
+1!
+17
+18
+0/
+#440000
+0!
+07
+08
+1/
+#450000
+1!
+17
+18
+0/
+#460000
+0!
+07
+08
+1/
+#470000
+1!
+17
+18
+0/
+#480000
+0!
+07
+08
+1/
+#490000
+1!
+17
+18
+0/
+#500000
+0!
+07
+08
+1/
+#510000
+1!
+17
+18
+0/
+#520000
+0!
+07
+08
+1/
+#530000
+1!
+17
+18
+0/
+#540000
+0!
+07
+08
+1/
+#550000
+1!
+17
+18
+0/
+#560000
+0!
+07
+08
+1/
+#570000
+1!
+17
+18
+0/
+#580000
+0!
+07
+08
+1/
+#590000
+1!
+17
+18
+0/
+#600000
+0!
+07
+08
+1/
+#610000
+1!
+17
+18
+0/
+#620000
+0!
+07
+08
+1/
+#630000
+1!
+17
+18
+0/
+#640000
+0!
+07
+08
+1/
+#650000
+1!
+17
+18
+0/
+#660000
+0!
+07
+08
+1/
+#670000
+1!
+17
+18
+0/
+#680000
+0!
+07
+08
+1/
+#690000
+1!
+17
+18
+0/
+#700000
+0!
+07
+08
+1/
+#710000
+1!
+17
+18
+0/
+#720000
+0!
+07
+08
+1/
+#730000
+1!
+17
+18
+0/
+#740000
+0!
+07
+08
+1/
+#750000
+1!
+17
+18
+0/
+#760000
+0!
+07
+08
+1/
+#770000
+1!
+17
+18
+0/
+#780000
+0!
+07
+08
+1/
+#790000
+1!
+17
+18
+0/
+#800000
+0!
+07
+08
+1/
+#810000
+1!
+17
+18
+0/
+#820000
+0!
+07
+08
+1/
+#830000
+1!
+17
+18
+0/
+#840000
+0!
+07
+08
+1/
+#850000
+1!
+17
+18
+0/
+#860000
+0!
+07
+08
+1/
+#870000
+1!
+17
+18
+0/
+#880000
+0!
+07
+08
+1/
+#890000
+1!
+17
+18
+0/
+#900000
+0!
+07
+08
+1/
+#910000
+1!
+17
+18
+0/
+#920000
+0!
+07
+08
+1/
+#930000
+1!
+17
+18
+0/
+#940000
+0!
+07
+08
+1/
+#950000
+1!
+17
+18
+0/
+#960000
+0!
+07
+08
+1/
+#970000
+1!
+17
+18
+0/
+#980000
+0!
+07
+08
+1/
+#990000
+1!
+17
+18
+0/
+#1000000
