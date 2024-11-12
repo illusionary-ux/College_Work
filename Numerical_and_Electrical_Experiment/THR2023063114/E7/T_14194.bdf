@@ -23,7 +23,7 @@ applicable agreement for further details.
 	(input)
 	(rect 112 344 280 360)
 	(text "INPUT" (rect 125 0 153 10)(font "Arial" (font_size 6)))
-	(text "CC" (rect 5 0 22 12)(font "Arial" ))
+	(text "CC" (rect 5 0 21 12)(font "Arial" ))
 	(pt 168 8)
 	(drawing
 		(line (pt 84 12)(pt 109 12))
@@ -246,7 +246,7 @@ applicable agreement for further details.
 (symbol
 	(rect 496 88 544 152)
 	(text "NAND2" (rect 0 32 10 63)(font "Arial" (font_size 6))(vertical))
-	(text "inst" (rect 37 44 49 61)(font "Arial" )(vertical))
+	(text "inst22" (rect 37 44 49 73)(font "Arial" )(vertical))
 	(port
 		(pt 32 64)
 		(input)

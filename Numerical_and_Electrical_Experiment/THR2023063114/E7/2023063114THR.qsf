@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY CNT24
+set_global_assignment -name TOP_LEVEL_ENTITY 2023063114THR
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "08:45:16  NOVEMBER 12, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -48,11 +48,36 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
 set_global_assignment -name BDF_FILE CNT24.bdf
+set_global_assignment -name BDF_FILE T_14194.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE CNT24.vwf
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E7/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_V18 -to Q0
+set_global_assignment -name BDF_FILE 2023063114THR.bdf
 set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
 set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
 set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_AJ29 -to H0
+set_location_assignment PIN_AH29 -to H1
+set_location_assignment PIN_AH30 -to H2
+set_location_assignment PIN_AG30 -to H3
+set_location_assignment PIN_AF29 -to H4
+set_location_assignment PIN_AF30 -to H5
+set_location_assignment PIN_AD27 -to H6
+set_location_assignment PIN_AA14 -to CF
+set_location_assignment PIN_AE26 -to D0
+set_location_assignment PIN_AE27 -to D1
+set_location_assignment PIN_AE28 -to D2
+set_location_assignment PIN_AG27 -to D3
+set_location_assignment PIN_AF28 -to D4
+set_location_assignment PIN_AG28 -to D5
+set_location_assignment PIN_AH28 -to D6
+set_location_assignment PIN_AA15 -to CC
+set_location_assignment PIN_V17 -to Q5
+set_location_assignment PIN_W16 -to Q6
+set_location_assignment PIN_V16 -to Q7
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
-set_global_assignment -name BDF_FILE T_14194.bdf

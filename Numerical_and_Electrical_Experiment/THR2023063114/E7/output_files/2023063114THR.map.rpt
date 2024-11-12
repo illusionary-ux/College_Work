@@ -1,5 +1,5 @@
 Analysis & Synthesis report for 2023063114THR
-Tue Nov 12 08:46:42 2024
+Tue Nov 12 15:42:59 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -41,14 +41,14 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Tue Nov 12 08:46:42 2024       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 12 15:42:59 2024       ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                   ; 2023063114THR                               ;
-; Top-level Entity Name           ; CNT24                                       ;
+; Top-level Entity Name           ; 2023063114THR                               ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 8                                           ;
-; Total pins                      ; 10                                          ;
+; Total registers                 ; 12                                          ;
+; Total pins                      ; 28                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; CNT24              ; 2023063114THR      ;
+; Top-level entity name                                                           ; 2023063114THR      ; 2023063114THR      ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -165,50 +165,55 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                   ; Library ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
-; CNT24.bdf                        ; yes             ; User Block Diagram/Schematic File  ; D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E7/CNT24.bdf ;         ;
-; 74160.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/others/maxplus2/74160.bdf                     ;         ;
-+----------------------------------+-----------------+------------------------------------+--------------------------------------------------------------------------------+---------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                     ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                           ; Library ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
+; 2023063114THR.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E7/2023063114THR.bdf ;         ;
+; 74160.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/others/maxplus2/74160.bdf                             ;         ;
+; 7447.bdf                         ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/others/maxplus2/7447.bdf                              ;         ;
+; 74194.bdf                        ; yes             ; Megafunction                       ; c:/altera/13.1/quartus/libraries/others/maxplus2/74194.bdf                             ;         ;
++----------------------------------+-----------------+------------------------------------+----------------------------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                ;
-+---------------------------------------------+--------------+
-; Resource                                    ; Usage        ;
-+---------------------------------------------+--------------+
-; Estimate of Logic utilization (ALMs needed) ; 6            ;
-;                                             ;              ;
-; Combinational ALUT usage for logic          ; 9            ;
-;     -- 7 input functions                    ; 0            ;
-;     -- 6 input functions                    ; 3            ;
-;     -- 5 input functions                    ; 2            ;
-;     -- 4 input functions                    ; 2            ;
-;     -- <=3 input functions                  ; 2            ;
-;                                             ;              ;
-; Dedicated logic registers                   ; 8            ;
-;                                             ;              ;
-; I/O pins                                    ; 10           ;
-; Total DSP Blocks                            ; 0            ;
-; Maximum fan-out node                        ; 74160:inst|6 ;
-; Maximum fan-out                             ; 9            ;
-; Total fan-out                               ; 81           ;
-; Average fan-out                             ; 2.19         ;
-+---------------------------------------------+--------------+
++-------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                 ;
++---------------------------------------------+---------------+
+; Resource                                    ; Usage         ;
++---------------------------------------------+---------------+
+; Estimate of Logic utilization (ALMs needed) ; 14            ;
+;                                             ;               ;
+; Combinational ALUT usage for logic          ; 24            ;
+;     -- 7 input functions                    ; 0             ;
+;     -- 6 input functions                    ; 3             ;
+;     -- 5 input functions                    ; 1             ;
+;     -- 4 input functions                    ; 12            ;
+;     -- <=3 input functions                  ; 8             ;
+;                                             ;               ;
+; Dedicated logic registers                   ; 12            ;
+;                                             ;               ;
+; I/O pins                                    ; 28            ;
+; Total DSP Blocks                            ; 0             ;
+; Maximum fan-out node                        ; 74160:ist88|6 ;
+; Maximum fan-out                             ; 17            ;
+; Total fan-out                               ; 173           ;
+; Average fan-out                             ; 1.88          ;
++---------------------------------------------+---------------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                       ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; |CNT24                     ; 9 (0)             ; 8 (0)        ; 0                 ; 0          ; 10   ; 0            ; |CNT24              ; work         ;
-;    |74160:inst1|           ; 5 (5)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |CNT24|74160:inst1  ; work         ;
-;    |74160:inst|            ; 4 (4)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |CNT24|74160:inst   ; work         ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                              ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------+--------------+
+; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name        ; Library Name ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------+--------------+
+; |2023063114THR             ; 24 (1)            ; 12 (0)       ; 0                 ; 0          ; 28   ; 0            ; |2023063114THR             ; work         ;
+;    |74160:IS6|             ; 5 (5)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |2023063114THR|74160:IS6   ; work         ;
+;    |74160:ist88|           ; 4 (4)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |2023063114THR|74160:ist88 ; work         ;
+;    |74194:inst1|           ; 0 (0)             ; 4 (4)        ; 0                 ; 0          ; 0    ; 0            ; |2023063114THR|74194:inst1 ; work         ;
+;    |7447:ist66|            ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |2023063114THR|7447:ist66  ; work         ;
+;    |7447:ist77|            ; 7 (7)             ; 0 (0)        ; 0                 ; 0          ; 0    ; 0            ; |2023063114THR|7447:ist77  ; work         ;
++----------------------------+-------------------+--------------+-------------------+------------+------+--------------+----------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -217,12 +222,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 8     ;
+; Total registers                              ; 12    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 8     ;
+; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 1     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -242,25 +247,35 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Tue Nov 12 08:46:40 2024
+    Info: Processing started: Tue Nov 12 15:42:58 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off 2023063114THR -c 2023063114THR
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file cnt24.bdf
     Info (12023): Found entity 1: CNT24
-Info (12127): Elaborating entity "CNT24" for the top level hierarchy
-Info (12128): Elaborating entity "74160" for hierarchy "74160:inst"
-Info (12130): Elaborated megafunction instantiation "74160:inst"
+Info (12021): Found 1 design units, including 1 entities, in source file t_14194.bdf
+    Info (12023): Found entity 1: T_14194
+Info (12021): Found 1 design units, including 1 entities, in source file 2023063114thr.bdf
+    Info (12023): Found entity 1: 2023063114THR
+Info (12127): Elaborating entity "2023063114THR" for the top level hierarchy
+Warning (275011): Block or symbol "GND" of instance "inst7" overlaps another block or symbol
+Warning (275008): Primitive "GND" of instance "inst8" not used
+Info (12128): Elaborating entity "74160" for hierarchy "74160:ist88"
+Info (12130): Elaborated megafunction instantiation "74160:ist88"
+Info (12128): Elaborating entity "7447" for hierarchy "7447:ist66"
+Info (12130): Elaborated megafunction instantiation "7447:ist66"
+Info (12128): Elaborating entity "74194" for hierarchy "74194:inst1"
+Info (12130): Elaborated megafunction instantiation "74194:inst1"
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 19 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 55 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
-    Info (21059): Implemented 8 output pins
-    Info (21061): Implemented 9 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4735 megabytes
-    Info: Processing ended: Tue Nov 12 08:46:42 2024
-    Info: Elapsed time: 00:00:02
+    Info (21059): Implemented 26 output pins
+    Info (21061): Implemented 27 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 4715 megabytes
+    Info: Processing ended: Tue Nov 12 15:42:59 2024
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 

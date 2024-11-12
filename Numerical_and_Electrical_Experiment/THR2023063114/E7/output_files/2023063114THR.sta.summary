@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'CF'
+Slack : -0.406
+TNS   : -3.507
+
+Type  : Slow 1100mV 85C Model Setup 'CC'
+Slack : -0.093
+TNS   : -0.181
+
+Type  : Slow 1100mV 85C Model Hold 'CC'
+Slack : 0.239
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'CF'
+Slack : 0.343
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CF'
+Slack : -0.394
+TNS   : -9.821
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CC'
+Slack : -0.394
+TNS   : -4.203
+
+Type  : Slow 1100mV 0C Model Setup 'CF'
+Slack : -0.439
+TNS   : -3.826
+
+Type  : Slow 1100mV 0C Model Setup 'CC'
+Slack : -0.122
+TNS   : -0.238
+
+Type  : Slow 1100mV 0C Model Hold 'CC'
+Slack : 0.219
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'CF'
+Slack : 0.330
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CF'
+Slack : -0.394
+TNS   : -9.261
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CC'
+Slack : -0.394
+TNS   : -4.022
+
+Type  : Fast 1100mV 85C Model Setup 'CF'
+Slack : 0.214
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'CC'
+Slack : 0.376
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CC'
+Slack : 0.141
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'CF'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CF'
+Slack : -0.343
+TNS   : -4.981
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CC'
+Slack : -0.343
+TNS   : -2.248
+
+Type  : Fast 1100mV 0C Model Setup 'CF'
+Slack : 0.256
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CC'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CC'
+Slack : 0.126
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CF'
+Slack : 0.171
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CC'
+Slack : -0.335
+TNS   : -2.207
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CF'
+Slack : -0.331
+TNS   : -4.807
+
+------------------------------------------------------------

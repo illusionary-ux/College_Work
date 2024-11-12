@@ -1,0 +1,85 @@
+m255
+K3
+13
+cModel Technology
+Z0 dD:\College_Work\Numerical_and_Electrical_Experiment\THR2023063114\E7\simulation\qsim
+vCNT24
+Z1 !s100 W9UnX4FgC=V;7LPmHlMI]3
+Z2 IN:mOd>T;_gGOo;YbMN@V:0
+Z3 VWomD^82Do:C9UKYmQD:zB2
+Z4 dD:\College_Work\Numerical_and_Electrical_Experiment\THR2023063114\E7\simulation\qsim
+Z5 w1731392452
+Z6 82023063114THR.vo
+Z7 F2023063114THR.vo
+L0 31
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -work|work|2023063114THR.vo|
+Z10 o-work work -O0
+Z11 n@c@n@t24
+!i10b 1
+!s85 0
+Z12 !s108 1731392453.423000
+Z13 !s107 2023063114THR.vo|
+!s101 -O0
+vCNT24_vlg_check_tst
+!i10b 1
+Z14 !s100 >gK`eROnPz4H>eV=4SThV0
+Z15 IA=MD0KG@1Sa@DeJHPehHK3
+Z16 V@;1^:F96e<lOd0JfO[H5=0
+R4
+Z17 w1731392451
+Z18 8CNT24.vwf.vt
+Z19 FCNT24.vwf.vt
+L0 59
+R8
+r1
+!s85 0
+31
+Z20 !s108 1731392453.525000
+Z21 !s107 CNT24.vwf.vt|
+Z22 !s90 -work|work|CNT24.vwf.vt|
+!s101 -O0
+R10
+Z23 n@c@n@t24_vlg_check_tst
+vCNT24_vlg_sample_tst
+!i10b 1
+Z24 !s100 79[So?CHM9RCSeXecjPad0
+Z25 I7Oi14og2<P;<nQfJKV9Mg3
+Z26 VOEME[bcHdEa`Tih6<fGX=1
+R4
+R17
+R18
+R19
+L0 29
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z27 n@c@n@t24_vlg_sample_tst
+vCNT24_vlg_vec_tst
+!i10b 1
+!s100 <`J20UJW6P3chgO6IhjZi1
+ISZ1TngMzcgCXHTl3a5>n<3
+Z28 V`o;`>e1B:HSaJARSJo7NH0
+R4
+R17
+R18
+R19
+Z29 L0 343
+R8
+r1
+!s85 0
+31
+R20
+R21
+R22
+!s101 -O0
+R10
+Z30 n@c@n@t24_vlg_vec_tst
