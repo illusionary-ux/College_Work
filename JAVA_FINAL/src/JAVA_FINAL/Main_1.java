@@ -1,7 +1,7 @@
 package JAVA_FINAL;
 import java.util.*;
 
-public class Main {
+public class Main_1 {
 
 	public static void main(String[] args) {
 		int num;
