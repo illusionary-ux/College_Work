@@ -1,0 +1,15 @@
+|sequence_generator
+clk => sout~reg0.CLK
+clk => sync~reg0.CLK
+clk => index[0].CLK
+clk => index[1].CLK
+clk => index[2].CLK
+rst => sync~reg0.PRESET
+rst => index[0].ACLR
+rst => index[1].ACLR
+rst => index[2].ACLR
+rst => sout~reg0.ENA
+sout << sout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sync << sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
