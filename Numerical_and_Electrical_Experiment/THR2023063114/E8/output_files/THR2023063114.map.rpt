@@ -1,5 +1,5 @@
 Analysis & Synthesis report for THR2023063114
-Mon Nov 18 20:18:33 2024
+Tue Nov 19 15:04:40 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -42,13 +42,13 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Mon Nov 18 20:18:33 2024       ;
+; Analysis & Synthesis Status     ; Successful - Tue Nov 19 15:04:40 2024       ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                   ; THR2023063114                               ;
-; Top-level Entity Name           ; sequence_generator                          ;
+; Top-level Entity Name           ; THR2023063114                               ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 5                                           ;
+; Total registers                 ; 38                                          ;
 ; Total pins                      ; 4                                           ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
@@ -68,7 +68,7 @@ applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; sequence_generator ; THR2023063114      ;
+; Top-level entity name                                                           ; THR2023063114      ; THR2023063114      ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -167,47 +167,51 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                       ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                                                ; Library ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
-; sequence_generator.vhd           ; yes             ; User VHDL File  ; D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E8/sequence_generator.vhd ;         ;
-+----------------------------------+-----------------+-----------------+---------------------------------------------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                          ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                          ; File Name with Absolute Path                                                                ; Library ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------+---------+
+; sequence_generator.vhd           ; yes             ; User VHDL File                     ; D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E8/sequence_generator.vhd ;         ;
+; LowFreqClk.vhd                   ; yes             ; User VHDL File                     ; D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E8/LowFreqClk.vhd         ;         ;
+; THR2023063114.bdf                ; yes             ; User Block Diagram/Schematic File  ; D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E8/THR2023063114.bdf      ;         ;
++----------------------------------+-----------------+------------------------------------+---------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimate of Logic utilization (ALMs needed) ; 3        ;
-;                                             ;          ;
-; Combinational ALUT usage for logic          ; 5        ;
-;     -- 7 input functions                    ; 0        ;
-;     -- 6 input functions                    ; 0        ;
-;     -- 5 input functions                    ; 1        ;
-;     -- 4 input functions                    ; 0        ;
-;     -- <=3 input functions                  ; 4        ;
-;                                             ;          ;
-; Dedicated logic registers                   ; 5        ;
-;                                             ;          ;
-; I/O pins                                    ; 4        ;
-; Total DSP Blocks                            ; 0        ;
-; Maximum fan-out node                        ; index[0] ;
-; Maximum fan-out                             ; 5        ;
-; Total fan-out                               ; 34       ;
-; Average fan-out                             ; 1.89     ;
-+---------------------------------------------+----------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimate of Logic utilization (ALMs needed) ; 26        ;
+;                                             ;           ;
+; Combinational ALUT usage for logic          ; 46        ;
+;     -- 7 input functions                    ; 0         ;
+;     -- 6 input functions                    ; 6         ;
+;     -- 5 input functions                    ; 0         ;
+;     -- 4 input functions                    ; 0         ;
+;     -- <=3 input functions                  ; 40        ;
+;                                             ;           ;
+; Dedicated logic registers                   ; 38        ;
+;                                             ;           ;
+; I/O pins                                    ; 4         ;
+; Total DSP Blocks                            ; 0         ;
+; Maximum fan-out node                        ; RES~input ;
+; Maximum fan-out                             ; 38        ;
+; Total fan-out                               ; 267       ;
+; Average fan-out                             ; 2.90      ;
++---------------------------------------------+-----------+
 
 
-+-----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                       ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; |sequence_generator        ; 5 (5)             ; 5 (5)        ; 0                 ; 0          ; 4    ; 0            ; |sequence_generator ; work         ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                              ;
++-------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------+--------------+
+; Compilation Hierarchy Node    ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Library Name ;
++-------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------+--------------+
+; |THR2023063114                ; 46 (0)            ; 38 (0)       ; 0                 ; 0          ; 4    ; 0            ; |THR2023063114                          ; work         ;
+;    |LowFreqClk:inst|          ; 41 (41)           ; 33 (33)      ; 0                 ; 0          ; 0    ; 0            ; |THR2023063114|LowFreqClk:inst          ; work         ;
+;    |sequence_generator:inst1| ; 5 (5)             ; 5 (5)        ; 0                 ; 0          ; 0    ; 0            ; |THR2023063114|sequence_generator:inst1 ; work         ;
++-------------------------------+-------------------+--------------+-------------------+------------+------+--------------+-----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -216,12 +220,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 5     ;
-; Number of registers using Synchronous Clear  ; 0     ;
+; Total registers                              ; 38    ;
+; Number of registers using Synchronous Clear  ; 30    ;
 ; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 4     ;
+; Number of registers using Asynchronous Clear ; 37    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
+; Number of registers using Clock Enable       ; 1     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -231,7 +235,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; sync~reg0                              ; 1       ;
+; sequence_generator:inst1|sync          ; 1       ;
 ; Total number of inverted registers = 1 ;         ;
 +----------------------------------------+---------+
 
@@ -251,7 +255,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Mon Nov 18 20:18:28 2024
+    Info: Processing started: Tue Nov 19 15:04:38 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off THR2023063114 -c THR2023063114
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
 Info (12021): Found 2 design units, including 1 entities, in source file sequence_generator.vhd
@@ -259,19 +263,29 @@ Info (12021): Found 2 design units, including 1 entities, in source file sequenc
     Info (12023): Found entity 1: sequence_generator
 Info (12021): Found 1 design units, including 1 entities, in source file sequence_generator_test.bdf
     Info (12023): Found entity 1: sequence_generator_test
-Info (12127): Elaborating entity "sequence_generator" for the top level hierarchy
+Info (12021): Found 2 design units, including 1 entities, in source file lowfreqclk.vhd
+    Info (12022): Found design unit 1: LowFreqClk-bhv
+    Info (12023): Found entity 1: LowFreqClk
+Info (12021): Found 1 design units, including 1 entities, in source file thr2023063114.bdf
+    Info (12023): Found entity 1: THR2023063114
+Info (12127): Elaborating entity "THR2023063114" for the top level hierarchy
+Info (12128): Elaborating entity "sequence_generator" for hierarchy "sequence_generator:inst1"
 Warning (10540): VHDL Signal Declaration warning at sequence_generator.vhd(14): used explicit default value for signal "sequence" because signal was never assigned a value
+Info (12128): Elaborating entity "LowFreqClk" for hierarchy "LowFreqClk:inst"
+Critical Warning (18061): Ignored Power-Up Level option on the following registers
+    Critical Warning (18010): Register LowFreqClk:inst|Count[31] will power up to Low
+    Critical Warning (18010): Register LowFreqClk:inst|Count[0] will power up to Low
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 9 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 50 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 2 input pins
     Info (21059): Implemented 2 output pins
-    Info (21061): Implemented 5 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4743 megabytes
-    Info: Processing ended: Mon Nov 18 20:18:33 2024
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:01
+    Info (21061): Implemented 46 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 4 warnings
+    Info: Peak virtual memory: 4755 megabytes
+    Info: Processing ended: Tue Nov 19 15:04:40 2024
+    Info: Elapsed time: 00:00:02
+    Info: Total CPU time (on all processors): 00:00:00
 
 

@@ -11,7 +11,7 @@ entity sequence_generator is
 end sequence_generator;
 
 architecture Behavioral of sequence_generator is
-    signal sequence : STD_LOGIC_VECTOR(7 downto 0) := "01101010"; -- 定义序列
+    signal sequence : STD_LOGIC_VECTOR(0 to 7) := "01101010"; -- 定义序列
     signal index : integer range 0 to 7 := 0;                    -- 当前序列索引
 begin
     process(clk, rst)

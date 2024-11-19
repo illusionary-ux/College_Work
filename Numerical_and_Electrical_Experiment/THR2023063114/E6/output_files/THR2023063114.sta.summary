@@ -2,339 +2,147 @@
 TimeQuest Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1100mV 85C Model Setup 'CLK'
-Slack : -3.780
-TNS   : -83.671
+Type  : Slow 1100mV 85C Model Setup 'CP'
+Slack : -0.382
+TNS   : -0.382
 
-Type  : Slow 1100mV 85C Model Setup 'Vhdl1:inst|clk_1Hz'
-Slack : -0.388
-TNS   : -0.388
+Type  : Slow 1100mV 85C Model Setup '74112:inst1|8'
+Slack : -0.370
+TNS   : -0.735
 
-Type  : Slow 1100mV 85C Model Setup 'ADDER:inst1|74112:inst1|8'
-Slack : -0.359
-TNS   : -0.713
+Type  : Slow 1100mV 85C Model Setup '74112:inst|8'
+Slack : -0.148
+TNS   : -0.148
 
-Type  : Slow 1100mV 85C Model Setup 'Vhdl1:inst|clk_4Hz'
-Slack : -0.357
-TNS   : -0.357
+Type  : Slow 1100mV 85C Model Hold 'CP'
+Slack : -2.768
+TNS   : -2.768
 
-Type  : Slow 1100mV 85C Model Setup 'Vhdl1:inst|clk_8Hz'
-Slack : -0.292
-TNS   : -0.292
+Type  : Slow 1100mV 85C Model Hold '74112:inst|8'
+Slack : -0.597
+TNS   : -0.597
 
-Type  : Slow 1100mV 85C Model Setup 'Vhdl1:inst|clk_2Hz'
-Slack : -0.124
-TNS   : -0.124
-
-Type  : Slow 1100mV 85C Model Setup 'ADDER:inst1|74112:inst|8'
-Slack : -0.045
-TNS   : -0.045
-
-Type  : Slow 1100mV 85C Model Hold 'CLK'
-Slack : -1.495
-TNS   : -1.495
-
-Type  : Slow 1100mV 85C Model Hold 'Vhdl1:inst|clk_8Hz'
-Slack : -0.681
-TNS   : -0.681
-
-Type  : Slow 1100mV 85C Model Hold 'Vhdl1:inst|clk_1Hz'
-Slack : -0.680
-TNS   : -0.680
-
-Type  : Slow 1100mV 85C Model Hold 'Vhdl1:inst|clk_2Hz'
-Slack : -0.680
-TNS   : -0.680
-
-Type  : Slow 1100mV 85C Model Hold 'ADDER:inst1|74112:inst|8'
-Slack : -0.622
-TNS   : -0.622
-
-Type  : Slow 1100mV 85C Model Hold 'Vhdl1:inst|clk_4Hz'
-Slack : -0.521
-TNS   : -0.521
-
-Type  : Slow 1100mV 85C Model Hold 'ADDER:inst1|74112:inst1|8'
-Slack : 0.360
+Type  : Slow 1100mV 85C Model Hold '74112:inst1|8'
+Slack : 0.370
 TNS   : 0.000
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CLK'
-Slack : -0.456
-TNS   : -17.223
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ADDER:inst1|74112:inst1|8'
+Type  : Slow 1100mV 85C Model Minimum Pulse Width '74112:inst1|8'
 Slack : -0.394
-TNS   : -1.049
+TNS   : -1.021
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Vhdl1:inst|clk_8Hz'
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'CP'
 Slack : -0.394
-TNS   : -0.561
+TNS   : -0.630
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Vhdl1:inst|clk_1Hz'
+Type  : Slow 1100mV 85C Model Minimum Pulse Width '74112:inst|8'
 Slack : -0.394
-TNS   : -0.542
+TNS   : -0.508
 
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Vhdl1:inst|clk_4Hz'
-Slack : -0.394
-TNS   : -0.526
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'ADDER:inst1|74112:inst|8'
-Slack : -0.394
-TNS   : -0.523
-
-Type  : Slow 1100mV 85C Model Minimum Pulse Width 'Vhdl1:inst|clk_2Hz'
-Slack : -0.394
-TNS   : -0.523
-
-Type  : Slow 1100mV 0C Model Setup 'CLK'
-Slack : -3.970
-TNS   : -83.377
-
-Type  : Slow 1100mV 0C Model Setup 'Vhdl1:inst|clk_4Hz'
-Slack : -0.448
-TNS   : -0.448
-
-Type  : Slow 1100mV 0C Model Setup 'Vhdl1:inst|clk_8Hz'
-Slack : -0.406
-TNS   : -0.406
-
-Type  : Slow 1100mV 0C Model Setup 'Vhdl1:inst|clk_1Hz'
-Slack : -0.375
-TNS   : -0.375
-
-Type  : Slow 1100mV 0C Model Setup 'ADDER:inst1|74112:inst1|8'
-Slack : -0.343
-TNS   : -0.680
-
-Type  : Slow 1100mV 0C Model Setup 'Vhdl1:inst|clk_2Hz'
-Slack : -0.207
-TNS   : -0.207
-
-Type  : Slow 1100mV 0C Model Setup 'ADDER:inst1|74112:inst|8'
-Slack : -0.122
-TNS   : -0.122
-
-Type  : Slow 1100mV 0C Model Hold 'CLK'
-Slack : -1.430
-TNS   : -1.430
-
-Type  : Slow 1100mV 0C Model Hold 'Vhdl1:inst|clk_1Hz'
-Slack : -0.645
-TNS   : -0.645
-
-Type  : Slow 1100mV 0C Model Hold 'Vhdl1:inst|clk_2Hz'
-Slack : -0.584
-TNS   : -0.584
-
-Type  : Slow 1100mV 0C Model Hold 'Vhdl1:inst|clk_8Hz'
-Slack : -0.583
-TNS   : -0.583
-
-Type  : Slow 1100mV 0C Model Hold 'ADDER:inst1|74112:inst|8'
-Slack : -0.529
-TNS   : -0.529
-
-Type  : Slow 1100mV 0C Model Hold 'Vhdl1:inst|clk_4Hz'
-Slack : -0.450
-TNS   : -0.450
-
-Type  : Slow 1100mV 0C Model Hold 'ADDER:inst1|74112:inst1|8'
-Slack : 0.338
-TNS   : 0.000
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CLK'
-Slack : -0.477
-TNS   : -18.874
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ADDER:inst1|74112:inst1|8'
-Slack : -0.394
-TNS   : -1.032
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Vhdl1:inst|clk_8Hz'
-Slack : -0.394
-TNS   : -0.578
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Vhdl1:inst|clk_4Hz'
-Slack : -0.394
-TNS   : -0.522
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Vhdl1:inst|clk_2Hz'
-Slack : -0.394
-TNS   : -0.517
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'ADDER:inst1|74112:inst|8'
-Slack : -0.394
-TNS   : -0.515
-
-Type  : Slow 1100mV 0C Model Minimum Pulse Width 'Vhdl1:inst|clk_1Hz'
-Slack : -0.394
-TNS   : -0.514
-
-Type  : Fast 1100mV 85C Model Setup 'CLK'
-Slack : -1.978
-TNS   : -33.516
-
-Type  : Fast 1100mV 85C Model Setup 'Vhdl1:inst|clk_4Hz'
-Slack : -0.219
-TNS   : -0.219
-
-Type  : Fast 1100mV 85C Model Setup 'Vhdl1:inst|clk_8Hz'
-Slack : -0.140
-TNS   : -0.140
-
-Type  : Fast 1100mV 85C Model Setup 'Vhdl1:inst|clk_1Hz'
-Slack : -0.121
-TNS   : -0.121
-
-Type  : Fast 1100mV 85C Model Setup 'Vhdl1:inst|clk_2Hz'
-Slack : -0.065
-TNS   : -0.065
-
-Type  : Fast 1100mV 85C Model Setup 'ADDER:inst1|74112:inst|8'
-Slack : -0.036
-TNS   : -0.036
-
-Type  : Fast 1100mV 85C Model Setup 'ADDER:inst1|74112:inst1|8'
-Slack : 0.024
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Hold 'CLK'
-Slack : -0.821
-TNS   : -0.821
-
-Type  : Fast 1100mV 85C Model Hold 'Vhdl1:inst|clk_8Hz'
-Slack : -0.581
-TNS   : -0.581
-
-Type  : Fast 1100mV 85C Model Hold 'Vhdl1:inst|clk_1Hz'
-Slack : -0.542
-TNS   : -0.542
-
-Type  : Fast 1100mV 85C Model Hold 'Vhdl1:inst|clk_2Hz'
-Slack : -0.503
-TNS   : -0.503
-
-Type  : Fast 1100mV 85C Model Hold 'ADDER:inst1|74112:inst|8'
-Slack : -0.476
-TNS   : -0.476
-
-Type  : Fast 1100mV 85C Model Hold 'Vhdl1:inst|clk_4Hz'
-Slack : -0.449
-TNS   : -0.449
-
-Type  : Fast 1100mV 85C Model Hold 'ADDER:inst1|74112:inst1|8'
-Slack : 0.153
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CLK'
-Slack : -0.455
-TNS   : -3.243
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Vhdl1:inst|clk_8Hz'
-Slack : 0.049
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Vhdl1:inst|clk_2Hz'
-Slack : 0.130
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ADDER:inst1|74112:inst1|8'
-Slack : 0.133
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Vhdl1:inst|clk_1Hz'
-Slack : 0.134
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'ADDER:inst1|74112:inst|8'
-Slack : 0.135
-TNS   : 0.000
-
-Type  : Fast 1100mV 85C Model Minimum Pulse Width 'Vhdl1:inst|clk_4Hz'
-Slack : 0.147
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Setup 'CLK'
-Slack : -1.842
-TNS   : -29.362
-
-Type  : Fast 1100mV 0C Model Setup 'Vhdl1:inst|clk_4Hz'
-Slack : -0.235
-TNS   : -0.235
-
-Type  : Fast 1100mV 0C Model Setup 'Vhdl1:inst|clk_8Hz'
-Slack : -0.156
-TNS   : -0.156
-
-Type  : Fast 1100mV 0C Model Setup 'Vhdl1:inst|clk_1Hz'
-Slack : -0.113
-TNS   : -0.113
-
-Type  : Fast 1100mV 0C Model Setup 'Vhdl1:inst|clk_2Hz'
-Slack : -0.087
-TNS   : -0.087
-
-Type  : Fast 1100mV 0C Model Setup 'ADDER:inst1|74112:inst|8'
-Slack : -0.057
-TNS   : -0.057
-
-Type  : Fast 1100mV 0C Model Setup 'ADDER:inst1|74112:inst1|8'
-Slack : 0.059
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Hold 'CLK'
-Slack : -0.824
-TNS   : -0.824
-
-Type  : Fast 1100mV 0C Model Hold 'Vhdl1:inst|clk_8Hz'
-Slack : -0.541
-TNS   : -0.541
-
-Type  : Fast 1100mV 0C Model Hold 'Vhdl1:inst|clk_1Hz'
+Type  : Slow 1100mV 0C Model Setup 'CP'
 Slack : -0.520
 TNS   : -0.520
 
-Type  : Fast 1100mV 0C Model Hold 'Vhdl1:inst|clk_2Hz'
-Slack : -0.465
-TNS   : -0.465
+Type  : Slow 1100mV 0C Model Setup '74112:inst1|8'
+Slack : -0.352
+TNS   : -0.698
 
-Type  : Fast 1100mV 0C Model Hold 'ADDER:inst1|74112:inst|8'
-Slack : -0.443
-TNS   : -0.443
+Type  : Slow 1100mV 0C Model Setup '74112:inst|8'
+Slack : -0.188
+TNS   : -0.188
 
-Type  : Fast 1100mV 0C Model Hold 'Vhdl1:inst|clk_4Hz'
-Slack : -0.421
-TNS   : -0.421
+Type  : Slow 1100mV 0C Model Hold 'CP'
+Slack : -2.517
+TNS   : -2.517
 
-Type  : Fast 1100mV 0C Model Hold 'ADDER:inst1|74112:inst1|8'
-Slack : 0.128
+Type  : Slow 1100mV 0C Model Hold '74112:inst|8'
+Slack : -0.533
+TNS   : -0.533
+
+Type  : Slow 1100mV 0C Model Hold '74112:inst1|8'
+Slack : 0.345
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CLK'
-Slack : -0.457
-TNS   : -3.266
+Type  : Slow 1100mV 0C Model Minimum Pulse Width '74112:inst1|8'
+Slack : -0.394
+TNS   : -1.029
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Vhdl1:inst|clk_8Hz'
-Slack : 0.060
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'CP'
+Slack : -0.394
+TNS   : -0.572
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width '74112:inst|8'
+Slack : -0.394
+TNS   : -0.511
+
+Type  : Fast 1100mV 85C Model Setup 'CP'
+Slack : -0.368
+TNS   : -0.368
+
+Type  : Fast 1100mV 85C Model Setup '74112:inst|8'
+Slack : -0.093
+TNS   : -0.093
+
+Type  : Fast 1100mV 85C Model Setup '74112:inst1|8'
+Slack : 0.016
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Vhdl1:inst|clk_1Hz'
-Slack : 0.129
+Type  : Fast 1100mV 85C Model Hold 'CP'
+Slack : -1.508
+TNS   : -1.508
+
+Type  : Fast 1100mV 85C Model Hold '74112:inst|8'
+Slack : -0.454
+TNS   : -0.454
+
+Type  : Fast 1100mV 85C Model Hold '74112:inst1|8'
+Slack : 0.161
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Vhdl1:inst|clk_2Hz'
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'CP'
+Slack : -0.251
+TNS   : -0.251
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width '74112:inst1|8'
+Slack : 0.151
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width '74112:inst|8'
+Slack : 0.154
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'CP'
+Slack : -0.230
+TNS   : -0.230
+
+Type  : Fast 1100mV 0C Model Setup '74112:inst|8'
+Slack : -0.099
+TNS   : -0.099
+
+Type  : Fast 1100mV 0C Model Setup '74112:inst1|8'
+Slack : 0.051
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'CP'
+Slack : -1.575
+TNS   : -1.575
+
+Type  : Fast 1100mV 0C Model Hold '74112:inst|8'
+Slack : -0.427
+TNS   : -0.427
+
+Type  : Fast 1100mV 0C Model Hold '74112:inst1|8'
 Slack : 0.134
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ADDER:inst1|74112:inst1|8'
-Slack : 0.140
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'CP'
+Slack : -0.285
+TNS   : -0.285
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width '74112:inst1|8'
+Slack : 0.146
 TNS   : 0.000
 
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'ADDER:inst1|74112:inst|8'
-Slack : 0.141
-TNS   : 0.000
-
-Type  : Fast 1100mV 0C Model Minimum Pulse Width 'Vhdl1:inst|clk_4Hz'
+Type  : Fast 1100mV 0C Model Minimum Pulse Width '74112:inst|8'
 Slack : 0.151
 TNS   : 0.000
 

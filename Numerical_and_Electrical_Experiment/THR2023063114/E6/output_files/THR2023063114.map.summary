@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Fri Nov 08 19:52:20 2024
+Analysis & Synthesis Status : Successful - Tue Nov 19 14:43:42 2024
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : THR2023063114
-Top-level Entity Name : Block1
+Top-level Entity Name : THR2023063114
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 39
-Total pins : 14
+Total registers : 3
+Total pins : 13
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

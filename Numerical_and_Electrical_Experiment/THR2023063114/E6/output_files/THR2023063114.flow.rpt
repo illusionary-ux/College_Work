@@ -1,5 +1,5 @@
 Flow report for THR2023063114
-Fri Nov 08 23:18:24 2024
+Tue Nov 19 14:44:34 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,16 +40,16 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Fri Nov 08 23:18:24 2024       ;
+; Flow Status                     ; Successful - Tue Nov 19 14:44:34 2024       ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                   ; THR2023063114                               ;
-; Top-level Entity Name           ; Block1                                      ;
+; Top-level Entity Name           ; THR2023063114                               ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Preliminary                                 ;
-; Logic utilization (in ALMs)     ; 41 / 32,070 ( < 1 % )                       ;
-; Total registers                 ; 40                                          ;
-; Total pins                      ; 14 / 457 ( 3 % )                            ;
+; Logic utilization (in ALMs)     ; 11 / 32,070 ( < 1 % )                       ;
+; Total registers                 ; 4                                           ;
+; Total pins                      ; 13 / 457 ( 3 % )                            ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0 / 4,065,280 ( 0 % )                       ;
 ; Total DSP Blocks                ; 0 / 87 ( 0 % )                              ;
@@ -67,7 +67,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/08/2024 19:52:18 ;
+; Start date & time ; 11/19/2024 14:43:40 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; THR2023063114       ;
 +-------------------+---------------------+
@@ -78,18 +78,17 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------------------------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                                                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------------------------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 220449209054716.173106673823168                                                       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 220449209054716.173199862012184                                                       ; --            ; --          ; --             ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; On                                                                                    ; --            ; --          ; eda_simulation ;
 ; EDA_NETLIST_WRITER_OUTPUT_DIR       ; D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E6/simulation/qsim/ ; --            ; --          ; eda_simulation ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                                                                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)                                                             ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                                                                    ; --            ; --          ; --             ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                                                                     ; --            ; --          ; --             ;
-; PARTITION_COLOR                     ; 16764057                                                                              ; --            ; Block1      ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                                 ; --            ; Block1      ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                                                                                ; --            ; Block1      ; Top            ;
+; PARTITION_COLOR                     ; 16764057                                                                              ; --            ; --          ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING                                                                 ; --            ; --          ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                                                                                ; --            ; --          ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files                                                                          ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; Block1                                                                                ; THR2023063114 ; --          ; --             ;
 +-------------------------------------+---------------------------------------------------------------------------------------+---------------+-------------+----------------+
 
 
@@ -98,14 +97,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 4743 MB             ; 00:00:01                           ;
-; Fitter                    ; 00:00:32     ; 4.0                     ; 6676 MB             ; 00:00:27                           ;
-; Assembler                 ; 00:00:10     ; 1.0                     ; 4776 MB             ; 00:00:07                           ;
-; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 5089 MB             ; 00:00:04                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 4620 MB             ; 00:00:00                           ;
-; EDA Netlist Writer        ; 00:00:05     ; 1.0                     ; 4631 MB             ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4631 MB             ; 00:00:01                           ;
-; Total                     ; 00:00:58     ; --                      ; --                  ; 00:00:41                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4755 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:29     ; 3.0                     ; 6694 MB             ; 00:00:21                           ;
+; Assembler                 ; 00:00:10     ; 1.0                     ; 4764 MB             ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:06     ; 1.0                     ; 5058 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:02     ; 1.0                     ; 4622 MB             ; 00:00:00                           ;
+; Total                     ; 00:00:48     ; --                      ; --                  ; 00:00:27                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -119,8 +116,6 @@ applicable agreement for further details.
 ; Assembler                 ; DESKTOP-ONPK3FH  ; Windows 7 ; 6.2        ; x86_64         ;
 ; TimeQuest Timing Analyzer ; DESKTOP-ONPK3FH  ; Windows 7 ; 6.2        ; x86_64         ;
 ; EDA Netlist Writer        ; DESKTOP-ONPK3FH  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-ONPK3FH  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; DESKTOP-ONPK3FH  ; Windows 7 ; 6.2        ; x86_64         ;
 +---------------------------+------------------+-----------+------------+----------------+
 
 
@@ -132,8 +127,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off THR2023063114 -
 quartus_asm --read_settings_files=off --write_settings_files=off THR2023063114 -c THR2023063114
 quartus_sta THR2023063114 -c THR2023063114
 quartus_eda --read_settings_files=off --write_settings_files=off THR2023063114 -c THR2023063114
-quartus_eda --gen_testbench --check_outputs=on --tool=modelsim_oem --format=verilog THR2023063114 -c THR2023063114 --vector_source=D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E6/Waveform.vwf --testbench_file=D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E6/simulation/qsim/Waveform.vwf.vt
-quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E6/simulation/qsim/ THR2023063114 -c THR2023063114
 
 
 

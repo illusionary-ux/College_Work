@@ -1,4 +1,12 @@
-|sequence_generator
+|THR2023063114
+SOUT <= sequence_generator:inst1.sout
+RES => LowFreqClk:inst.rst_n
+RES => sequence_generator:inst1.rst
+CLK => LowFreqClk:inst.Clk_50M
+SYNC <= sequence_generator:inst1.sync
+
+
+|THR2023063114|sequence_generator:inst1
 clk => sout~reg0.CLK
 clk => sync~reg0.CLK
 clk => index[0].CLK
@@ -9,7 +17,77 @@ rst => index[0].ACLR
 rst => index[1].ACLR
 rst => index[2].ACLR
 rst => sout~reg0.ENA
-sout << sout~reg0.DB_MAX_OUTPUT_PORT_TYPE
-sync << sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sout <= sout~reg0.DB_MAX_OUTPUT_PORT_TYPE
+sync <= sync~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|THR2023063114|LowFreqClk:inst
+rst_n => clk_1MHz~reg0.ACLR
+rst_n => Count[0].ACLR
+rst_n => Count[1].ACLR
+rst_n => Count[2].ACLR
+rst_n => Count[3].ACLR
+rst_n => Count[4].ACLR
+rst_n => Count[5].ACLR
+rst_n => Count[6].ACLR
+rst_n => Count[7].ACLR
+rst_n => Count[8].ACLR
+rst_n => Count[9].ACLR
+rst_n => Count[10].ACLR
+rst_n => Count[11].ACLR
+rst_n => Count[12].ACLR
+rst_n => Count[13].ACLR
+rst_n => Count[14].ACLR
+rst_n => Count[15].ACLR
+rst_n => Count[16].ACLR
+rst_n => Count[17].ACLR
+rst_n => Count[18].ACLR
+rst_n => Count[19].ACLR
+rst_n => Count[20].ACLR
+rst_n => Count[21].ACLR
+rst_n => Count[22].ACLR
+rst_n => Count[23].ACLR
+rst_n => Count[24].ACLR
+rst_n => Count[25].ACLR
+rst_n => Count[26].ACLR
+rst_n => Count[27].ACLR
+rst_n => Count[28].ACLR
+rst_n => Count[29].ACLR
+rst_n => Count[30].ACLR
+rst_n => Count[31].ACLR
+Clk_50M => clk_1MHz~reg0.CLK
+Clk_50M => Count[0].CLK
+Clk_50M => Count[1].CLK
+Clk_50M => Count[2].CLK
+Clk_50M => Count[3].CLK
+Clk_50M => Count[4].CLK
+Clk_50M => Count[5].CLK
+Clk_50M => Count[6].CLK
+Clk_50M => Count[7].CLK
+Clk_50M => Count[8].CLK
+Clk_50M => Count[9].CLK
+Clk_50M => Count[10].CLK
+Clk_50M => Count[11].CLK
+Clk_50M => Count[12].CLK
+Clk_50M => Count[13].CLK
+Clk_50M => Count[14].CLK
+Clk_50M => Count[15].CLK
+Clk_50M => Count[16].CLK
+Clk_50M => Count[17].CLK
+Clk_50M => Count[18].CLK
+Clk_50M => Count[19].CLK
+Clk_50M => Count[20].CLK
+Clk_50M => Count[21].CLK
+Clk_50M => Count[22].CLK
+Clk_50M => Count[23].CLK
+Clk_50M => Count[24].CLK
+Clk_50M => Count[25].CLK
+Clk_50M => Count[26].CLK
+Clk_50M => Count[27].CLK
+Clk_50M => Count[28].CLK
+Clk_50M => Count[29].CLK
+Clk_50M => Count[30].CLK
+Clk_50M => Count[31].CLK
+clk_1MHz <= clk_1MHz~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
