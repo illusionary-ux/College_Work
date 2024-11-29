@@ -38,7 +38,7 @@
 
 set_global_assignment -name FAMILY "Cyclone V"
 set_global_assignment -name DEVICE 5CSEMA5F31C6
-set_global_assignment -name TOP_LEVEL_ENTITY THR2023063114
+set_global_assignment -name TOP_LEVEL_ENTITY mo12
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 13.1
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "22:01:10  NOVEMBER 28, 2024"
 set_global_assignment -name LAST_QUARTUS_VERSION 13.1
@@ -48,8 +48,46 @@ set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name DEVICE_FILTER_PACKAGE FBGA
 set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 6
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
-set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (Verilog)"
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_NETLIST_WRITER_OUTPUT_DIR "D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E9/simulation/qsim/" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST ON -section_id eda_simulation
 set_global_assignment -name BDF_FILE jz24.bdf
 set_global_assignment -name BDF_FILE mo12.bdf
-set_global_assignment -name VHDL_FILE si.vhd
+set_global_assignment -name VHDL_FILE cnt4.vhd
+set_global_assignment -name VHDL_FILE LowFreqClk.vhd
+set_global_assignment -name VECTOR_WAVEFORM_FILE cnt4.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE jz24.vwf
+set_global_assignment -name VECTOR_WAVEFORM_FILE mo12.vwf
+set_global_assignment -name BDF_FILE simu.bdf
+set_global_assignment -name VECTOR_WAVEFORM_FILE simu.vwf
+set_global_assignment -name BDF_FILE Final.bdf
+set_global_assignment -name STRATIX_DEVICE_IO_STANDARD "2.5 V"
+set_location_assignment PIN_AF14 -to CLK
+set_location_assignment PIN_AJ29 -to H0
+set_location_assignment PIN_AH29 -to H1
+set_location_assignment PIN_AH30 -to H2
+set_location_assignment PIN_AG30 -to H3
+set_location_assignment PIN_AF29 -to H4
+set_location_assignment PIN_AF30 -to H5
+set_location_assignment PIN_AD27 -to H6
+set_location_assignment PIN_AE26 -to L0
+set_location_assignment PIN_AE27 -to L1
+set_location_assignment PIN_AE28 -to L2
+set_location_assignment PIN_AG27 -to L3
+set_location_assignment PIN_AF28 -to L4
+set_location_assignment PIN_AG28 -to L5
+set_location_assignment PIN_AH28 -to L6
+set_location_assignment PIN_V16 -to EWG
+set_location_assignment PIN_W16 -to EWR
+set_location_assignment PIN_V17 -to EWY
+set_location_assignment PIN_V18 -to NSG
+set_location_assignment PIN_W17 -to NSR
+set_location_assignment PIN_W19 -to NSY
+set_location_assignment PIN_AB12 -to CL
+set_location_assignment PIN_AC12 -to RST
+set_global_assignment -name VECTOR_WAVEFORM_FILE output_files/Final.vwf
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
