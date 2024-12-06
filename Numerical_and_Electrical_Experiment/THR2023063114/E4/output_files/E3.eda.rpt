@@ -1,5 +1,5 @@
 EDA Netlist Writer report for E3
-Fri Oct 25 22:54:52 2024
+Fri Nov 29 19:49:23 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Oct 25 22:54:52 2024 ;
+; EDA Netlist Writer Status ; Successful - Fri Nov 29 19:49:23 2024 ;
 ; Revision Name             ; E3                                    ;
 ; Top-level Entity Name     ; E3_74153                              ;
 ; Family                    ; Cyclone V                             ;
@@ -93,13 +93,14 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Fri Oct 25 22:54:51 2024
+    Info: Processing started: Fri Nov 29 19:49:23 2024
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E4/simulation/qsim/ E3 -c E3
+Info (119006): Selected device 5CSEMA5F31C6 for design "E3"
 Info (204019): Generated file E3.vo in folder "D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E4/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4635 megabytes
-    Info: Processing ended: Fri Oct 25 22:54:52 2024
-    Info: Elapsed time: 00:00:01
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4638 megabytes
+    Info: Processing ended: Fri Nov 29 19:49:23 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 

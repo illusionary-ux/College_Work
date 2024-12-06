@@ -3,7 +3,7 @@ $comment
 		vcd file E3.msim.vcd -direction
 $end
 $date
-	Fri Oct 25 22:54:55 2024
+	Fri Nov 29 19:49:24 2024
 $end
 $version
 	ModelSim Version 10.1d
@@ -24,7 +24,7 @@ $var wire 1 ( unknown $end
 $var tri1 1 ) devclrn $end
 $var tri1 1 * devpor $end
 $var tri1 1 + devoe $end
-$var wire 1 , ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 , OUTPUT~output_o $end
 $var wire 1 - C~input_o $end
 $var wire 1 . A~input_o $end
 $var wire 1 / B~input_o $end
@@ -66,6 +66,7 @@ $end
 1-
 0%
 10
+1,
 1$
 #400000
 1!
@@ -76,12 +77,14 @@ $end
 0-
 1%
 00
+0,
 0$
 #500000
 1#
 1-
 0%
 10
+1,
 1$
 #600000
 1"
@@ -102,6 +105,7 @@ $end
 0-
 1%
 00
+0,
 0$
 #900000
 1#

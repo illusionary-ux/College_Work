@@ -1,0 +1,311 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Full Version"
+
+// DATE "11/30/2024 12:23:56"
+
+// 
+// Device: Altera 5CSEMA5F31C6 Package FBGA896
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module THR2023063114 (
+	pin_name1,
+	clk,
+	pin_name2,
+	pin_name3,
+	pin_name4);
+output 	pin_name1;
+input 	clk;
+output 	pin_name2;
+output 	pin_name3;
+output 	pin_name4;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \pin_name1~output_o ;
+wire \pin_name2~output_o ;
+wire \pin_name3~output_o ;
+wire \pin_name4~output_o ;
+wire \clk~input_o ;
+wire \inst|sub|108~combout ;
+wire \inst|sub|110~q ;
+wire \inst|sub|92~combout ;
+wire \inst|sub|87~q ;
+wire \inst|sub|98~combout ;
+wire \inst|sub|99~q ;
+wire \inst|sub|75~combout ;
+wire \inst|sub|9~q ;
+
+
+cyclonev_io_obuf \pin_name1~output (
+	.i(\inst|sub|9~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\pin_name1~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \pin_name1~output .bus_hold = "false";
+defparam \pin_name1~output .open_drain_output = "false";
+defparam \pin_name1~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \pin_name2~output (
+	.i(\inst|sub|87~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\pin_name2~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \pin_name2~output .bus_hold = "false";
+defparam \pin_name2~output .open_drain_output = "false";
+defparam \pin_name2~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \pin_name3~output (
+	.i(\inst|sub|99~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\pin_name3~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \pin_name3~output .bus_hold = "false";
+defparam \pin_name3~output .open_drain_output = "false";
+defparam \pin_name3~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \pin_name4~output (
+	.i(\inst|sub|110~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\pin_name4~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \pin_name4~output .bus_hold = "false";
+defparam \pin_name4~output .open_drain_output = "false";
+defparam \pin_name4~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|sub|108 (
+// Equation(s):
+// \inst|sub|108~combout  = (!\inst|sub|9~q  & (((\inst|sub|110~q )))) # (\inst|sub|9~q  & ((!\inst|sub|99~q  & ((\inst|sub|110~q ))) # (\inst|sub|99~q  & (\inst|sub|87~q  & !\inst|sub|110~q ))))
+
+	.dataa(!\inst|sub|9~q ),
+	.datab(!\inst|sub|87~q ),
+	.datac(!\inst|sub|99~q ),
+	.datad(!\inst|sub|110~q ),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|sub|108~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|sub|108 .extended_lut = "off";
+defparam \inst|sub|108 .lut_mask = 64'h01FA01FA01FA01FA;
+defparam \inst|sub|108 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \inst|sub|110 (
+	.clk(\clk~input_o ),
+	.d(\inst|sub|108~combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|sub|110~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|sub|110 .is_wysiwyg = "true";
+defparam \inst|sub|110 .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|sub|92 (
+// Equation(s):
+// \inst|sub|92~combout  = (!\inst|sub|9~q  & (\inst|sub|87~q )) # (\inst|sub|9~q  & ((!\inst|sub|87~q ) # ((\inst|sub|99~q  & \inst|sub|110~q ))))
+
+	.dataa(!\inst|sub|9~q ),
+	.datab(!\inst|sub|87~q ),
+	.datac(!\inst|sub|99~q ),
+	.datad(!\inst|sub|110~q ),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|sub|92~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|sub|92 .extended_lut = "off";
+defparam \inst|sub|92 .lut_mask = 64'h6667666766676667;
+defparam \inst|sub|92 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \inst|sub|87 (
+	.clk(\clk~input_o ),
+	.d(\inst|sub|92~combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|sub|87~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|sub|87 .is_wysiwyg = "true";
+defparam \inst|sub|87 .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|sub|98 (
+// Equation(s):
+// \inst|sub|98~combout  = (!\inst|sub|9~q  & (((\inst|sub|99~q )))) # (\inst|sub|9~q  & ((!\inst|sub|87~q  & (\inst|sub|99~q  & !\inst|sub|110~q )) # (\inst|sub|87~q  & (!\inst|sub|99~q ))))
+
+	.dataa(!\inst|sub|9~q ),
+	.datab(!\inst|sub|87~q ),
+	.datac(!\inst|sub|99~q ),
+	.datad(!\inst|sub|110~q ),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|sub|98~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|sub|98 .extended_lut = "off";
+defparam \inst|sub|98 .lut_mask = 64'h1E1A1E1A1E1A1E1A;
+defparam \inst|sub|98 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \inst|sub|99 (
+	.clk(\clk~input_o ),
+	.d(\inst|sub|98~combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|sub|99~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|sub|99 .is_wysiwyg = "true";
+defparam \inst|sub|99 .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \inst|sub|75 (
+// Equation(s):
+// \inst|sub|75~combout  = (!\inst|sub|9~q ) # ((\inst|sub|99~q  & \inst|sub|110~q ))
+
+	.dataa(!\inst|sub|9~q ),
+	.datab(!\inst|sub|99~q ),
+	.datac(!\inst|sub|110~q ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\inst|sub|75~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \inst|sub|75 .extended_lut = "off";
+defparam \inst|sub|75 .lut_mask = 64'hABABABABABABABAB;
+defparam \inst|sub|75 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \inst|sub|9 (
+	.clk(\clk~input_o ),
+	.d(\inst|sub|75~combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\inst|sub|9~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \inst|sub|9 .is_wysiwyg = "true";
+defparam \inst|sub|9 .power_up = "low";
+// synopsys translate_on
+
+assign pin_name1 = \pin_name1~output_o ;
+
+assign pin_name2 = \pin_name2~output_o ;
+
+assign pin_name3 = \pin_name3~output_o ;
+
+assign pin_name4 = \pin_name4~output_o ;
+
+endmodule

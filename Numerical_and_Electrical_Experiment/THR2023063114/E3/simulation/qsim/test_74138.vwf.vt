@@ -18,7 +18,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "10/19/2024 00:06:23"
+// Generated on "11/29/2024 19:35:41"
                                                                         
 // Verilog Self-Checking Test Bench (with test vectors) for design :    test_74138
 // 
@@ -389,39 +389,58 @@ test_74138 i1 (
 );
 
 // C
-initial
+always
 begin
-	C = 1'bX;
+	C = 1'b0;
+	C = #400000 1'b1;
+	C = #400000 1'b0;
+	#200000;
 end 
 
 // B
-initial
+always
 begin
-	B = 1'bX;
+	B = 1'b0;
+	B = #200000 1'b1;
+	B = #200000 1'b0;
+	B = #200000 1'b1;
+	B = #200000 1'b0;
+	#200000;
 end 
 
 // A
-initial
+always
 begin
-	A = 1'bX;
+	A = 1'b0;
+	A = #100000 1'b1;
+	# 100000;
+	repeat(3)
+	begin
+		A = 1'b0;
+		A = #100000 1'b1;
+		# 100000;
+	end
+	A = 1'b0;
+	A = #100000 1'b1;
+	#100000;
 end 
 
 // G1
 initial
 begin
-	G1 = 1'bX;
+	G1 = 1'b1;
 end 
 
 // G2AN
 initial
 begin
-	G2AN = 1'b1;
+	G2AN = 1'b0;
 end 
 
 // G2BN
 initial
 begin
-	G2BN = 1'b1;
+	G2BN = 1'b0;
 end 
 
 test_74138_vlg_sample_tst tb_sample (

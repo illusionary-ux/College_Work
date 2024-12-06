@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Full Version"
 
-// DATE "10/25/2024 22:54:52"
+// DATE "11/29/2024 19:49:23"
 
 // 
 // Device: Altera 5CSEMA5F31C6 Package FBGA896
@@ -38,13 +38,6 @@ input 	C;
 input 	B;
 input 	A;
 
-// Design Ports Information
-// OUTPUT	=>  Location: PIN_Y21,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// C	=>  Location: PIN_AC9,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// A	=>  Location: PIN_AE12,	 I/O Standard: 2.5 V,	 Current Strength: Default
-// B	=>  Location: PIN_AD10,	 I/O Standard: 2.5 V,	 Current Strength: Default
-
-
 wire gnd;
 wire vcc;
 wire unknown;
@@ -56,14 +49,13 @@ assign unknown = 1'bx;
 tri1 devclrn;
 tri1 devpor;
 tri1 devoe;
-wire \~QUARTUS_CREATED_GND~I_combout ;
+wire \OUTPUT~output_o ;
 wire \C~input_o ;
 wire \A~input_o ;
 wire \B~input_o ;
 wire \inst|9~0_combout ;
 
 
-// Location: IOOBUF_X89_Y6_N22
 cyclonev_io_obuf \OUTPUT~output (
 	.i(\inst|9~0_combout ),
 	.oe(vcc),
@@ -71,7 +63,7 @@ cyclonev_io_obuf \OUTPUT~output (
 	.seriesterminationcontrol(16'b0000000000000000),
 	.parallelterminationcontrol(16'b0000000000000000),
 	.devoe(devoe),
-	.o(\OUTPUT ),
+	.o(\OUTPUT~output_o ),
 	.obar());
 // synopsys translate_off
 defparam \OUTPUT~output .bus_hold = "false";
@@ -79,7 +71,6 @@ defparam \OUTPUT~output .open_drain_output = "false";
 defparam \OUTPUT~output .shift_series_termination_control = "false";
 // synopsys translate_on
 
-// Location: IOIBUF_X4_Y0_N1
 cyclonev_io_ibuf \C~input (
 	.i(C),
 	.ibar(gnd),
@@ -90,7 +81,6 @@ defparam \C~input .bus_hold = "false";
 defparam \C~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X2_Y0_N58
 cyclonev_io_ibuf \A~input (
 	.i(A),
 	.ibar(gnd),
@@ -101,7 +91,6 @@ defparam \A~input .bus_hold = "false";
 defparam \A~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: IOIBUF_X4_Y0_N18
 cyclonev_io_ibuf \B~input (
 	.i(B),
 	.ibar(gnd),
@@ -112,17 +101,16 @@ defparam \B~input .bus_hold = "false";
 defparam \B~input .simulate_z_as = "z";
 // synopsys translate_on
 
-// Location: LABCELL_X9_Y4_N0
 cyclonev_lcell_comb \inst|9~0 (
 // Equation(s):
-// \inst|9~0_combout  = ( \A~input_o  & ( \B~input_o  ) ) # ( !\A~input_o  & ( \B~input_o  & ( \C~input_o  ) ) ) # ( \A~input_o  & ( !\B~input_o  & ( \C~input_o  ) ) )
+// \inst|9~0_combout  = (!\C~input_o  & (\A~input_o  & \B~input_o )) # (\C~input_o  & ((\B~input_o ) # (\A~input_o )))
 
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(!\C~input_o ),
+	.dataa(!\C~input_o ),
+	.datab(!\A~input_o ),
+	.datac(!\B~input_o ),
 	.datad(gnd),
-	.datae(!\A~input_o ),
-	.dataf(!\B~input_o ),
+	.datae(gnd),
+	.dataf(gnd),
 	.datag(gnd),
 	.cin(gnd),
 	.sharein(gnd),
@@ -132,31 +120,10 @@ cyclonev_lcell_comb \inst|9~0 (
 	.shareout());
 // synopsys translate_off
 defparam \inst|9~0 .extended_lut = "off";
-defparam \inst|9~0 .lut_mask = 64'h00000F0F0F0FFFFF;
+defparam \inst|9~0 .lut_mask = 64'h1717171717171717;
 defparam \inst|9~0 .shared_arith = "off";
 // synopsys translate_on
 
-// Location: LABCELL_X11_Y2_N0
-cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
-// Equation(s):
-
-	.dataa(gnd),
-	.datab(gnd),
-	.datac(gnd),
-	.datad(gnd),
-	.datae(gnd),
-	.dataf(gnd),
-	.datag(gnd),
-	.cin(gnd),
-	.sharein(gnd),
-	.combout(\~QUARTUS_CREATED_GND~I_combout ),
-	.sumout(),
-	.cout(),
-	.shareout());
-// synopsys translate_off
-defparam \~QUARTUS_CREATED_GND~I .extended_lut = "off";
-defparam \~QUARTUS_CREATED_GND~I .lut_mask = 64'h0000000000000000;
-defparam \~QUARTUS_CREATED_GND~I .shared_arith = "off";
-// synopsys translate_on
+assign \OUTPUT  = \OUTPUT~output_o ;
 
 endmodule

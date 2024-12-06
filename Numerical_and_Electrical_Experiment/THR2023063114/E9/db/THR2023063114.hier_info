@@ -1,4 +1,103 @@
-|mo12
+|simu
+a0 <= jz24:inst1.a0
+Rst_L => jz24:inst1.ld
+Rst_L => cnt4:inst.rst
+Rst_L => mo12:inst2.cr
+CLK_T1S => jz24:inst1.cp
+CLK_T1S => cnt4:inst.clk
+a1 <= jz24:inst1.a1
+a2 <= jz24:inst1.a2
+a3 <= jz24:inst1.a3
+a4 <= jz24:inst1.a4
+a5 <= jz24:inst1.a5
+a6 <= jz24:inst1.a6
+a7 <= jz24:inst1.a7
+EWG <= mo12:inst2.EWG
+EWY <= mo12:inst2.EWY
+EWR <= mo12:inst2.EWR
+NSG <= mo12:inst2.NSG
+NSY <= mo12:inst2.NSY
+NSR <= mo12:inst2.NSR
+CLK_T4S <= cnt4:inst.Q
+
+
+|simu|jz24:inst1
+a0 <= 74160:inst.QA
+cp => 74160:inst.CLK
+cp => 74160:inst1.CLK
+ld => inst5.IN1
+a1 <= 74160:inst.QB
+a2 <= 74160:inst.QC
+a3 <= 74160:inst.QD
+a4 <= 74160:inst1.QA
+a5 <= 74160:inst1.QB
+a6 <= 74160:inst1.QC
+a7 <= 74160:inst1.QD
+
+
+|simu|jz24:inst1|74160:inst
+RCO <= 45.DB_MAX_OUTPUT_PORT_TYPE
+ENT => 45.IN0
+ENT => 47.IN0
+ENT => 65.IN0
+CLRN => 6.ACLR
+CLRN => 9.ACLR
+CLRN => 8.ACLR
+CLRN => 7.ACLR
+CLK => 6.CLK
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+LDN => 32.IN0
+LDN => 47.IN2
+LDN => 33.IN0
+LDN => 49.IN1
+LDN => 27.IN0
+LDN => 30.IN0
+ENP => 47.IN1
+ENP => 65.IN1
+A => 31.IN0
+D => 24.IN0
+C => 26.IN0
+B => 29.IN0
+QD <= 9.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 8.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 7.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simu|jz24:inst1|74160:inst1
+RCO <= 45.DB_MAX_OUTPUT_PORT_TYPE
+ENT => 45.IN0
+ENT => 47.IN0
+ENT => 65.IN0
+CLRN => 6.ACLR
+CLRN => 9.ACLR
+CLRN => 8.ACLR
+CLRN => 7.ACLR
+CLK => 6.CLK
+CLK => 9.CLK
+CLK => 8.CLK
+CLK => 7.CLK
+LDN => 32.IN0
+LDN => 47.IN2
+LDN => 33.IN0
+LDN => 49.IN1
+LDN => 27.IN0
+LDN => 30.IN0
+ENP => 47.IN1
+ENP => 65.IN1
+A => 31.IN0
+D => 24.IN0
+C => 26.IN0
+B => 29.IN0
+QD <= 9.DB_MAX_OUTPUT_PORT_TYPE
+QC <= 8.DB_MAX_OUTPUT_PORT_TYPE
+QB <= 7.DB_MAX_OUTPUT_PORT_TYPE
+QA <= 6.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simu|mo12:inst2
 EWG <= w11.DB_MAX_OUTPUT_PORT_TYPE
 cp => 74194:w90.CLK
 cp => 74194:inst17.CLK
@@ -11,7 +110,7 @@ NSY <= w8.DB_MAX_OUTPUT_PORT_TYPE
 NSR <= w7.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|mo12|74194:inst17
+|simu|mo12:inst2|74194:inst17
 QD <= 38.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 38.ACLR
 CLRN => 39.ACLR
@@ -50,7 +149,7 @@ QB <= 40.DB_MAX_OUTPUT_PORT_TYPE
 QA <= 41.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|mo12|74194:w90
+|simu|mo12:inst2|74194:w90
 QD <= 38.DB_MAX_OUTPUT_PORT_TYPE
 CLRN => 38.ACLR
 CLRN => 39.ACLR
@@ -87,5 +186,15 @@ D => 51.IN0
 QC <= 39.DB_MAX_OUTPUT_PORT_TYPE
 QB <= 40.DB_MAX_OUTPUT_PORT_TYPE
 QA <= 41.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|simu|cnt4:inst
+clk => Q~reg0.CLK
+clk => count[0].CLK
+clk => count[1].CLK
+rst => Q~reg0.PRESET
+rst => count[0].ACLR
+rst => count[1].ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 

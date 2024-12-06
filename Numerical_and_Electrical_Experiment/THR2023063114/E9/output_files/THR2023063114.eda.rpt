@@ -1,5 +1,5 @@
 EDA Netlist Writer report for THR2023063114
-Fri Nov 29 10:47:56 2024
+Sat Nov 30 21:00:42 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -36,9 +36,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Fri Nov 29 10:47:56 2024 ;
+; EDA Netlist Writer Status ; Successful - Sat Nov 30 21:00:42 2024 ;
 ; Revision Name             ; THR2023063114                         ;
-; Top-level Entity Name     ; mo12                                  ;
+; Top-level Entity Name     ; simu                                  ;
 ; Family                    ; Cyclone V                             ;
 ; Simulation Files Creation ; Successful                            ;
 +---------------------------+---------------------------------------+
@@ -93,14 +93,14 @@ Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: programming logic devices manufactured by Altera and sold by 
     Info: Altera or its authorized distributors.  Please refer to the 
     Info: applicable agreement for further details.
-    Info: Processing started: Fri Nov 29 10:47:55 2024
+    Info: Processing started: Sat Nov 30 21:00:42 2024
 Info: Command: quartus_eda --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E9/simulation/qsim/ THR2023063114 -c THR2023063114
 Info (119006): Selected device 5CSEMA5F31C6 for design "THR2023063114"
 Info (204019): Generated file THR2023063114.vo in folder "D:/College_Work/Numerical_and_Electrical_Experiment/THR2023063114/E9/simulation/qsim//" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
-    Info: Peak virtual memory: 4631 megabytes
-    Info: Processing ended: Fri Nov 29 10:47:57 2024
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 4638 megabytes
+    Info: Processing ended: Sat Nov 30 21:00:42 2024
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
 
 

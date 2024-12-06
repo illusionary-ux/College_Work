@@ -1,5 +1,5 @@
 Analysis & Synthesis report for E3
-Fri Oct 25 19:36:08 2024
+Fri Nov 29 19:49:19 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -41,7 +41,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Fri Oct 25 19:36:08 2024       ;
+; Analysis & Synthesis Status     ; Successful - Fri Nov 29 19:49:19 2024       ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                   ; E3                                          ;
 ; Top-level Entity Name           ; E3_74153                                    ;
@@ -241,13 +241,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Fri Oct 25 19:36:06 2024
+    Info: Processing started: Fri Nov 29 19:49:19 2024
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off E3 -c E3
 Info (11104): Parallel Compilation has detected 20 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 14 of the 14 physical processors detected instead.
-Info (12021): Found 1 design units, including 1 entities, in source file e3_74138.bdf
-    Info (12023): Found entity 1: E3_74138
 Info (12021): Found 1 design units, including 1 entities, in source file e3_74153.bdf
     Info (12023): Found entity 1: E3_74153
+Info (12021): Found 1 design units, including 1 entities, in source file e3_74138.bdf
+    Info (12023): Found entity 1: E3_74138
 Info (12127): Elaborating entity "E3_74153" for the top level hierarchy
 Info (12128): Elaborating entity "74153" for hierarchy "74153:inst"
 Info (12130): Elaborated megafunction instantiation "74153:inst"
@@ -260,8 +260,8 @@ Info (21057): Implemented 5 device resources after synthesis - the final resourc
     Info (21061): Implemented 1 logic cells
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4723 megabytes
-    Info: Processing ended: Fri Oct 25 19:36:08 2024
-    Info: Elapsed time: 00:00:02
+    Info: Processing ended: Fri Nov 29 19:49:19 2024
+    Info: Elapsed time: 00:00:00
     Info: Total CPU time (on all processors): 00:00:01
 
 
