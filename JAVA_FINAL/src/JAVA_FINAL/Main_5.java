@@ -1,23 +1,40 @@
 package JAVA_FINAL;
 import java.util.*;
-public class Main_5 {
 
-	public static void main(String[] args) {
-		String string;
+public class Main_5{
+	public static void main(String[] args)
+	{
 		Scanner scanner = new Scanner(System.in);
-		string = scanner.nextLine();
-		int letter = 0,digits = 0;
-		for(int i = 0;i < string.length(); i++)
-		{
-			char tmp = string.charAt(i);
-			if (Character.isLetter(tmp)) {
-				letter++;
-			}else if (Character.isDigit(tmp)) {
-				digits++;
-			}
+		int arr[] = new int[8];
+		for (int i = 0; i < arr.length; i++) {
+			arr[i] = scanner.nextInt();
 		}
-		System.out.println(letter + " " + digits);
-		scanner.close();
+		
+		for (int i = 0; i < arr.length - 1; i++) {
+			for (int j = 0; j < arr.length - 1 - i; j++) {
+				if (arr[j] > arr[j+1]) {
+					int tmp = arr[j];
+                    arr[j] = arr[j + 1];
+                    arr[j + 1] = tmp;
+				}
+			}
+			printTools.PrintArray(arr);
+		}
 	}
 
+}
+class printTools{
+    static int n;
+    public static void PrintArray(int a[]){
+        n=a.length;
+        for(int i=0;i<=a.length-1;i++){
+            if(i==0){
+                System.out.print(a[i]);
+            }
+            else{
+                System.out.print(" "+a[i]);
+            }
+        }
+        System.out.println();
+    }
 }

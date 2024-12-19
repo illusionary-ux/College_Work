@@ -1,49 +1,37 @@
 package JAVA_FINAL;
+import java.util.Scanner;
 
-class Thread_test extends Thread
-{
-    int number;
-    public static int sum;
-    public Thread_test(int n) //构造函数
-    {
-        number=n;
-    }
-    public static synchronized void add(int num){  //同步方法
-        sum += num;
-        }
-    public void run()
-    {
-        int count=0;
-        for(int i=0;i<10;i++)
-        {
-            count+=number+i;
-        }
-        System.out.println("The "+((int)number/10+1)+" time: "+count);
-        add(count);
-    }
-    
-}
-
-/* 请在这里填写答案 */
 public class Main_3 {
     public static void main(String[] args) {
-        // 创建并启动10个线程
-        Thread_test[] threads = new Thread_test[10];
-        for (int i = 0; i < 10; i++) {
-            threads[i] = new Thread_test(i * 10 + 1); // 每个线程的起始值分别为1, 11, 21, ..., 91
-            threads[i].start();
-        }
+        Scanner scanner = new Scanner(System.in);
+        int max = scanner.nextInt(); // 读取输入的正整数
+        int arr[] = new int[max];
+        int cnt = 0;
+        for (int i = 2; i < max; i++) {
+			if (isPrime(i)) {
+				arr[cnt++] = i;
+			}
+		}
+        
+        for (int j = 0; j < cnt; j++) {
+			System.out.print(arr[j]);
+			if ((j+1)%5==0) {
+				System.out.println();
+			}
+			else {
+				System.out.print("\t");
+			}
+				
+			}
+		}
 
-        // 等待所有线程执行完成
-        for (int i = 0; i < 10; i++) {
-            try {
-                threads[i].join();
-            } catch (InterruptedException e) {
-                e.printStackTrace();
-            }
-        }
 
-        // 输出总和
-        System.out.println("Total is " + Thread_test.sum);
+    // 判断一个数是否是素数
+    private static boolean isPrime(int num) {
+        if (num < 2) return false; // 小于2的数不是素数
+        for (int i = 2; i <= Math.sqrt(num); i++) {
+            if (num % i == 0) return false; // 如果能整除，说明不是素数
+        }
+        return true; // 否则是素数
     }
 }

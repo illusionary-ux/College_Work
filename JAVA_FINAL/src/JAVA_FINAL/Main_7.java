@@ -4,21 +4,22 @@ public class Main_7 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		int n = scanner.nextInt();
-		int[] arr = new int[n];
-		for(int i = 0; i < n;i++)
-		{
-			arr[i] = scanner.nextInt();
-		}
-		Arrays.sort(arr);
 		
-		for (int i = 1; i < arr.length - 1; i++) {
-			System.out.print(arr[i]);
-			if (i < n - 2) {
-				System.out.print(" ");
-				
+		String input = scanner.nextLine();
+		
+		String[] word = input.split(" ");
+		
+		StringBuilder output = new StringBuilder();
+		
+		for (int i = word.length - 1; i >= 0; i--) {
+			output.append(word[i]);
+			if (i != 0) {
+				output.append(" ");
 			}
 		}
+		
+		System.out.print(output.toString());
+
 	}
 
 }

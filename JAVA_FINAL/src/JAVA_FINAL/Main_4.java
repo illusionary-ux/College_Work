@@ -1,28 +1,24 @@
 package JAVA_FINAL;
-import java.util.*;
+import java.util.Scanner;
 
 public class Main_4 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int m, n;
-        m = scanner.nextInt();
-        n = scanner.nextInt();
-        int flag = 0;
-
-        for (int i = 0; i < m; i++) {
-            for (int j = 0; j < m; j++) {
-                if (2 * i + 4 * j == n && i + j == m) {
-                    flag = 1;
-                    System.out.println(i + " " + j); // 使用字符串拼接，输出每组解
-                    break;
-                }
+        Scanner in = new Scanner(System.in);
+        int n;
+        int flag=0;
+        int x=in.nextInt();
+        int y=in.nextInt();
+        int z=in.nextInt();
+        for(n=1;n<=100;n++) {
+            //尾数相加等于18，其中两个数不相等，且3个尾数都能整除3，只有包含3，6，9符合；
+            if((x+n)%10+(y+n)%10+(z+n)%10==18 &&(x+n)%10!=(y+n)%10 && (x+n)%10%3==0&& (y+n)%10%3==0&& (z+n)%10%3==0) {
+                System.out.println(n);
+                flag=1;
+                break;
             }
         }
-
-        if (flag == 0) {
-            System.out.print("No Answer");
+        if(flag==0) {
+            System.out.printf("so sad!");
         }
-
-        scanner.close();
     }
 }

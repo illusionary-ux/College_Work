@@ -1,19 +1,32 @@
 package JAVA_FINAL;
-import java.util.*;
+
+import java.util.Scanner;
+
 public class Main_10 {
 
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
 		int n = scanner.nextInt();
-		int sn = 0, pow = 6;
-		for (int i = 0; i < n; i++) {
-			sn += pow;
-			pow = pow * 10 + 6;
-			
+		int cnt = 0;
+		if (n%2 == 0) {
+			cnt++;
 		}
-		System.out.print(sn);
-		
-
+		if (n%3 == 0) {
+			cnt++;
+		}
+		switch (cnt){
+		case 0: {
+			System.out.printf("%d is not divisible by 2 and 3",n);
+			break;
+		}
+		case 1:{
+			System.out.printf("%d is divisible by 2 or 3, but not both",n);
+			break;
+		}
+		case 2:{
+			System.out.printf("%d is divisible by 2 and 3",n);
+		}
+		}
 	}
 
 }

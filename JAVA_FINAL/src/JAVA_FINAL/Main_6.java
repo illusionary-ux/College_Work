@@ -1,29 +1,46 @@
 package JAVA_FINAL;
 import java.util.*;
+
 public class Main_6 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int arr[] = new int[8]; // 定义8个整数的数组
+        for (int i = 0; i < arr.length; i++) { // 输入8个整数
+            arr[i] = scanner.nextInt();
+        }
 
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		int n = scanner.nextInt();
-		int[] count = new int[101];
-		for (int i = 0; i < n; i++) {
-			int tmp = scanner.nextInt();
-			count[tmp]++;
-		}
-		
-		int giftCount = 0;
-		for (int i = 0; i <= 98; i++) {
-			while(count[i] > 0 && count[i + 1] > 0 && count[i + 2] > 0)
-			{
-				giftCount++;
-				count[i]--;
-				count[i+1]--;
-				count[i+2]--;
-			}
-		}
-		
-		System.out.println(giftCount);
-		scanner.close();
-	}
+        // 选择排序实现
+        for (int i = 0; i < arr.length; i++) {
+            int minIndex = i; // 假设当前位置是最小值
+            for (int j = i + 1; j < arr.length; j++) { // 查找未排序部分的最小值
+                if (arr[j] < arr[minIndex]) {
+                    minIndex = j;
+                }
+            }
+            // 如果找到的最小值索引与当前索引不同，则进行交换
+            if (minIndex != i) {
+                int temp = arr[i];
+                arr[i] = arr[minIndex];
+                arr[minIndex] = temp;
+            }
+            printTools.PrintArray(arr); // 打印中间过程
+        }
+        scanner.close();
+    }
+}
 
+class printTools {
+    static int n;
+
+    public static void PrintArray(int a[]) {
+        n = a.length;
+        for (int i = 0; i <= a.length - 1; i++) {
+            if (i == 0) {
+                System.out.print(a[i]);
+            } else {
+                System.out.print(" " + a[i]);
+            }
+        }
+        System.out.println();
+    }
 }
