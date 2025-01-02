@@ -76,8 +76,6 @@ typedef priority_queue<Huffman_Tree*,vector<Huffman_Tree*>,cmp> Huffman_Tree_Pri
 
 
 
-/**********************************************************************************************************/
-
 
 const bool logging=true;
 const bool output=false;
@@ -99,8 +97,8 @@ void show_position(Huffman_Tree_Node *cur,Huffman_Tree_Node *parent=NULL){
 void display(){
     if (!logging) return;
     Huffman_Tree_Priority_Queue q=que;
-    int x=1;
-//    cout<<"round"<<endl;
+    int x = 1; // 起始水平位置
+    //    cout<<"round"<<endl;
     cout<<"-1"<<endl;
     while (!q.empty()){
         Huffman_Tree *p=q.top();q.pop();

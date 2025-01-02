@@ -1,220 +1,102 @@
 #include <iostream>
-#include <cstring>
+#include <queue>
+#include <unordered_map>
+#include <string>
+#include <vector>
 
 using namespace std;
 
-// 哈夫曼树的节点
-struct HuffmanNode
+// 哈夫曼树节点
+struct Node
 {
     char ch;
     int freq;
-    HuffmanNode *left, *right;
+    Node *left;
+    Node *right;
 
-    HuffmanNode(char c, int f) : ch(c), freq(f), left(nullptr), right(nullptr) {}
-    HuffmanNode(int f, HuffmanNode *l, HuffmanNode *r) : ch(0), freq(f), left(l), right(r) {}
+    Node(char c, int f) : ch(c), freq(f), left(nullptr), right(nullptr) {}
+};
+
+// 比较器，用于优先队列排序
+struct Compare
+{
+    bool operator()(Node *a, Node *b)
+    {
+        return a->freq > b->freq;
+    }
 };
 
 // 递归生成哈夫曼编码
-void generateCodes(HuffmanNode *root, const char *code, char huffmanCodes[256][256])
+void generateCodes(Node *root, const string &currentCode, unordered_map<char, string> &codes)
 {
     if (!root)
         return;
-    if (root->ch != 0)
-    { // 叶子节点
-        strcpy(huffmanCodes[root->ch], code);
-    }
-    char leftCode[256], rightCode[256];
-    strcpy(leftCode, code);
-    strcat(leftCode, "0");
-    generateCodes(root->left, leftCode, huffmanCodes);
 
-    strcpy(rightCode, code);
-    strcat(rightCode, "1");
-    generateCodes(root->right, rightCode, huffmanCodes);
+    if (root->ch != '\0')
+    {
+        codes[root->ch] = currentCode;
+    }
+
+    generateCodes(root->left, currentCode + "0", codes);
+    generateCodes(root->right, currentCode + "1", codes);
 }
 
-// 哈夫曼编码
-void huffmanEncoding(const char *input, char huffmanCodes[256][256])
+// 构建哈夫曼树
+Node *buildHuffmanTree(const unordered_map<char, int> &freqMap)
 {
-    int freq[256] = {0};
-    int length = strlen(input);
+    priority_queue<Node *, vector<Node *>, Compare> pq;
 
-    for (int i = 0; i < length; i++)
+    // 将频率表中的每个字符创建为叶子节点并插入优先队列
+    for (auto &pair : freqMap)
     {
-        freq[(unsigned char)input[i]]++;
-    }
-
-    HuffmanNode *nodes[256];
-    int nodeCount = 0;
-
-    // 创建所有的哈夫曼树节点
-    for (int i = 0; i < 256; i++)
-    {
-        if (freq[i] > 0)
-        {
-            nodes[nodeCount++] = new HuffmanNode((char)i, freq[i]);
-        }
+        pq.push(new Node(pair.first, pair.second));
     }
 
     // 构建哈夫曼树
-    while (nodeCount > 1)
+    while (pq.size() > 1)
     {
-        // 找到频率最小的两个节点
-        int min1 = 0, min2 = 1;
-        if (nodes[min1]->freq > nodes[min2]->freq)
-        {
-            swap(min1, min2);
-        }
+        Node *left = pq.top();
+        pq.pop();
+        Node *right = pq.top();
+        pq.pop();
 
-        for (int i = 2; i < nodeCount; i++)
-        {
-            if (nodes[i]->freq < nodes[min1]->freq)
-            {
-                min2 = min1;
-                min1 = i;
-            }
-            else if (nodes[i]->freq < nodes[min2]->freq)
-            {
-                min2 = i;
-            }
-        }
+        Node *parent = new Node('\0', left->freq + right->freq);
+        parent->left = left;
+        parent->right = right;
 
-        // 合并两个最小频率的节点
-        HuffmanNode *left = nodes[min1];
-        HuffmanNode *right = nodes[min2];
-        HuffmanNode *mergedNode = new HuffmanNode(left->freq + right->freq, left, right);
-
-        // 将合并后的节点替换原来的两个节点
-        nodes[min1] = mergedNode;
-        nodes[min2] = nodes[nodeCount - 1];
-        nodeCount--;
+        pq.push(parent);
     }
 
-    // 根节点
-    HuffmanNode *root = nodes[0];
-    generateCodes(root, "", huffmanCodes);
+    return pq.top(); // 返回树的根节点
 }
 
-// 哈夫曼解码
-void huffmanDecoding(const char *encodedStr, char *decodedStr, HuffmanNode *root)
-{
-    int i = 0, j = 0;
-    HuffmanNode *current = root;
-
-    while (encodedStr[i] != '\0')
-    {
-        // 遍历编码字符串
-        if (encodedStr[i] == '0')
-        {
-            current = current->left;
-        }
-        else
-        {
-            current = current->right;
-        }
-
-        // 如果当前节点是叶子节点，输出字符并重置到根节点
-        if (current->ch != 0)
-        {
-            decodedStr[j++] = current->ch;
-            decodedStr[j] = '\0';
-            current = root; // 返回根节点重新开始
-        }
-        i++;
-    }
-}
-
+// 主函数
 int main()
 {
-    char input[1024];
-    cout << "请输入一段文字进行哈夫曼编码：";
-    cin.getline(input, 1024);
+    string input;
+    cout << "请输入文本：";
+    getline(cin, input);
 
-    char huffmanCodes[256][256] = {0};
-    huffmanEncoding(input, huffmanCodes);
-
-    // 输出哈夫曼编码
-    cout << "\n哈夫曼编码结果：\n";
-    for (int i = 0; i < 256; i++)
+    // 统计字符频率
+    unordered_map<char, int> freqMap;
+    for (char c : input)
     {
-        if (huffmanCodes[i][0] != '\0')
-        {
-            cout << (char)i << ": " << huffmanCodes[i] << endl;
-        }
-    }
-
-    // 编码字符串
-    char encodedStr[1024] = {0};
-    for (int i = 0; i < strlen(input); i++)
-    {
-        strcat(encodedStr, huffmanCodes[(unsigned char)input[i]]);
-    }
-
-    cout << "\n编码后的字符串: " << encodedStr << endl;
-
-    // 用户输入待解码的字符串
-    char toDecode[1024];
-    cout << "\n请输入一段编码过的文字进行哈夫曼解码：";
-    cin.getline(toDecode, 1024);
-
-    // 创建哈夫曼树以便解码
-    HuffmanNode *nodes[256];
-    int freq[256] = {0};
-    int nodeCount = 0;
-
-    // 计算频率并创建节点
-    for (int i = 0; i < strlen(input); i++)
-    {
-        freq[(unsigned char)input[i]]++;
-    }
-
-    for (int i = 0; i < 256; i++)
-    {
-        if (freq[i] > 0)
-        {
-            nodes[nodeCount++] = new HuffmanNode((char)i, freq[i]);
-        }
+        freqMap[c]++;
     }
 
     // 构建哈夫曼树
-    while (nodeCount > 1)
+    Node *root = buildHuffmanTree(freqMap);
+
+    // 生成哈夫曼编码
+    unordered_map<char, string> codes;
+    generateCodes(root, "", codes);
+
+    // 输出编码结果
+    cout << "哈夫曼编码结果：" << endl;
+    for (auto &pair : codes)
     {
-        int min1 = 0, min2 = 1;
-        if (nodes[min1]->freq > nodes[min2]->freq)
-        {
-            swap(min1, min2);
-        }
-
-        for (int i = 2; i < nodeCount; i++)
-        {
-            if (nodes[i]->freq < nodes[min1]->freq)
-            {
-                min2 = min1;
-                min1 = i;
-            }
-            else if (nodes[i]->freq < nodes[min2]->freq)
-            {
-                min2 = i;
-            }
-        }
-
-        HuffmanNode *left = nodes[min1];
-        HuffmanNode *right = nodes[min2];
-        HuffmanNode *mergedNode = new HuffmanNode(left->freq + right->freq, left, right);
-
-        nodes[min1] = mergedNode;
-        nodes[min2] = nodes[nodeCount - 1];
-        nodeCount--;
+        cout << pair.first << ": " << pair.second << endl;
     }
-
-    // 获取根节点
-    HuffmanNode *root = nodes[0];
-
-    // 解码
-    char decodedStr[1024] = {0};
-    huffmanDecoding(toDecode, decodedStr, root);
-
-    cout << "\n解码后的字符串: " << decodedStr << endl;
 
     return 0;
 }
